@@ -1,0 +1,153 @@
+git add .
+
+git commit -m "Actualizaciones"
+
+git push
+
+git push --set-upstream https://github.com/edu-jose/example-app.git master
+
+
+#verificar el estado de los archivos
+$git status
+
+#verificar actualizaciones en el repo original
+$git push
+
+#cambiar de rama de orig a dev
+git checkout dev
+
+$git branch --set-upstream-to=origin/dev 
+
+#verificar actualizaciones
+$composer install
+$git pull
+
+#si los cambios son en el codigo volver a hacer estos pasos
+
+$composer install
+$php artisan migrate
+$php artisan db:seed && php artisan module:seed
+$php artisan module:compile -s -i
+
+-----------------------------------------
+3 config datos iniciales
+
+git config --global user.name "Ing Eduardo"
+git config --global user.email edujosepeolms@gmail.com
+
+git config --list
+
+git help config
+
+------------------------------------------
+
+4 Creando un proyecto desde cero o clonando uno existente
+
+git init
+
+git clone https://github.com/git/git.git
+
+------------------------------------------
+
+5 Estados de los archivos cuando trabajamos con Git
+
+git status
+
+git add .
+
+git commit -m "se añade o actualiza archivos"
+
+git add *.py
+
+------------------------------------------
+
+6 Saltear el área de preparación
+git commit -a -m "se borraron la última línea de los archivos "
+
+---------------------------------------------
+
+7 Eliminar archivos y cambiar sus nombres
+eliminar
+git rm programa1.py
+renombrar
+git mv programa2.py programafinal.py
+
+---------------------------------------------
+
+8 Consulta del historial de confirmaciones.
+
+git log
+
+git log -3
+
+git log -p -2
+
+git log --pretty=oneline
+
+git log --since="2022-12-01" --until="2022-12-16"
+
+git log --author="Diego Moisset"
+
+------------------------------------------
+
+9 Deshacer cambios de archivos
+
+git commit -a -m "se agrega el archivo programa3.py" 
+
+git checkout -- programa3.py
+
+--------------------------------------------
+
+10 GitHub como alojamiento de repositorios Git
+
+git add README.md
+git commit -m "Modificamos archivo README.md"
+git push
+
+-----------------------------------------
+
+11 - Creación de ramas
+
+
+git branch login
+
+git branch
+
+git checkout
+
+fusionar
+git merge
+
+borrar rama
+
+git branch -d nombre
+
+----------------------------------------
+
+12 - Evitar que Git siga a ciertos archivos y directorios.
+
+----------------------------------------
+
+13 - Creación de alias para comandos Git
+
+git config --global alias.ci commit
+
+git ci
+
+git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.st status
+
+modificar nombre
+
+git config --global alias.ct commit
+
+borrar
+git config --global --unset alias.st 
+
+
+
+
+
+
+
