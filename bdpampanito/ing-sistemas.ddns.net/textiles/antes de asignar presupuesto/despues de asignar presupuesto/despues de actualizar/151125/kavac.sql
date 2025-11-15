@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict GLoDzSkWgtOULRTd8Zi1p3ueuTLR7ZCOQwvnfIZtdBWClZuowGXIjAJ5N7Z0dwV
+\restrict 116YcDbY973oGB2ZEjP9NEhRf1mAbGXbMp0rMjNhNzrJdHojLVJZdjmfCtBYBqZ
 
 -- Dumped from database version 15.14 (Debian 15.14-0+deb12u1)
 -- Dumped by pg_dump version 15.14 (Debian 15.14-0+deb12u1)
@@ -39244,6 +39244,7 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 8098	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConceptAssignOption	77	[]	{"key":"staff_according_position_type","applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept","applicable_id":38,"updated_at":"2025-11-08 10:17:29","created_at":"2025-11-08 10:17:29","id":77}	http://127.0.0.1:8000/payroll/concepts/38	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-08 10:17:29	2025-11-08 10:17:29
 8099	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	77	{"assignable_id":null,"assignable_type":null}	{"assignable_id":7,"assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType"}	http://127.0.0.1:8000/payroll/concepts/38	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-08 10:17:29	2025-11-08 10:17:29
 8111	App\\Models\\User	1	deleted	Modules\\Payroll\\Models\\PayrollConceptAssignOption	13	{"id":13,"assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollScholarshipType","assignable_id":1,"key":"staff_with_sons_has_scholarships","value":null,"created_at":"2025-10-22 11:54:00","updated_at":"2025-10-22 11:54:00","deleted_at":null,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept","applicable_id":20}	[]	http://127.0.0.1:8000/payroll/concepts/20	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-08 10:21:43	2025-11-08 10:21:43
+8910	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2025-11-15 09:56:54","updated_at":"2025-11-15 09:56:54"}	{"last_login":"2025-11-15 10:46:29","updated_at":"2025-11-15 10:46:29"}	http://127.0.0.1:8000/login	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:46:29	2025-11-15 10:46:29
 8100	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConcept	39	{"name":"SURTRAPPS","payroll_concept_type_id":3,"updated_at":"2025-11-01 09:39:44","assign_to":"[{\\"id\\":\\"all\\",\\"name\\":\\"Todos los trabajadores\\",\\"model\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollStaff\\",\\"type\\":null,\\"whereHas\\":null,\\"where\\":null}]","is_strict":true}	{"name":"SURTRAPPS EMPLEADOS","payroll_concept_type_id":"2","updated_at":"2025-11-08 10:18:15","assign_to":"[{\\"id\\":\\"all\\",\\"name\\":\\"Todos los trabajadores\\",\\"model\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollStaff\\",\\"type\\":null,\\"whereHas\\":null,\\"where\\":null},{\\"id\\":\\"staff_according_position_type\\",\\"name\\":\\"Trabajadores de acuerdo al tipo de cargo al que pertenece\\",\\"model\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollStaff\\",\\"optionModel\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollPositionType\\",\\"optionField\\":[\\"name\\"],\\"type\\":\\"list\\",\\"whereHas\\":{\\"field\\":\\"payrollEmployment\\",\\"whereIn\\":[\\"payroll_position_type_id\\",[\\"ids\\"]]}}]","is_strict":"true"}	http://127.0.0.1:8000/payroll/concepts/39	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-08 10:18:15	2025-11-08 10:18:15
 8101	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConceptAssignOption	78	[]	{"key":"staff_according_position_type","applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept","applicable_id":39,"updated_at":"2025-11-08 10:18:15","created_at":"2025-11-08 10:18:15","id":78}	http://127.0.0.1:8000/payroll/concepts/39	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-08 10:18:15	2025-11-08 10:18:15
 8102	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	78	{"assignable_id":null,"assignable_type":null}	{"assignable_id":7,"assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType"}	http://127.0.0.1:8000/payroll/concepts/39	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-08 10:18:15	2025-11-08 10:18:15
@@ -39775,7 +39776,6 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 8637	App\\Models\\User	1	deleted	Modules\\Payroll\\Models\\PayrollConceptAssignOption	185	{"id":185,"assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType","assignable_id":7,"key":"staff_according_position_type","value":null,"created_at":"2025-11-11 11:32:09","updated_at":"2025-11-11 11:32:09","deleted_at":null,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept","applicable_id":44}	[]	https://192.168.10.221/payroll/concepts/44	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-11 11:41:54	2025-11-11 11:41:54
 8638	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConceptAssignOption	195	[]	{"key":"staff_according_position_type","applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept","applicable_id":44,"updated_at":"2025-11-11 11:41:54","created_at":"2025-11-11 11:41:54","id":195}	https://192.168.10.221/payroll/concepts/44	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-11 11:41:55	2025-11-11 11:41:55
 8639	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	195	{"updated_at":"2025-11-11 11:41:54","assignable_id":null,"assignable_type":null}	{"updated_at":"2025-11-11 11:41:55","assignable_id":7,"assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType"}	https://192.168.10.221/payroll/concepts/44	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-11 11:41:55	2025-11-11 11:41:55
-8640	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2025-11-11 11:19:49","updated_at":"2025-11-11 11:19:49"}	{"last_login":"2025-11-12 08:25:35","updated_at":"2025-11-12 08:25:35"}	http://127.0.0.1:8000/login	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-12 08:25:35	2025-11-12 08:25:35
 8641	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryScale	5	[]	{"code":"ESC-4-2025","name":"GRADOS OBREROS","active":true,"description":null,"institution_id":"1","group_by":"STAFF_TYPE","type":"list","updated_at":"2025-11-12 08:29:38","created_at":"2025-11-12 08:29:38","id":5}	http://127.0.0.1:8000/payroll/salary-scales	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-12 08:29:38	2025-11-12 08:29:38
 8642	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	79	[]	{"name":"GRADO","value":"\\"16\\"","payroll_salary_scale_id":5,"updated_at":"2025-11-12 08:29:38","created_at":"2025-11-12 08:29:38","id":79}	http://127.0.0.1:8000/payroll/salary-scales	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-12 08:29:38	2025-11-12 08:29:38
 8643	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	80	[]	{"name":"GRADO","value":"\\"17\\"","payroll_salary_scale_id":5,"updated_at":"2025-11-12 08:29:38","created_at":"2025-11-12 08:29:38","id":80}	http://127.0.0.1:8000/payroll/salary-scales	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-12 08:29:38	2025-11-12 08:29:38
@@ -40033,6 +40033,40 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 8907	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	239	[]	{"payroll_vertical_scale_id":76,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":4,"value":"30","updated_at":"2025-11-15 10:11:17","created_at":"2025-11-15 10:11:17","id":239}	http://127.0.0.1:8000/payroll/salary-tabulators/4	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:11:17	2025-11-15 10:11:17
 8908	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	240	[]	{"payroll_vertical_scale_id":77,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":4,"value":"35","updated_at":"2025-11-15 10:11:17","created_at":"2025-11-15 10:11:17","id":240}	http://127.0.0.1:8000/payroll/salary-tabulators/4	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:11:17	2025-11-15 10:11:17
 8909	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	241	[]	{"payroll_vertical_scale_id":78,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":4,"value":"40","updated_at":"2025-11-15 10:11:17","created_at":"2025-11-15 10:11:17","id":241}	http://127.0.0.1:8000/payroll/salary-tabulators/4	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:11:17	2025-11-15 10:11:17
+8911	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	242	[]	{"payroll_vertical_scale_id":47,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"1","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":242}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8912	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	243	[]	{"payroll_vertical_scale_id":48,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"2","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":243}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8913	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	244	[]	{"payroll_vertical_scale_id":49,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"3","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":244}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8914	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	245	[]	{"payroll_vertical_scale_id":50,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"4","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":245}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8915	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	246	[]	{"payroll_vertical_scale_id":51,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"5","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":246}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8916	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	247	[]	{"payroll_vertical_scale_id":52,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"6.2","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":247}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8917	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	248	[]	{"payroll_vertical_scale_id":53,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"7.4","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":248}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8918	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	249	[]	{"payroll_vertical_scale_id":54,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"8.6","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":249}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8919	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	250	[]	{"payroll_vertical_scale_id":55,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"9.8","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":250}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8920	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	251	[]	{"payroll_vertical_scale_id":56,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"11","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":251}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8921	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	252	[]	{"payroll_vertical_scale_id":57,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"12.4","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":252}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8922	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	253	[]	{"payroll_vertical_scale_id":58,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"13.8","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":253}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8923	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	254	[]	{"payroll_vertical_scale_id":59,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"15.2","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":254}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8924	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	255	[]	{"payroll_vertical_scale_id":60,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"16.6","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":255}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8925	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	256	[]	{"payroll_vertical_scale_id":61,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"18","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":256}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8926	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	257	[]	{"payroll_vertical_scale_id":62,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"19.60","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":257}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8927	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	258	[]	{"payroll_vertical_scale_id":63,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"21.2","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":258}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8928	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	259	[]	{"payroll_vertical_scale_id":64,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"22.8","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":259}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8929	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	260	[]	{"payroll_vertical_scale_id":65,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"24.4","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":260}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8930	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	261	[]	{"payroll_vertical_scale_id":66,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"26","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":261}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8931	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	262	[]	{"payroll_vertical_scale_id":67,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"27.8","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":262}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8932	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	263	[]	{"payroll_vertical_scale_id":68,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"29.6","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":263}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8933	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	264	[]	{"payroll_vertical_scale_id":69,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"30","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":264}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8934	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	265	[]	{"payroll_vertical_scale_id":70,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"30","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":265}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8935	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	266	[]	{"payroll_vertical_scale_id":71,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"30","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":266}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8936	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	267	[]	{"payroll_vertical_scale_id":72,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"0","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":267}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8937	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	268	[]	{"payroll_vertical_scale_id":84,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"30","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":268}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8938	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	269	[]	{"payroll_vertical_scale_id":85,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"30","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":269}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8939	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	270	[]	{"payroll_vertical_scale_id":86,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"30","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":270}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8940	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	271	[]	{"payroll_vertical_scale_id":87,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"30","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":271}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8941	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	272	[]	{"payroll_vertical_scale_id":88,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"30","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":272}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8942	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	273	[]	{"payroll_vertical_scale_id":89,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"30","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":273}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8943	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	274	[]	{"payroll_vertical_scale_id":90,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"30","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":274}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
+8944	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	275	[]	{"payroll_vertical_scale_id":91,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":2,"value":"30","updated_at":"2025-11-15 10:51:48","created_at":"2025-11-15 10:51:48","id":275}	http://127.0.0.1:8000/payroll/salary-tabulators/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-15 10:51:48	2025-11-15 10:51:48
 \.
 
 
@@ -47605,46 +47639,46 @@ COPY public.payroll_salary_tabulator_scales (id, payroll_horizontal_scale_id, pa
 199	\N	81	6	363	2025-11-12 10:05:39	2025-11-12 10:05:39	\N
 200	\N	82	6	391	2025-11-12 10:05:40	2025-11-12 10:05:40	\N
 201	\N	83	6	409	2025-11-12 10:05:40	2025-11-12 10:05:40	\N
-202	\N	47	2	1	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-203	\N	48	2	2	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-204	\N	49	2	3	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-205	\N	50	2	4	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-206	\N	51	2	5	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-207	\N	52	2	6.2	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-208	\N	53	2	7.4	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-209	\N	54	2	8.6	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-210	\N	55	2	9.8	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-211	\N	56	2	11	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-212	\N	57	2	12.4	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-213	\N	58	2	13.8	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-214	\N	59	2	15.2	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-215	\N	60	2	16.6	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-216	\N	61	2	18	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-217	\N	62	2	19.2	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-218	\N	63	2	21.2	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-219	\N	64	2	22.8	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-220	\N	65	2	24.4	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-221	\N	66	2	26	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-222	\N	67	2	27.8	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-223	\N	68	2	29.6	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-224	\N	69	2	30	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-225	\N	70	2	30	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-226	\N	71	2	30	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-227	\N	72	2	0	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-228	\N	84	2	30	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-229	\N	85	2	30	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-230	\N	86	2	30	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-231	\N	87	2	30	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-232	\N	88	2	30	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-233	\N	89	2	30	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-234	\N	90	2	30	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
-235	\N	91	2	30	2025-11-15 10:10:41	2025-11-15 10:10:41	\N
 236	\N	73	4	0	2025-11-15 10:11:17	2025-11-15 10:11:17	\N
 237	\N	74	4	20	2025-11-15 10:11:17	2025-11-15 10:11:17	\N
 238	\N	75	4	25	2025-11-15 10:11:17	2025-11-15 10:11:17	\N
 239	\N	76	4	30	2025-11-15 10:11:17	2025-11-15 10:11:17	\N
 240	\N	77	4	35	2025-11-15 10:11:17	2025-11-15 10:11:17	\N
 241	\N	78	4	40	2025-11-15 10:11:17	2025-11-15 10:11:17	\N
+242	\N	47	2	1	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+243	\N	48	2	2	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+244	\N	49	2	3	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+245	\N	50	2	4	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+246	\N	51	2	5	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+247	\N	52	2	6.2	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+248	\N	53	2	7.4	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+249	\N	54	2	8.6	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+250	\N	55	2	9.8	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+251	\N	56	2	11	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+252	\N	57	2	12.4	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+253	\N	58	2	13.8	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+254	\N	59	2	15.2	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+255	\N	60	2	16.6	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+256	\N	61	2	18	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+257	\N	62	2	19.6	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+258	\N	63	2	21.2	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+259	\N	64	2	22.8	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+260	\N	65	2	24.4	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+261	\N	66	2	26	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+262	\N	67	2	27.8	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+263	\N	68	2	29.6	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+264	\N	69	2	30	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+265	\N	70	2	30	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+266	\N	71	2	30	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+267	\N	72	2	0	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+268	\N	84	2	30	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+269	\N	85	2	30	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+270	\N	86	2	30	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+271	\N	87	2	30	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+272	\N	88	2	30	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+273	\N	89	2	30	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+274	\N	90	2	30	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
+275	\N	91	2	30	2025-11-15 10:51:48	2025-11-15 10:51:48	\N
 \.
 
 
@@ -51412,7 +51446,7 @@ COPY public.users (id, name, email, username, password, level, last_login, lock_
 2	usuario	edu.jose.olmos@gmail.com	user	$2y$10$nH6X0CmfsOSUViwEfVU4l.mvQzj5b73MRnGxfKth7K2UZRrZPGfN2	2	2025-09-01 10:26:29	f	10	\N	t	2024-10-23 11:09:31	\N	\N	2024-10-23 11:09:31	2025-09-01 10:26:29	\N
 3	joseluis	joseluisolmos59@gmail.com	joseluis	$2y$10$Ws.Z1ujriGKY6qHfu2VvheQi4Fzu.vGEK4fzsrI6ZiMkvSP4Luxe2	1	2025-09-21 14:19:47	f	10	\N	t	2024-10-23 11:19:28	\N	nBCUfExn81c9qm3Dz0wtW9H5EFVxp6Q1G2yCx0kiK2pu1cKUKPrEBUnYDOS3	2024-10-23 11:19:28	2025-09-21 14:19:47	\N
 4	sapnnaet	sapnnaettapo@gmail.com	sapnnaet	$2y$10$b.3LS5zHk9IYVCfIwIVf5Oj./AXGa2wzGCmGmJT1o316O5f57Xo9y	0	2025-09-21 14:58:57	f	10	\N	t	2025-08-31 22:24:23	\N	JkFerPFIYpPpLc2YlEqIDENlPPBhsRrUsSGlO7S604xKzVOv1g6ZxRCnnTay	2025-09-01 10:35:13	2025-09-21 14:58:57	\N
-1	eduardo	edujosepeolms@gmail.com	eduardo	$2y$10$5jc01Bx1eqktzC8rysoot.SYcO0R8lV5GWKvj3.L6GiMoXpg1UtFm	1	2025-11-15 09:56:54	f	10	\N	t	2024-10-23 11:09:29	\N	\N	2024-10-23 11:09:29	2025-11-15 09:56:54	\N
+1	eduardo	edujosepeolms@gmail.com	eduardo	$2y$10$5jc01Bx1eqktzC8rysoot.SYcO0R8lV5GWKvj3.L6GiMoXpg1UtFm	1	2025-11-15 10:46:29	f	10	\N	t	2024-10-23 11:09:29	\N	\N	2024-10-23 11:09:29	2025-11-15 10:46:29	\N
 \.
 
 
@@ -51927,7 +51961,7 @@ SELECT pg_catalog.setval('public.assets_id_seq', 1, false);
 -- Name: audits_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.audits_id_seq', 8909, true);
+SELECT pg_catalog.setval('public.audits_id_seq', 8944, true);
 
 
 --
@@ -52921,7 +52955,7 @@ SELECT pg_catalog.setval('public.payroll_salary_tabulator_payroll_staff_type_id_
 -- Name: payroll_salary_tabulator_scales_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.payroll_salary_tabulator_scales_id_seq', 241, true);
+SELECT pg_catalog.setval('public.payroll_salary_tabulator_scales_id_seq', 275, true);
 
 
 --
@@ -62155,5 +62189,5 @@ ALTER TABLE ONLY public.work_attendances
 -- PostgreSQL database dump complete
 --
 
-\unrestrict GLoDzSkWgtOULRTd8Zi1p3ueuTLR7ZCOQwvnfIZtdBWClZuowGXIjAJ5N7Z0dwV
+\unrestrict 116YcDbY973oGB2ZEjP9NEhRf1mAbGXbMp0rMjNhNzrJdHojLVJZdjmfCtBYBqZ
 
