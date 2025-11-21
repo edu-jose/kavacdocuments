@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict BybjhuUNiG1IWlMY1b2CZYXNlaIw3dnkh9Ti2HGsgNc0clS5z10vbgTMwgFmNAo
+\restrict SE8o3zP4Za1hLGo4CiBa0ntle3GnuwKF8dbEDOryJjcUmNhvhbcxYgv8JWhIVy0
 
 -- Dumped from database version 15.14 (Debian 15.14-0+deb12u1)
 -- Dumped by pg_dump version 15.14 (Debian 15.14-0+deb12u1)
@@ -82200,5 +82200,5 @@ ALTER TABLE ONLY public.work_attendances
 -- PostgreSQL database dump complete
 --
 
-\unrestrict BybjhuUNiG1IWlMY1b2CZYXNlaIw3dnkh9Ti2HGsgNc0clS5z10vbgTMwgFmNAo
+\unrestrict SE8o3zP4Za1hLGo4CiBa0ntle3GnuwKF8dbEDOryJjcUmNhvhbcxYgv8JWhIVy0
 
