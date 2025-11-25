@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict oiGwZm1Kex4KAK5JPEp6Pt5bChDQtQoBdkr0mU7ysmrkZIBX9WsQCfW1QkuvKhK
+\restrict JmNhFjcbjIvyOcdivJmTpm1eps11EJkaUd562RcnZA0L9Wk5Z8wbfGURugvK8hy
 
 -- Dumped from database version 15.14 (Debian 15.14-0+deb12u1)
 -- Dumped by pg_dump version 15.14 (Debian 15.14-0+deb12u1)
@@ -36933,7 +36933,6 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 5623	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollEmployment	2	[]	{"payroll_staff_id":"3","years_apn":null,"start_date":"2020-10-30","end_date":null,"active":true,"payroll_inactivity_type_id":null,"institution_email":null,"function_description":null,"payroll_position_type_id":"3","payroll_coordination_id":"1","payroll_staff_type_id":"2","department_id":"2","payroll_contract_type_id":"2","worksheet_code":null,"updated_at":"2024-11-26 09:36:09","created_at":"2024-11-26 09:36:09","id":2}	http://127.0.0.1:8000/payroll/employments	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0	\N	2024-11-26 09:36:09	2024-11-26 09:36:09
 5624	App\\Models\\User	1	created	Modules\\Payroll\\Models\\Profile	2	[]	{"first_name":"Maria de los Angeles","last_name":"Almazan","institution_id":1,"employee_id":2,"updated_at":"2024-11-26 09:36:09","created_at":"2024-11-26 09:36:09","id":2}	http://127.0.0.1:8000/payroll/employments	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0	\N	2024-11-26 09:36:09	2024-11-26 09:36:09
 6499	\N	\N	updated	Modules\\Asset\\Models\\AssetSpecificCategory	164	{"code":"0164","updated_at":"2025-08-23 22:29:28"}	{"code":"0270","updated_at":"2025-08-23 22:29:29"}	artisan module:seed	127.0.0.1	Symfony	\N	2025-08-23 22:29:29	2025-08-23 22:29:29
-5625	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollEmployment	3	[]	{"payroll_staff_id":"2","years_apn":null,"start_date":"2020-11-30","end_date":null,"active":true,"payroll_inactivity_type_id":null,"institution_email":null,"function_description":null,"payroll_position_type_id":"2","payroll_coordination_id":"3","payroll_staff_type_id":"1","department_id":"4","payroll_contract_type_id":"3","worksheet_code":null,"updated_at":"2024-11-26 09:37:32","created_at":"2024-11-26 09:37:32","id":3}	http://127.0.0.1:8000/payroll/employments	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0	\N	2024-11-26 09:37:32	2024-11-26 09:37:32
 5626	App\\Models\\User	1	created	Modules\\Payroll\\Models\\Profile	3	[]	{"first_name":"Marianela","last_name":"Gonzalez","institution_id":1,"employee_id":3,"updated_at":"2024-11-26 09:37:32","created_at":"2024-11-26 09:37:32","id":3}	http://127.0.0.1:8000/payroll/employments	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0	\N	2024-11-26 09:37:32	2024-11-26 09:37:32
 5627	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollEmployment	4	[]	{"payroll_staff_id":"4","years_apn":null,"start_date":"2024-08-04","end_date":null,"active":true,"payroll_inactivity_type_id":null,"institution_email":null,"function_description":null,"payroll_position_type_id":"3","payroll_coordination_id":"2","payroll_staff_type_id":"1","department_id":"3","payroll_contract_type_id":"4","worksheet_code":null,"updated_at":"2024-11-26 09:40:33","created_at":"2024-11-26 09:40:33","id":4}	http://127.0.0.1:8000/payroll/employments	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0	\N	2024-11-26 09:40:33	2024-11-26 09:40:33
 5628	App\\Models\\User	1	created	Modules\\Payroll\\Models\\Profile	4	[]	{"first_name":"Jenoifer","last_name":"Vielma","institution_id":1,"employee_id":4,"updated_at":"2024-11-26 09:40:33","created_at":"2024-11-26 09:40:33","id":4}	http://127.0.0.1:8000/payroll/employments	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:128.0) Gecko/20100101 Firefox/128.0	\N	2024-11-26 09:40:33	2024-11-26 09:40:33
@@ -40227,7 +40226,6 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 9116	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	256	{"applicable_id":null,"applicable_type":null}	{"applicable_id":83,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept"}	https://192.168.10.221/payroll/concepts	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-20 14:33:38	2025-11-20 14:33:38
 9118	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConcept	80	{"updated_at":"2025-11-16 11:00:02","formula":"(concept(54)+concept(66))+concept(75)+concept(74)","is_strict":true,"formula_show_history":"[\\"(EMPLEADOS SUELDO QUINCENAL+EMPLEADOS PF SEGUNDA QUINCENA)+EMPLEADOS BONO DE EMERGENCIA+EMPLEADOS MONTO TOTAL BECAS CONTRIB DISC\\"]"}	{"updated_at":"2025-11-20 15:24:07","formula":"(concept(54)+concept(66))+concept(75)+concept(74)+concept(83)+concept(81)","is_strict":"true","formula_show_history":"[\\"(EMPLEADOS SUELDO QUINCENAL+EMPLEADOS PF SEGUNDA QUINCENA)+EMPLEADOS BONO DE EMERGENCIA+EMPLEADOS MONTO TOTAL BECAS CONTRIB DISC+EMPLEADOS CESTA TICKET+EMPLEADOS DIAS FERIADOS\\"]"}	https://192.168.10.221/payroll/concepts/80	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-20 15:24:07	2025-11-20 15:24:07
 9119	App\\Models\\User	1	deleted	Modules\\Payroll\\Models\\PayrollConceptAssignOption	252	{"id":252,"assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType","assignable_id":7,"key":"staff_according_position_type","value":null,"created_at":"2025-11-16 11:00:02","updated_at":"2025-11-16 11:00:02","deleted_at":null,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept","applicable_id":80}	[]	https://192.168.10.221/payroll/concepts/80	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-20 15:24:08	2025-11-20 15:24:08
-9124	App\\Models\\User	1	updated	App\\Models\\User	1	{"lock_screen":true,"updated_at":"2025-11-21 10:35:33"}	{"lock_screen":false,"updated_at":"2025-11-21 10:40:12"}	http://127.0.0.1:8000/unlockscreen	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 10:40:12	2025-11-21 10:40:12
 9137	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	261	{"applicable_id":null,"applicable_type":null}	{"applicable_id":86,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept"}	http://127.0.0.1:8000/payroll/concepts/86	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 10:54:57	2025-11-21 10:54:57
 9150	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConceptAssignOption	266	[]	{"key":"all_staff_with_sons","value":"{\\"minimum\\":\\"0\\",\\"maximum\\":\\"17\\"}","applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept","applicable_id":88,"updated_at":"2025-11-21 11:00:18","created_at":"2025-11-21 11:00:18","id":266}	http://127.0.0.1:8000/payroll/concepts/88	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 11:00:18	2025-11-21 11:00:18
 9162	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	270	{"applicable_id":null,"applicable_type":null}	{"applicable_id":92,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept"}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 11:23:50	2025-11-21 11:23:50
@@ -40309,7 +40307,6 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 9196	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConcept	98	[]	{"name":"OBREROS SUELDO NORMAL MENSUAL","description":"<p>15.- CONCEPTO AU (SNM)<\\/p>","active":true,"arc":false,"formula":"concept(84)+concept(89)","institution_id":"1","payroll_concept_type_id":"3","accounting_account_id":null,"budget_account_id":null,"budget_project_id":null,"budget_centralized_action_id":null,"budget_specific_action_id":null,"assign_to":"[{\\"id\\":\\"staff_according_position_type\\",\\"name\\":\\"Trabajadores de acuerdo al tipo de cargo al que pertenece\\",\\"model\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollStaff\\",\\"optionModel\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollPositionType\\",\\"optionField\\":[\\"name\\"],\\"type\\":\\"list\\",\\"whereHas\\":{\\"field\\":\\"payrollEmployment\\",\\"whereIn\\":[\\"payroll_position_type_id\\",[\\"ids\\"]]}}]","currency_id":"1","is_strict":"true","formula_history":"[]","formula_show_history":"[\\"OBREROS SUELDO BASE A PAGAR MENSUAL+OBREROS TOTAL PRIMAS MESUAL\\"]","is_concept_advancement":false,"is_advance_deduction":false,"updated_at":"2025-11-21 11:53:04","created_at":"2025-11-21 11:53:04","id":98}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 11:53:04	2025-11-21 11:53:04
 9197	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConceptAssignOption	282	[]	{"key":"staff_according_position_type","assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType","assignable_id":8,"updated_at":"2025-11-21 11:53:04","created_at":"2025-11-21 11:53:04","id":282}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 11:53:04	2025-11-21 11:53:04
 9198	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	282	{"applicable_id":null,"applicable_type":null}	{"applicable_id":98,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept"}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 11:53:04	2025-11-21 11:53:04
-9199	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2025-11-21 10:25:30","updated_at":"2025-11-21 10:40:12"}	{"last_login":"2025-11-21 14:50:54","updated_at":"2025-11-21 14:50:54"}	http://127.0.0.1:8000/login	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 14:50:54	2025-11-21 14:50:54
 9200	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConcept	99	[]	{"name":"OBREROS BONO VACACIONAL","description":"<p>16.- CONCEPTO AX (BV)<\\/p>","active":true,"arc":false,"formula":"((concept(98)*4\\/12)+concept(98))\\/30*180","institution_id":"1","payroll_concept_type_id":"3","accounting_account_id":null,"budget_account_id":null,"budget_project_id":null,"budget_centralized_action_id":null,"budget_specific_action_id":null,"assign_to":"[{\\"id\\":\\"staff_according_position_type\\",\\"name\\":\\"Trabajadores de acuerdo al tipo de cargo al que pertenece\\",\\"model\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollStaff\\",\\"optionModel\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollPositionType\\",\\"optionField\\":[\\"name\\"],\\"type\\":\\"list\\",\\"whereHas\\":{\\"field\\":\\"payrollEmployment\\",\\"whereIn\\":[\\"payroll_position_type_id\\",[\\"ids\\"]]}},{\\"id\\":\\"all_staff_in_vacations\\",\\"name\\":\\"Todos los trabajadores que est\\\\u00e1n de vacaciones\\",\\"model\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollStaff\\",\\"type\\":null}]","currency_id":"1","is_strict":"true","formula_history":"[]","formula_show_history":"[\\"((OBREROS SUELDO NORMAL MENSUAL*4\\\\\\/12)+OBREROS SUELDO NORMAL MENSUAL)\\\\\\/30*180\\"]","is_concept_advancement":false,"is_advance_deduction":false,"updated_at":"2025-11-21 15:00:19","created_at":"2025-11-21 15:00:19","id":99}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 15:00:19	2025-11-21 15:00:19
 9201	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConceptAssignOption	283	[]	{"key":"staff_according_position_type","assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType","assignable_id":8,"updated_at":"2025-11-21 15:00:19","created_at":"2025-11-21 15:00:19","id":283}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 15:00:19	2025-11-21 15:00:19
 9202	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	283	{"applicable_id":null,"applicable_type":null}	{"applicable_id":99,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept"}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 15:00:19	2025-11-21 15:00:19
@@ -40332,7 +40329,6 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 9217	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConcept	103	[]	{"name":"OBREROS PARO FORZOSO DEDUCCION","description":"<p>20.- DEDUCCIONES BM (PF0.5%)<\\/p>","active":true,"arc":false,"formula":"(((concept(98)*12)\\/52)*parameter(50))*parameter(1)","institution_id":"1","payroll_concept_type_id":"3","accounting_account_id":null,"budget_account_id":null,"budget_project_id":null,"budget_centralized_action_id":null,"budget_specific_action_id":null,"assign_to":"[{\\"id\\":\\"staff_according_position_type\\",\\"name\\":\\"Trabajadores de acuerdo al tipo de cargo al que pertenece\\",\\"model\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollStaff\\",\\"optionModel\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollPositionType\\",\\"optionField\\":[\\"name\\"],\\"type\\":\\"list\\",\\"whereHas\\":{\\"field\\":\\"payrollEmployment\\",\\"whereIn\\":[\\"payroll_position_type_id\\",[\\"ids\\"]]}}]","currency_id":"1","is_strict":"true","formula_history":"[]","formula_show_history":"[\\"(((OBREROS SUELDO NORMAL MENSUAL*12)\\\\\\/52)*PARO FORZOSO CERO CINCO DEDUCCION)*Numero de lunes del mes\\"]","is_concept_advancement":false,"is_advance_deduction":false,"updated_at":"2025-11-21 15:15:49","created_at":"2025-11-21 15:15:49","id":103}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 15:15:49	2025-11-21 15:15:49
 9218	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConceptAssignOption	289	[]	{"key":"staff_according_position_type","assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType","assignable_id":8,"updated_at":"2025-11-21 15:15:49","created_at":"2025-11-21 15:15:49","id":289}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 15:15:49	2025-11-21 15:15:49
 9219	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	289	{"applicable_id":null,"applicable_type":null}	{"applicable_id":103,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept"}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-21 15:15:49	2025-11-21 15:15:49
-9220	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2025-11-21 14:50:54","updated_at":"2025-11-21 14:50:54"}	{"last_login":"2025-11-22 08:17:46","updated_at":"2025-11-22 08:17:46"}	http://127.0.0.1:8000/login	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-22 08:17:46	2025-11-22 08:17:46
 9221	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConcept	104	[]	{"name":"OBREROS FAOV DEDUCCION","description":"<p>21.- DEDUCCIONES BN (FAOV1%)<\\/p>","active":true,"arc":false,"formula":"concept(98)*parameter(52)","institution_id":"1","payroll_concept_type_id":"3","accounting_account_id":null,"budget_account_id":null,"budget_project_id":null,"budget_centralized_action_id":null,"budget_specific_action_id":null,"assign_to":"[{\\"id\\":\\"staff_according_position_type\\",\\"name\\":\\"Trabajadores de acuerdo al tipo de cargo al que pertenece\\",\\"model\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollStaff\\",\\"optionModel\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollPositionType\\",\\"optionField\\":[\\"name\\"],\\"type\\":\\"list\\",\\"whereHas\\":{\\"field\\":\\"payrollEmployment\\",\\"whereIn\\":[\\"payroll_position_type_id\\",[\\"ids\\"]]}}]","currency_id":"1","is_strict":"true","formula_history":"[]","formula_show_history":"[\\"OBREROS SUELDO NORMAL MENSUAL*FAOV UNO DEDUCCION\\"]","is_concept_advancement":false,"is_advance_deduction":false,"updated_at":"2025-11-22 08:26:31","created_at":"2025-11-22 08:26:31","id":104}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-22 08:26:31	2025-11-22 08:26:31
 9222	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConceptAssignOption	290	[]	{"key":"staff_according_position_type","assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType","assignable_id":8,"updated_at":"2025-11-22 08:26:31","created_at":"2025-11-22 08:26:31","id":290}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-22 08:26:31	2025-11-22 08:26:31
 9223	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	290	{"applicable_id":null,"applicable_type":null}	{"applicable_id":104,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept"}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-22 08:26:31	2025-11-22 08:26:31
@@ -40645,6 +40641,7 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 9540	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConceptAssignOption	382	[]	{"key":"staff_according_position_type","assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType","assignable_id":4,"updated_at":"2025-11-24 15:04:07","created_at":"2025-11-24 15:04:07","id":382}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-24 15:04:07	2025-11-24 15:04:07
 9541	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	382	{"applicable_id":null,"applicable_type":null}	{"applicable_id":144,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept"}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-24 15:04:07	2025-11-24 15:04:07
 9562	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	389	{"applicable_id":null,"applicable_type":null}	{"applicable_id":147,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept"}	http://127.0.0.1:8000/payroll/concepts/147	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-24 15:15:28	2025-11-24 15:15:28
+9592	App\\Models\\User	1	updated	App\\Models\\User	1	{"lock_screen":false,"updated_at":"2025-11-25 14:03:11"}	{"lock_screen":true,"updated_at":"2025-11-25 14:24:50"}	https://192.168.1.180/set-lockscreen-data	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:24:50	2025-11-25 14:24:50
 9542	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConcept	145	[]	{"name":"ALTO NIVEL CESTA TICKET","description":"","active":true,"arc":false,"formula":"parameter(44)","institution_id":"1","payroll_concept_type_id":"3","accounting_account_id":null,"budget_account_id":null,"budget_project_id":null,"budget_centralized_action_id":null,"budget_specific_action_id":null,"assign_to":"[{\\"id\\":\\"staff_according_position_type\\",\\"name\\":\\"Trabajadores de acuerdo al tipo de cargo al que pertenece\\",\\"model\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollStaff\\",\\"optionModel\\":\\"Modules\\\\\\\\Payroll\\\\\\\\Models\\\\\\\\PayrollPositionType\\",\\"optionField\\":[\\"name\\"],\\"type\\":\\"list\\",\\"whereHas\\":{\\"field\\":\\"payrollEmployment\\",\\"whereIn\\":[\\"payroll_position_type_id\\",[\\"ids\\"]]}}]","currency_id":"1","is_strict":"true","formula_history":"[]","formula_show_history":"[\\"VALOR CESTA TICKET\\"]","is_concept_advancement":false,"is_advance_deduction":false,"updated_at":"2025-11-24 15:05:05","created_at":"2025-11-24 15:05:05","id":145}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-24 15:05:05	2025-11-24 15:05:05
 9543	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConceptAssignOption	383	[]	{"key":"staff_according_position_type","assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType","assignable_id":4,"updated_at":"2025-11-24 15:05:05","created_at":"2025-11-24 15:05:05","id":383}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-24 15:05:05	2025-11-24 15:05:05
 9544	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	383	{"applicable_id":null,"applicable_type":null}	{"applicable_id":145,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept"}	http://127.0.0.1:8000/payroll/concepts	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-24 15:05:05	2025-11-24 15:05:05
@@ -40681,6 +40678,46 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 9577	App\\Models\\User	1	deleted	Modules\\Payroll\\Models\\PayrollConceptAssignOption	389	{"id":389,"assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType","assignable_id":4,"key":"staff_according_position_type","value":null,"created_at":"2025-11-24 15:15:28","updated_at":"2025-11-24 15:15:28","deleted_at":null,"applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept","applicable_id":147}	[]	https://192.168.1.180/payroll/concepts/147	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 13:47:46	2025-11-25 13:47:46
 9578	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollConceptAssignOption	393	[]	{"key":"staff_according_position_type","applicable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollConcept","applicable_id":147,"updated_at":"2025-11-25 13:47:46","created_at":"2025-11-25 13:47:46","id":393}	https://192.168.1.180/payroll/concepts/147	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 13:47:46	2025-11-25 13:47:46
 9579	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollConceptAssignOption	393	{"assignable_id":null,"assignable_type":null}	{"assignable_id":4,"assignable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollPositionType"}	https://192.168.1.180/payroll/concepts/147	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 13:47:46	2025-11-25 13:47:46
+9580	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2025-11-25 12:53:50","updated_at":"2025-11-25 12:53:50"}	{"last_login":"2025-11-25 14:03:11","updated_at":"2025-11-25 14:03:11"}	https://192.168.1.180/login	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:03:11	2025-11-25 14:03:11
+9581	App\\Models\\User	1	deleted	Modules\\Payroll\\Models\\PayrollPositionType	11	{"id":11,"name":"Trabajador","description":null,"created_at":"2025-09-28 14:19:40","updated_at":"2025-11-25 14:06:50","deleted_at":"2025-11-25 14:06:50"}	[]	https://192.168.1.180/payroll/position-types/11	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:06:50	2025-11-25 14:06:50
+9582	App\\Models\\User	1	deleted	Modules\\Payroll\\Models\\PayrollPositionType	10	{"id":10,"name":"Operario","description":null,"created_at":"2025-09-28 14:17:41","updated_at":"2025-11-25 14:06:56","deleted_at":"2025-11-25 14:06:56"}	[]	https://192.168.1.180/payroll/position-types/10	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:06:56	2025-11-25 14:06:56
+9583	App\\Models\\User	1	deleted	Modules\\Payroll\\Models\\PayrollPositionType	6	{"id":6,"name":"Coorporativo","description":null,"created_at":"2024-11-26 09:23:22","updated_at":"2025-11-25 14:07:00","deleted_at":"2025-11-25 14:07:00"}	[]	https://192.168.1.180/payroll/position-types/6	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:07:00	2025-11-25 14:07:00
+9584	App\\Models\\User	1	deleted	Modules\\Payroll\\Models\\PayrollPositionType	9	{"id":9,"name":"Coordinador","description":null,"created_at":"2025-09-28 14:14:31","updated_at":"2025-11-25 14:07:05","deleted_at":"2025-11-25 14:07:05"}	[]	https://192.168.1.180/payroll/position-types/9	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:07:05	2025-11-25 14:07:05
+9585	App\\Models\\User	1	deleted	Modules\\Payroll\\Models\\PayrollPositionType	5	{"id":5,"name":"Operativo","description":null,"created_at":"2024-11-26 09:22:56","updated_at":"2025-11-25 14:07:09","deleted_at":"2025-11-25 14:07:09"}	[]	https://192.168.1.180/payroll/position-types/5	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:07:09	2025-11-25 14:07:09
+9586	App\\Models\\User	1	deleted	Modules\\Payroll\\Models\\PayrollPositionType	3	{"id":3,"name":"Directivo","description":null,"created_at":"2024-11-26 09:22:28","updated_at":"2025-11-25 14:07:13","deleted_at":"2025-11-25 14:07:13"}	[]	https://192.168.1.180/payroll/position-types/3	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:07:13	2025-11-25 14:07:13
+9587	App\\Models\\User	1	deleted	Modules\\Payroll\\Models\\PayrollPositionType	2	{"id":2,"name":"Adminstrativo","description":null,"created_at":"2024-11-26 09:22:20","updated_at":"2025-11-25 14:07:17","deleted_at":"2025-11-25 14:07:17"}	[]	https://192.168.1.180/payroll/position-types/2	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:07:17	2025-11-25 14:07:17
+9588	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollPositionType	12	[]	{"name":"COMISION DE SERVICIO","description":"CS","updated_at":"2025-11-25 14:07:38","created_at":"2025-11-25 14:07:38","id":12}	https://192.168.1.180/payroll/position-types	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:07:38	2025-11-25 14:07:38
+9589	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollEmployment	3	{"payroll_position_type_id":4,"updated_at":"2025-11-23 08:54:34"}	{"payroll_position_type_id":"12","updated_at":"2025-11-25 14:08:19"}	https://192.168.1.180/payroll/employments/3	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:08:19	2025-11-25 14:08:19
+9590	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollEmployment	6	{"payroll_position_type_id":4,"updated_at":"2025-11-23 08:55:00"}	{"payroll_position_type_id":"12","updated_at":"2025-11-25 14:08:43"}	https://192.168.1.180/payroll/employments/6	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:08:43	2025-11-25 14:08:43
+9591	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollEmployment	4	{"payroll_position_type_id":4,"updated_at":"2025-11-23 08:46:42"}	{"payroll_position_type_id":"12","updated_at":"2025-11-25 14:09:01"}	https://192.168.1.180/payroll/employments/4	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:09:01	2025-11-25 14:09:01
+9593	App\\Models\\User	1	updated	App\\Models\\User	1	{"lock_screen":true,"updated_at":"2025-11-25 14:24:50"}	{"lock_screen":false,"updated_at":"2025-11-25 14:34:03"}	https://192.168.1.180/unlockscreen	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:34:03	2025-11-25 14:34:03
+9594	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryScale	7	[]	{"code":"ESC-6-2025","name":"ANTIGUEDAD CS","active":true,"description":null,"institution_id":"1","group_by":"START_DATE","type":"value","updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":7}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9595	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	93	[]	{"name":"A\\u00d1OS","value":"\\"0\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":93}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9596	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	94	[]	{"name":"A\\u00d1OS","value":"\\"1\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":94}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9597	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	95	[]	{"name":"A\\u00d1OS","value":"\\"2\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":95}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9598	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	96	[]	{"name":"A\\u00d1OS","value":"\\"3\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":96}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9599	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	97	[]	{"name":"A\\u00d1OS","value":"\\"4\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":97}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9600	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	98	[]	{"name":"A\\u00d1OS","value":"\\"5\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":98}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9601	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	99	[]	{"name":"A\\u00d1OS","value":"\\"6\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":99}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9602	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	100	[]	{"name":"A\\u00d1OS","value":"\\"7\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":100}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9603	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	101	[]	{"name":"A\\u00d1OS","value":"\\"8\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":101}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9604	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	102	[]	{"name":"A\\u00d1OS","value":"\\"9\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":102}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9605	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	103	[]	{"name":"A\\u00d1OS","value":"\\"10\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":103}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9606	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	104	[]	{"name":"A\\u00d1OS","value":"\\"11\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":104}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9607	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	105	[]	{"name":"A\\u00d1OS","value":"\\"12\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":105}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9608	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	106	[]	{"name":"A\\u00d1OS","value":"\\"13\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":106}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9609	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	107	[]	{"name":"A\\u00d1OS","value":"\\"14\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":107}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9610	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	108	[]	{"name":"A\\u00d1OS","value":"\\"15\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":108}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9611	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	109	[]	{"name":"A\\u00d1OS","value":"\\"16\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":109}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9612	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	110	[]	{"name":"A\\u00d1OS","value":"\\"17\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":110}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9613	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	111	[]	{"name":"A\\u00d1OS","value":"\\"18\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":111}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9614	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	112	[]	{"name":"A\\u00d1OS","value":"\\"19\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":112}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9615	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	113	[]	{"name":"A\\u00d1OS","value":"\\"20\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":113}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9616	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	114	[]	{"name":"A\\u00d1OS","value":"\\"21\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":114}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9617	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	115	[]	{"name":"A\\u00d1OS","value":"\\"22\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":115}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9618	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	116	[]	{"name":"A\\u00d1OS","value":"\\"23\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":116}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9619	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	117	[]	{"name":"A\\u00d1OS","value":"\\"24\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":117}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
+9620	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	118	[]	{"name":"A\\u00d1OS","value":"\\"25\\"","payroll_salary_scale_id":7,"updated_at":"2025-11-25 14:40:15","created_at":"2025-11-25 14:40:15","id":118}	https://192.168.1.180/payroll/salary-scales	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-11-25 14:40:15	2025-11-25 14:40:15
 \.
 
 
@@ -46065,6 +46102,7 @@ d60b8310-25de-4ee6-a706-a6bc1afb7ab9	App\\Notifications\\SystemNotification	App\
 6f595e14-1494-4c1f-9c52-86e76d55aeeb	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Exito","message":"Ha finalizado la exportaci\\u00f3n de los datos socioeconomicos, el archivo ha sido enviado a su correo electr\\u00f3nico","currentTimestamp":"2025-09-22T20:44:52.696169Z"}	2025-11-22 08:18:39	2025-09-22 16:44:59	2025-11-22 08:18:39
 15a683ca-dcd5-4a40-abed-792c6d4c8e65	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Exito","message":"Ha finalizado la exportaci\\u00f3n de los datos profesionales, el archivo ha sido enviado a su correo electr\\u00f3nico","currentTimestamp":"2025-08-24T15:10:39.749586Z"}	2025-11-22 08:18:39	2025-08-24 11:10:46	2025-11-22 08:18:39
 51807f08-d747-4e25-b6c7-9888609b3dce	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Par\\u00e1metro creado(a)","message":"Se realiz\\u00f3 un registro de datos en Par\\u00e1metro","currentTimestamp":"2025-08-24T02:58:30.861980Z"}	2025-11-22 08:18:39	2025-08-24 09:19:15	2025-11-22 08:18:39
+621bf698-fa0e-435b-bb92-68c3de739bfe	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Exito","message":"Ha finalizado la exportaci\\u00f3n de los datos socioeconomicos, el archivo ha sido enviado a su correo electr\\u00f3nico","currentTimestamp":"2025-11-25T18:03:44.841643Z"}	\N	2025-11-25 14:03:47	2025-11-25 14:03:47
 \.
 
 
@@ -47962,10 +48000,10 @@ COPY public.payroll_employment_payroll_position (id, payroll_employment_id, payr
 18	17	6	t	2025-09-20 18:34:19	\N	\N
 20	19	10	t	2025-09-20 18:43:47	\N	\N
 24	23	6	t	2025-09-20 19:07:02	\N	\N
-4	4	3	t	2024-11-26 09:40:33	\N	\N
+6	5	12	t	2025-09-20 16:52:46	\N	\N
 5	3	13	t	\N	\N	\N
 7	6	7	t	2025-09-20 16:56:37	\N	\N
-6	5	12	t	2025-09-20 16:52:46	\N	\N
+4	4	3	t	2024-11-26 09:40:33	\N	\N
 \.
 
 
@@ -47993,10 +48031,10 @@ COPY public.payroll_employments (id, active, start_date, end_date, institution_e
 17	t	2021-02-01	\N	\N	\N	\N	8	16	6	5	17	2025-09-20 18:34:19	2025-11-22 10:47:56	\N	0	\N	\N	f	f	5	\N	\N	130
 19	t	2021-03-16	\N	\N	\N	\N	8	17	6	5	19	2025-09-20 18:43:47	2025-11-22 10:50:23	\N	0	\N	\N	f	f	5	\N	\N	171
 23	t	2025-01-02	\N	\N	\N	\N	8	16	5	5	23	2025-09-20 19:07:02	2025-11-22 10:52:42	\N	0	\N	\N	f	f	5	\N	\N	130
-4	t	2025-04-01	\N	\N	\N	\N	4	14	3	4	4	2024-11-26 09:40:33	2025-11-23 08:46:42	\N	0	\N	2	f	f	6	\N	\N	391
-3	t	2023-06-21	\N	\N	\N	\N	4	13	4	7	2	2024-11-26 09:37:32	2025-11-23 08:54:34	\N	0	\N	\N	f	f	6	\N	\N	363
-6	t	2022-01-04	\N	\N	\N	\N	4	13	6	8	6	2025-09-20 16:56:37	2025-11-23 08:55:00	\N	0	\N	\N	f	f	6	\N	\N	363
 5	t	2021-03-01	\N	\N	\N	\N	4	18	5	5	5	2025-09-20 16:52:46	2025-11-23 09:02:04	\N	0	\N	\N	f	f	6	\N	\N	348
+3	t	2023-06-21	\N	\N	\N	\N	12	13	4	7	2	2024-11-26 09:37:32	2025-11-25 14:08:19	\N	0	\N	\N	f	f	6	\N	\N	363
+6	t	2022-01-04	\N	\N	\N	\N	12	13	6	8	6	2025-09-20 16:56:37	2025-11-25 14:08:43	\N	0	\N	\N	f	f	6	\N	\N	363
+4	t	2025-04-01	\N	\N	\N	\N	12	14	3	4	4	2024-11-26 09:40:33	2025-11-25 14:09:01	\N	0	\N	2	f	f	6	\N	\N	391
 \.
 
 
@@ -48290,17 +48328,18 @@ COPY public.payroll_permission_requests (id, date, start_date, end_date, motive_
 --
 
 COPY public.payroll_position_types (id, name, description, created_at, updated_at, deleted_at) FROM stdin;
-2	Adminstrativo	\N	2024-11-26 09:22:20	2024-11-26 09:22:20	\N
-3	Directivo	\N	2024-11-26 09:22:28	2024-11-26 09:22:28	\N
-5	Operativo	\N	2024-11-26 09:22:56	2024-11-26 09:22:56	\N
-6	Coorporativo	\N	2024-11-26 09:23:22	2024-11-26 09:23:22	\N
 1	ADMINISTRADOR I	ADMINISTRADOR	2024-10-24 10:09:47	2025-09-28 14:13:44	2025-09-28 14:13:44
-9	Coordinador	\N	2025-09-28 14:14:31	2025-09-28 14:14:31	\N
-10	Operario	\N	2025-09-28 14:17:41	2025-09-28 14:17:41	\N
-11	Trabajador	\N	2025-09-28 14:19:40	2025-09-28 14:19:40	\N
 7	EMPLEADO	E	2025-09-20 14:19:42	2025-11-08 08:58:01	\N
 8	OBRERO	O	2025-09-20 14:20:00	2025-11-08 08:58:15	\N
 4	ALTO NIVEL	AN	2024-11-26 09:22:43	2025-11-08 08:58:30	\N
+11	Trabajador	\N	2025-09-28 14:19:40	2025-11-25 14:06:50	2025-11-25 14:06:50
+10	Operario	\N	2025-09-28 14:17:41	2025-11-25 14:06:56	2025-11-25 14:06:56
+6	Coorporativo	\N	2024-11-26 09:23:22	2025-11-25 14:07:00	2025-11-25 14:07:00
+9	Coordinador	\N	2025-09-28 14:14:31	2025-11-25 14:07:05	2025-11-25 14:07:05
+5	Operativo	\N	2024-11-26 09:22:56	2025-11-25 14:07:09	2025-11-25 14:07:09
+3	Directivo	\N	2024-11-26 09:22:28	2025-11-25 14:07:13	2025-11-25 14:07:13
+2	Adminstrativo	\N	2024-11-26 09:22:20	2025-11-25 14:07:17	2025-11-25 14:07:17
+12	COMISION DE SERVICIO	CS	2025-11-25 14:07:38	2025-11-25 14:07:38	\N
 \.
 
 
@@ -48453,6 +48492,7 @@ COPY public.payroll_salary_scales (id, name, description, active, created_at, up
 3	GRADOS EMPLEADOS	\N	t	2025-10-09 18:57:01	2025-11-10 15:30:53	\N	ESC-2-2025	1	STAFF_TYPE	list
 5	GRADOS OBREROS	\N	t	2025-11-12 08:29:38	2025-11-12 08:29:38	\N	ESC-4-2025	1	STAFF_TYPE	list
 6	GRADOS ALTO NIVEL	\N	t	2025-11-12 08:34:26	2025-11-12 08:34:26	\N	ESC-5-2025	1	STAFF_TYPE	list
+7	ANTIGUEDAD CS	\N	t	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	ESC-6-2025	1	START_DATE	value
 \.
 
 
@@ -48644,6 +48684,32 @@ COPY public.payroll_scales (id, name, payroll_salary_scale_id, created_at, updat
 82	GRADO	6	2025-11-12 08:34:26	2025-11-23 09:00:05	\N	"14"	\N	\N	\N
 83	GRADO	6	2025-11-12 08:34:26	2025-11-23 09:00:05	\N	"15"	\N	\N	\N
 92	GRADO	6	2025-11-23 09:00:05	2025-11-23 09:00:05	\N	"18"	\N	\N	\N
+93	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"0"	\N	\N	\N
+94	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"1"	\N	\N	\N
+95	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"2"	\N	\N	\N
+96	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"3"	\N	\N	\N
+97	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"4"	\N	\N	\N
+98	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"5"	\N	\N	\N
+99	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"6"	\N	\N	\N
+100	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"7"	\N	\N	\N
+101	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"8"	\N	\N	\N
+102	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"9"	\N	\N	\N
+103	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"10"	\N	\N	\N
+104	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"11"	\N	\N	\N
+105	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"12"	\N	\N	\N
+106	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"13"	\N	\N	\N
+107	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"14"	\N	\N	\N
+108	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"15"	\N	\N	\N
+109	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"16"	\N	\N	\N
+110	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"17"	\N	\N	\N
+111	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"18"	\N	\N	\N
+112	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"19"	\N	\N	\N
+113	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"20"	\N	\N	\N
+114	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"21"	\N	\N	\N
+115	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"22"	\N	\N	\N
+116	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"23"	\N	\N	\N
+117	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"24"	\N	\N	\N
+118	AÑOS	7	2025-11-25 14:40:15	2025-11-25 14:40:15	\N	"25"	\N	\N	\N
 \.
 
 
@@ -71959,7 +72025,7 @@ COPY public.users (id, name, email, username, password, level, last_login, lock_
 2	usuario	edu.jose.olmos@gmail.com	user	$2y$10$nH6X0CmfsOSUViwEfVU4l.mvQzj5b73MRnGxfKth7K2UZRrZPGfN2	2	2025-09-01 10:26:29	f	10	\N	t	2024-10-23 11:09:31	\N	\N	2024-10-23 11:09:31	2025-09-01 10:26:29	\N
 3	joseluis	joseluisolmos59@gmail.com	joseluis	$2y$10$Ws.Z1ujriGKY6qHfu2VvheQi4Fzu.vGEK4fzsrI6ZiMkvSP4Luxe2	1	2025-09-21 14:19:47	f	10	\N	t	2024-10-23 11:19:28	\N	nBCUfExn81c9qm3Dz0wtW9H5EFVxp6Q1G2yCx0kiK2pu1cKUKPrEBUnYDOS3	2024-10-23 11:19:28	2025-09-21 14:19:47	\N
 4	sapnnaet	sapnnaettapo@gmail.com	sapnnaet	$2y$10$b.3LS5zHk9IYVCfIwIVf5Oj./AXGa2wzGCmGmJT1o316O5f57Xo9y	0	2025-09-21 14:58:57	f	10	\N	t	2025-08-31 22:24:23	\N	JkFerPFIYpPpLc2YlEqIDENlPPBhsRrUsSGlO7S604xKzVOv1g6ZxRCnnTay	2025-09-01 10:35:13	2025-09-21 14:58:57	\N
-1	eduardo	edujosepeolms@gmail.com	eduardo	$2y$10$5jc01Bx1eqktzC8rysoot.SYcO0R8lV5GWKvj3.L6GiMoXpg1UtFm	1	2025-11-25 12:53:50	f	10	\N	t	2024-10-23 11:09:29	\N	\N	2024-10-23 11:09:29	2025-11-25 12:53:50	\N
+1	eduardo	edujosepeolms@gmail.com	eduardo	$2y$10$5jc01Bx1eqktzC8rysoot.SYcO0R8lV5GWKvj3.L6GiMoXpg1UtFm	1	2025-11-25 14:03:11	f	10	\N	t	2024-10-23 11:09:29	\N	\N	2024-10-23 11:09:29	2025-11-25 14:34:03	\N
 \.
 
 
@@ -72474,7 +72540,7 @@ SELECT pg_catalog.setval('public.assets_id_seq', 1, false);
 -- Name: audits_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.audits_id_seq', 9579, true);
+SELECT pg_catalog.setval('public.audits_id_seq', 9620, true);
 
 
 --
@@ -73384,7 +73450,7 @@ SELECT pg_catalog.setval('public.payroll_permission_requests_id_seq', 1, false);
 -- Name: payroll_position_types_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.payroll_position_types_id_seq', 11, true);
+SELECT pg_catalog.setval('public.payroll_position_types_id_seq', 12, true);
 
 
 --
@@ -73454,7 +73520,7 @@ SELECT pg_catalog.setval('public.payroll_salary_adjustments_id_seq', 1, false);
 -- Name: payroll_salary_scales_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.payroll_salary_scales_id_seq', 6, true);
+SELECT pg_catalog.setval('public.payroll_salary_scales_id_seq', 7, true);
 
 
 --
@@ -73489,7 +73555,7 @@ SELECT pg_catalog.setval('public.payroll_savings_funds_id_seq', 1, false);
 -- Name: payroll_scales_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.payroll_scales_id_seq', 92, true);
+SELECT pg_catalog.setval('public.payroll_scales_id_seq', 118, true);
 
 
 --
@@ -82702,5 +82768,5 @@ ALTER TABLE ONLY public.work_attendances
 -- PostgreSQL database dump complete
 --
 
-\unrestrict oiGwZm1Kex4KAK5JPEp6Pt5bChDQtQoBdkr0mU7ysmrkZIBX9WsQCfW1QkuvKhK
+\unrestrict JmNhFjcbjIvyOcdivJmTpm1eps11EJkaUd562RcnZA0L9Wk5Z8wbfGURugvK8hy
 
