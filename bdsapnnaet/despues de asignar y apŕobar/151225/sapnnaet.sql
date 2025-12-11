@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict Lul9ll0OtWGTUeogWuISdtVthYMw5lAQiC4LHyeOREplbYwCjfyibKhQyEOtaYZ
+\restrict nmsHNRAxwN5cbvAZabRD8343copLhPSAUw7Yexbe3N2XlM1RzypjionufUYDr1p
 
 -- Dumped from database version 15.14 (Debian 15.14-0+deb12u1)
 -- Dumped by pg_dump version 15.14 (Debian 15.14-0+deb12u1)
@@ -41036,7 +41036,6 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 10007	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccountOpen	1395	{"total_year_amount_m":"11292545.63"}	{"total_year_amount_m":11245745.63}	https://192.168.10.221/budget/compromises/4	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-03 15:31:50	2025-12-03 15:31:50
 10008	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccountOpen	1395	{"total_year_amount_m":11292545.63}	{"total_year_amount_m":11339345.63}	https://192.168.10.221/budget/compromises/4	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-03 15:31:50	2025-12-03 15:31:50
 10009	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetCompromise	4	{"document_status_id":1,"updated_at":"2025-12-03 15:31:48"}	{"document_status_id":3,"updated_at":"2025-12-03 15:32:00"}	https://192.168.10.221/budget/compromises/approve	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-03 15:32:00	2025-12-03 15:32:00
-10019	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2025-12-08 10:30:04","updated_at":"2025-12-08 10:30:04"}	{"last_login":"2025-12-08 15:18:49","updated_at":"2025-12-08 15:18:49"}	https://192.168.10.221/login	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-08 15:18:49	2025-12-08 15:18:49
 10020	\N	\N	created	Modules\\Payroll\\Models\\PayrollProfessional	2	[]	{"payroll_staff_id":6,"payroll_instruction_degree_id":5,"is_student":false,"payroll_study_type_id":null,"study_program_name":null,"updated_at":"2025-12-08 15:19:38","created_at":"2025-12-08 15:19:38","id":2}	/var/www/html/sapnnaet/artisan queue:work redis --queue=default --sleep=3 --tries=3	127.0.0.1	Symfony	\N	2025-12-08 15:19:38	2025-12-08 15:19:38
 10021	\N	\N	created	Modules\\Payroll\\Models\\PayrollClassSchedule	2	[]	{"payroll_professional_id":2,"updated_at":"2025-12-08 15:19:38","created_at":"2025-12-08 15:19:38","id":2}	/var/www/html/sapnnaet/artisan queue:work redis --queue=default --sleep=3 --tries=3	127.0.0.1	Symfony	\N	2025-12-08 15:19:38	2025-12-08 15:19:38
 10022	\N	\N	created	Modules\\Payroll\\Models\\PayrollCourse	2	[]	{"payroll_professional_id":2,"updated_at":"2025-12-08 15:19:38","created_at":"2025-12-08 15:19:38","id":2}	/var/www/html/sapnnaet/artisan queue:work redis --queue=default --sleep=3 --tries=3	127.0.0.1	Symfony	\N	2025-12-08 15:19:38	2025-12-08 15:19:38
@@ -42768,7 +42767,6 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 11738	\N	\N	created	Modules\\Payroll\\Models\\PayrollFamilyBurden	170	[]	{"payroll_socioeconomic_id":98,"id_number":33000267,"first_name":"Yosmer","last_name":"Teran Brice\\u00f1o","birthdate":"2003-10-02","age":22,"address":"Valera","payroll_gender_id":2,"payroll_relationships_id":3,"payroll_schooling_level_id":null,"payroll_scholarship_types_id":null,"study_center":"Valera","payroll_disability_id":null,"is_student":false,"has_disability":false,"has_scholarships":false,"deleted_at":null,"updated_at":"2025-12-08 15:21:13","created_at":"2025-12-08 15:21:13","id":170}	/var/www/html/sapnnaet/artisan queue:work redis --queue=default --sleep=3 --tries=3	127.0.0.1	Symfony	\N	2025-12-08 15:21:13	2025-12-08 15:21:13
 11739	\N	\N	created	Modules\\Payroll\\Models\\PayrollFamilyBurden	171	[]	{"payroll_socioeconomic_id":98,"id_number":33000268,"first_name":"Joneiber","last_name":"Mendoza Brice\\u00f1o","birthdate":"2006-07-14","age":19,"address":"Valera","payroll_gender_id":2,"payroll_relationships_id":3,"payroll_schooling_level_id":null,"payroll_scholarship_types_id":null,"study_center":"Valera","payroll_disability_id":null,"is_student":false,"has_disability":false,"has_scholarships":false,"deleted_at":null,"updated_at":"2025-12-08 15:21:13","created_at":"2025-12-08 15:21:13","id":171}	/var/www/html/sapnnaet/artisan queue:work redis --queue=default --sleep=3 --tries=3	127.0.0.1	Symfony	\N	2025-12-08 15:21:13	2025-12-08 15:21:13
 11740	\N	\N	created	Modules\\Payroll\\Models\\PayrollSocioeconomic	99	[]	{"payroll_staff_id":179,"marital_status_id":1,"updated_at":"2025-12-08 15:21:13","created_at":"2025-12-08 15:21:13","id":99}	/var/www/html/sapnnaet/artisan queue:work redis --queue=default --sleep=3 --tries=3	127.0.0.1	Symfony	\N	2025-12-08 15:21:13	2025-12-08 15:21:13
-12027	App\\Models\\User	1	updated	App\\Models\\User	1	[]	[]	https://192.168.10.221/logout	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-08 15:22:35	2025-12-08 15:22:35
 12032	App\\Models\\User	1	updated	App\\Models\\User	1	[]	[]	https://192.168.10.221/logout	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-10 08:34:08	2025-12-10 08:34:08
 11741	\N	\N	created	Modules\\Payroll\\Models\\PayrollFamilyBurden	172	[]	{"payroll_socioeconomic_id":99,"first_name":"Mathias Alejandro","last_name":"Cruz Castellano","id_number":33000270,"birthdate":"2018-06-05","age":7,"address":"Valera","payroll_gender_id":1,"payroll_relationships_id":3,"payroll_schooling_level_id":1,"payroll_scholarship_types_id":1,"study_center":"Valera","payroll_disability_id":null,"is_student":true,"has_disability":false,"has_scholarships":true,"deleted_at":null,"updated_at":"2025-12-08 15:21:14","created_at":"2025-12-08 15:21:14","id":172}	/var/www/html/sapnnaet/artisan queue:work redis --queue=default --sleep=3 --tries=3	127.0.0.1	Symfony	\N	2025-12-08 15:21:14	2025-12-08 15:21:14
 11742	\N	\N	created	Modules\\Payroll\\Models\\PayrollSocioeconomic	100	[]	{"payroll_staff_id":181,"marital_status_id":1,"updated_at":"2025-12-08 15:21:14","created_at":"2025-12-08 15:21:14","id":100}	/var/www/html/sapnnaet/artisan queue:work redis --queue=default --sleep=3 --tries=3	127.0.0.1	Symfony	\N	2025-12-08 15:21:14	2025-12-08 15:21:14
@@ -43073,6 +43071,7 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 12053	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollContractType	16	[]	{"name":"DICIEMBRE","updated_at":"2025-12-11 08:30:52","created_at":"2025-12-11 08:30:52","id":16}	http://127.0.0.1:8000/payroll/contract-types	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 08:30:52	2025-12-11 08:30:52
 12054	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollEmployment	2	{"payroll_staff_type_id":1,"payroll_contract_type_id":3,"updated_at":"2025-10-04 13:59:38","years_apn":""}	{"payroll_staff_type_id":"27","payroll_contract_type_id":"5","updated_at":"2025-12-11 08:50:44","years_apn":"A\\u00f1os: 3 Meses: 0 D\\u00edas: 0"}	http://127.0.0.1:8000/payroll/employments/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 08:50:44	2025-12-11 08:50:44
 12097	App\\Models\\User	1	updated	App\\Models\\User	1	[]	[]	http://127.0.0.1:8000/logout	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 10:48:10	2025-12-11 10:48:10
+12101	App\\Models\\User	1	updated	App\\Models\\User	1	[]	[]	http://127.0.0.1:8000/logout	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 11:23:33	2025-12-11 11:23:33
 12055	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollPreviousJob	1	[]	{"organization_name":"INSTITUCION","organization_phone":"+58-123-4567891","payroll_sector_type_id":"1","previous_position":"CARGO","payroll_staff_type_id":"27","start_date":"2005-02-14","end_date":"2008-02-15","payroll_employment_id":2,"updated_at":"2025-12-11 08:50:44","created_at":"2025-12-11 08:50:44","id":1}	http://127.0.0.1:8000/payroll/employments/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 08:50:44	2025-12-11 08:50:44
 12056	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollEmployment	3	{"payroll_staff_type_id":1,"payroll_contract_type_id":3,"updated_at":"2025-10-04 13:59:39","years_apn":"","payroll_salary_tabulator_id":null,"payroll_basic_salary":"0"}	{"payroll_staff_type_id":"15","payroll_contract_type_id":"5","updated_at":"2025-12-11 08:58:23","years_apn":0,"payroll_salary_tabulator_id":"3","payroll_basic_salary":219}	http://127.0.0.1:8000/payroll/employments/3	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 08:58:23	2025-12-11 08:58:23
 12057	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollEmployment	2	{"updated_at":"2025-12-11 08:50:44","payroll_salary_tabulator_id":null,"payroll_basic_salary":"0"}	{"updated_at":"2025-12-11 08:59:20","payroll_salary_tabulator_id":"3","payroll_basic_salary":287}	http://127.0.0.1:8000/payroll/employments/2	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 08:59:20	2025-12-11 08:59:20
@@ -43115,6 +43114,9 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 12094	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\PayrollEmployment	5	{"updated_at":"2025-12-11 10:43:47","years_apn":"A\\u00f1os: 0 Meses: 11 D\\u00edas: 30"}	{"updated_at":"2025-12-11 10:44:29","years_apn":"A\\u00f1os: 1 Meses: 0 D\\u00edas: 0"}	http://127.0.0.1:8000/payroll/employments/5	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 10:44:29	2025-12-11 10:44:29
 12095	App\\Models\\User	1	deleted	Modules\\Payroll\\Models\\PayrollPreviousJob	11	{"id":11,"organization_name":"INSTITUCION","organization_phone":"+58-271-1234567","payroll_sector_type_id":1,"payroll_staff_type_id":36,"start_date":"2020-12-13","end_date":"2021-12-13","payroll_employment_id":5,"created_at":"2025-12-11 10:43:47","updated_at":"2025-12-11 10:44:29","deleted_at":"2025-12-11 10:44:29","previous_position":"CARGO"}	[]	http://127.0.0.1:8000/payroll/employments/5	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 10:44:29	2025-12-11 10:44:29
 12096	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollPreviousJob	12	[]	{"organization_name":"INSTITUCION","organization_phone":"+58-271-1234567","payroll_sector_type_id":1,"previous_position":"CARGO","payroll_staff_type_id":36,"start_date":"2020-12-13","end_date":"2021-12-14","payroll_employment_id":5,"updated_at":"2025-12-11 10:44:29","created_at":"2025-12-11 10:44:29","id":12}	http://127.0.0.1:8000/payroll/employments/5	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 10:44:29	2025-12-11 10:44:29
+12098	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2025-12-11 08:17:20","updated_at":"2025-12-11 10:05:36"}	{"last_login":"2025-12-11 11:17:41","updated_at":"2025-12-11 11:17:41"}	http://127.0.0.1:8000/login	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 11:17:41	2025-12-11 11:17:41
+12099	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollEmployment	18	[]	{"payroll_staff_id":"314","years_apn":null,"start_date":"2025-05-01","end_date":null,"active":true,"payroll_inactivity_type_id":null,"institution_email":null,"function_description":null,"payroll_position_type_id":"2","payroll_coordination_id":null,"payroll_staff_type_id":"42","department_id":"12","payroll_contract_type_id":"9","worksheet_code":null,"workers_union":false,"savings_fund":false,"payroll_salary_tabulator_id":"3","payroll_basic_salary":130,"payroll_payment_type_id":null,"payroll_seniority_id":null,"updated_at":"2025-12-11 11:20:41","created_at":"2025-12-11 11:20:41","id":18}	http://127.0.0.1:8000/payroll/employments	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 11:20:41	2025-12-11 11:20:41
+12100	App\\Models\\User	1	created	Modules\\Payroll\\Models\\Profile	25	[]	{"first_name":"Yhonny Alberto","last_name":"Brice\\u00f1o Matheus","institution_id":1,"employee_id":18,"updated_at":"2025-12-11 11:20:42","created_at":"2025-12-11 11:20:42","id":25}	http://127.0.0.1:8000/payroll/employments	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-11 11:20:42	2025-12-11 11:20:42
 \.
 
 
@@ -48530,6 +48532,7 @@ ea5e769b-4362-4d50-8d9a-d5dd1ee91ad2	App\\Notifications\\SystemNotification	App\
 119b056a-a406-4005-8283-0dc514f3b775	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Error - Datos Socioeconomicos","message":"Importaci\\u00f3n fallida. No fue posible registrar la informaci\\u00f3n suministrada. Para obtener m\\u00e1s detalles, por favor, contacte al administrador.","currentTimestamp":"2025-12-08T19:21:29.664583Z"}	\N	2025-12-08 15:21:31	2025-12-08 15:21:31
 a4b496b0-7b6e-4252-ab24-8019f8a2845d	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Organizaci\\u00f3n actualizado(a)","message":"Se realiz\\u00f3 una actualizaci\\u00f3n de datos en Organizaci\\u00f3n","currentTimestamp":"2025-12-10T12:33:44.843449Z"}	\N	2025-12-10 08:33:45	2025-12-10 08:33:45
 24a9ba1a-fceb-4199-a6f4-2944542565ed	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Exito","message":"Ha finalizado la exportaci\\u00f3n de los datos laborales, el archivo ha sido enviado a su correo electr\\u00f3nico","currentTimestamp":"2025-12-11T14:47:33.890909Z"}	\N	2025-12-11 10:47:33	2025-12-11 10:47:33
+fba2b256-1729-4fc5-9732-1c76aacf27d0	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Exito","message":"Ha finalizado la exportaci\\u00f3n de los datos laborales, el archivo ha sido enviado a su correo electr\\u00f3nico","currentTimestamp":"2025-12-11T15:21:59.518957Z"}	\N	2025-12-11 11:21:59	2025-12-11 11:21:59
 \.
 
 
@@ -51031,6 +51034,7 @@ COPY public.payroll_employment_payroll_position (id, payroll_employment_id, payr
 18	17	1	t	\N	\N	\N
 11	10	1	t	2025-08-29 11:44:12	\N	\N
 6	5	5	t	2025-08-29 11:30:33	\N	\N
+19	18	25	t	2025-12-11 11:20:41	\N	\N
 \.
 
 
@@ -51056,6 +51060,7 @@ COPY public.payroll_employments (id, active, start_date, end_date, institution_e
 16	t	2006-08-01	\N	\N	\N	\N	3	35	20	5	14	2025-09-18 10:56:19	2025-12-11 10:31:52	\N	0	\N	\N	f	f	3	\N	\N	348
 17	t	1999-07-01	\N	\N	\N	\N	1	27	6	5	18	2025-10-04 13:59:45	2025-12-11 10:37:18	\N	Años: 1 Meses: 0 Días: 0	\N	\N	f	f	3	\N	\N	287
 5	t	2021-12-15	\N	\N	\N	\N	4	36	6	7	7	2025-08-29 11:30:33	2025-12-11 10:44:29	\N	Años: 1 Meses: 0 Días: 0	\N	\N	f	f	3	\N	\N	363
+18	t	2025-05-01	\N	\N	\N	\N	2	42	12	9	314	2025-12-11 11:20:41	2025-12-11 11:20:41	\N	\N	\N	\N	f	f	3	\N	\N	130
 \.
 
 
@@ -55908,6 +55913,7 @@ COPY public.profiles (id, first_name, last_name, image_id, user_id, institution_
 9	Maria De Los Angeles	Almazan Barraga	\N	\N	1	4	2025-08-29 11:28:37	2025-11-02 16:02:45	\N
 23	Tulio Enrique	Mendez Olmos	\N	\N	1	17	2025-10-04 13:59:46	2025-11-02 16:04:27	\N
 24	maria elena mendoza	\N	\N	8	1	\N	2025-11-24 09:02:14	2025-11-24 09:02:14	\N
+25	Yhonny Alberto	Briceño Matheus	\N	\N	1	18	2025-12-11 11:20:42	2025-12-11 11:20:42	\N
 \.
 
 
@@ -57173,7 +57179,7 @@ COPY public.users (id, name, email, username, password, level, last_login, lock_
 7	MARIA	mariesper4@gmail.com	maria	$2y$10$dD/pdIzvxj1TQ8YxqxgIgOGf1voj/59.nxGvcyeDnrg58pWe0TtVy	0	2025-08-08 10:06:30	f	10	\N	t	2025-07-17 22:24:27	\N	FwHmCuul9mTii1cwhUpXZyDw0ZZSWMOiaejl9e5vkt4LXhu3QjDa0vmBOgdW	2025-08-08 09:52:59	2025-08-08 10:06:30	\N
 8	maria elena mendoza	mary2015mendoza@gmail.com	mary	$2y$10$/ber0hXI4.2X9FnSifJN/.HLCC73m4jHE8igxazimn7Ln1P0QuOvG	0	2025-12-02 09:37:22	f	10	\N	t	2025-11-24 09:13:22	\N	MOvUGhIyhvXTc912vsek3tJX3sNjWRbe6lebL7dkbzWeKhE022yNSBKdVwUB	2025-11-24 09:02:14	2025-12-02 09:56:50	\N
 3	jose	edu.jose.olmos@gmail.com	jose	$2y$10$WHkGxOF7HEdhe.MaCHtUNubf3izAo/mNovQoSszNfpd48PoQJp4K6	0	2025-12-03 14:34:02	f	10	\N	t	2025-07-17 22:24:23	\N	K0BnJEI6u3HmhMRCqliJyOjwBAptdGTm8bhUyZjCS6AThZgHxbd12DMdxnQq	2025-07-25 12:27:41	2025-12-03 14:34:02	\N
-1	EDUARDO	edujosepeolms@gmail.com	eduardo	$2y$10$ATB2UmsNAOErXu4QR1qbD.E44rBcrwyB9YN12iu8b7ZXP3Tr8YX6G	1	2025-12-11 08:17:20	f	10	\N	t	2025-07-21 18:23:44	\N	M7THdiJYx36AP01OY52TvuXRvoVQJzHPHV4mJmYtuBGa6c00f3CoZ5MlOwMm	2025-07-21 18:23:44	2025-12-11 10:05:36	\N
+1	EDUARDO	edujosepeolms@gmail.com	eduardo	$2y$10$ATB2UmsNAOErXu4QR1qbD.E44rBcrwyB9YN12iu8b7ZXP3Tr8YX6G	1	2025-12-11 11:17:41	f	10	\N	t	2025-07-21 18:23:44	\N	uJVIea0nLLXxK37qkpS6SHqDEmi9HjlwU6udXwzdgD7wq0gRi6NHXqkbMufX	2025-07-21 18:23:44	2025-12-11 11:17:41	\N
 \.
 
 
@@ -57674,7 +57680,7 @@ SELECT pg_catalog.setval('public.assets_id_seq', 1, false);
 -- Name: audits_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.audits_id_seq', 12097, true);
+SELECT pg_catalog.setval('public.audits_id_seq', 12101, true);
 
 
 --
@@ -58199,7 +58205,7 @@ SELECT pg_catalog.setval('public.institutions_id_seq', 1, true);
 -- Name: jobs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.jobs_id_seq', 5, true);
+SELECT pg_catalog.setval('public.jobs_id_seq', 10, true);
 
 
 --
@@ -58416,14 +58422,14 @@ SELECT pg_catalog.setval('public.payroll_disabilities_id_seq', 8, true);
 -- Name: payroll_employment_payroll_position_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.payroll_employment_payroll_position_id_seq', 18, true);
+SELECT pg_catalog.setval('public.payroll_employment_payroll_position_id_seq', 19, true);
 
 
 --
 -- Name: payroll_employments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.payroll_employments_id_seq', 17, true);
+SELECT pg_catalog.setval('public.payroll_employments_id_seq', 18, true);
 
 
 --
@@ -58948,7 +58954,7 @@ SELECT pg_catalog.setval('public.professions_id_seq', 27, true);
 -- Name: profiles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.profiles_id_seq', 24, true);
+SELECT pg_catalog.setval('public.profiles_id_seq', 25, true);
 
 
 --
@@ -67902,5 +67908,5 @@ ALTER TABLE ONLY public.work_attendances
 -- PostgreSQL database dump complete
 --
 
-\unrestrict Lul9ll0OtWGTUeogWuISdtVthYMw5lAQiC4LHyeOREplbYwCjfyibKhQyEOtaYZ
+\unrestrict nmsHNRAxwN5cbvAZabRD8343copLhPSAUw7Yexbe3N2XlM1RzypjionufUYDr1p
 
