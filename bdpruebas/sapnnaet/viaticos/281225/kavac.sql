@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict hVQqtrdlWhqVCSKRoLFtwRDA5Ld4Nh06z5KQd30XskkbagSIuPWudQRAcXukxTU
+\restrict wQpaUYh2ikympGOTe2Pca0HQHN1wT7UgxYLEzqqHFBt22txBGHCyTerGAEWivcc
 
 -- Dumped from database version 15.14 (Debian 15.14-0+deb12u1)
 -- Dumped by pg_dump version 15.14 (Debian 15.14-0+deb12u1)
@@ -36745,7 +36745,6 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 5283	\N	\N	created	Modules\\Asset\\Models\\AssetSpecificCategory	1442	[]	{"name":"Escudos nacionales","asset_subcategory_id":35,"code":"0051","updated_at":"2025-07-21 18:26:43","created_at":"2025-07-21 18:26:43","id":1442}	artisan module:seed	127.0.0.1	Symfony	\N	2025-07-21 18:26:43	2025-07-21 18:26:43
 5284	\N	\N	created	Modules\\Asset\\Models\\AssetSpecificCategory	1443	[]	{"name":"Estantes","asset_subcategory_id":35,"code":"0052","updated_at":"2025-07-21 18:26:43","created_at":"2025-07-21 18:26:43","id":1443}	artisan module:seed	127.0.0.1	Symfony	\N	2025-07-21 18:26:43	2025-07-21 18:26:43
 5285	\N	\N	created	Modules\\Asset\\Models\\AssetSpecificCategory	1444	[]	{"name":"Espejos","asset_subcategory_id":35,"code":"0053","updated_at":"2025-07-21 18:26:43","created_at":"2025-07-21 18:26:43","id":1444}	artisan module:seed	127.0.0.1	Symfony	\N	2025-07-21 18:26:43	2025-07-21 18:26:43
-15873	App\\Models\\User	1	updated	App\\Models\\User	1	[]	[]	http://127.0.0.1:8000/logout	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-27 09:57:35	2025-12-27 09:57:35
 5286	\N	\N	created	Modules\\Asset\\Models\\AssetSpecificCategory	1445	[]	{"name":"Estufas m\\u00f3viles","asset_subcategory_id":35,"code":"0054","updated_at":"2025-07-21 18:26:43","created_at":"2025-07-21 18:26:43","id":1445}	artisan module:seed	127.0.0.1	Symfony	\N	2025-07-21 18:26:43	2025-07-21 18:26:43
 5287	\N	\N	created	Modules\\Asset\\Models\\AssetSpecificCategory	1446	[]	{"name":"Exprimidoras","asset_subcategory_id":35,"code":"0055","updated_at":"2025-07-21 18:26:43","created_at":"2025-07-21 18:26:43","id":1446}	artisan module:seed	127.0.0.1	Symfony	\N	2025-07-21 18:26:43	2025-07-21 18:26:43
 5288	\N	\N	created	Modules\\Asset\\Models\\AssetSpecificCategory	1447	[]	{"name":"Exprimidoras de lavandera","asset_subcategory_id":35,"code":"0056","updated_at":"2025-07-21 18:26:43","created_at":"2025-07-21 18:26:43","id":1447}	artisan module:seed	127.0.0.1	Symfony	\N	2025-07-21 18:26:43	2025-07-21 18:26:43
@@ -46399,7 +46398,6 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 15719	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromiseDetail	439	[]	{"description":"IMPUESTOS","amount":"1418.26","tax_amount":0,"tax_id":null,"budget_account_id":"1247","budget_sub_specific_formulation_id":4,"budget_tax_key":2,"budget_compromise_id":13,"updated_at":"2025-12-26 20:14:05","created_at":"2025-12-26 20:14:05","id":439}	http://127.0.0.1:8000/budget/compromises/13	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-26 20:14:05	2025-12-26 20:14:05
 15721	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetCompromise	13	{"document_status_id":1,"updated_at":"2025-12-26 20:14:05"}	{"document_status_id":3,"updated_at":"2025-12-26 20:14:25"}	http://127.0.0.1:8000/budget/compromises/approve	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-26 20:14:25	2025-12-26 20:14:25
 15722	App\\Models\\User	1	updated	Modules\\Purchase\\Models\\PurchaseProduct	39428	{"name":"REFRESCO DE 1 LITRO (G9","updated_at":"2025-11-25 11:56:16"}	{"name":"REFRESCO DE 1 LITRO (G)","updated_at":"2025-12-26 20:18:53"}	http://127.0.0.1:8000/purchase/products/39428	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-26 20:18:53	2025-12-26 20:18:53
-15726	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2025-12-26 19:32:12","updated_at":"2025-12-26 20:40:47"}	{"last_login":"2025-12-27 09:04:21","updated_at":"2025-12-27 09:04:21"}	http://127.0.0.1:8000/login	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-27 09:04:21	2025-12-27 09:04:21
 15727	App\\Models\\User	1	created	Modules\\Purchase\\Models\\PurchaseProduct	39591	[]	{"name":"AGUA MINERAL","code":"338","updated_at":"2025-12-27 09:09:45","created_at":"2025-12-27 09:09:45","id":39591}	http://127.0.0.1:8000/purchase/products	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-27 09:09:45	2025-12-27 09:09:45
 15728	\N	\N	created	Modules\\Purchase\\Models\\PurchaseBaseBudget	13	[]	{"date":"2025-01-16","prepared_by_id":"12","reviewed_by_id":"8","verified_by_id":"14","first_signature_id":"1","second_signature_id":"4","subtotal":0,"updated_at":"2025-12-27 09:41:29","created_at":"2025-12-27 09:41:29","id":13}	/var/www/html/kavac/artisan queue:work --queue=default --sleep=3 --tries=3	127.0.0.1	Symfony	\N	2025-12-27 09:41:29	2025-12-27 09:41:29
 15729	\N	\N	created	Modules\\Purchase\\Models\\PurchaseRequirement	13	[]	{"code":"CDR-13-2025","date":"2025-01-16","institution_id":"1","contracting_department_id":"26","user_department_id":"61","purchase_supplier_object_id":"1","description":"DESCRIPCION","fiscal_year_id":1,"prepared_by_id":"12","reviewed_by_id":"8","verified_by_id":"14","first_signature_id":"1","second_signature_id":"4","requirement_type":"Producto","purchase_base_budget_id":13,"updated_at":"2025-12-27 09:41:29","created_at":"2025-12-27 09:41:29","id":13}	/var/www/html/kavac/artisan queue:work --queue=default --sleep=3 --tries=3	127.0.0.1	Symfony	\N	2025-12-27 09:41:29	2025-12-27 09:41:29
@@ -48220,6 +48218,50 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 17838	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromiseDetail	897	[]	{"description":"IMPUESTOS","amount":"284.75","tax_amount":0,"tax_id":null,"budget_account_id":"1247","budget_sub_specific_formulation_id":4,"budget_tax_key":21,"budget_compromise_id":24,"updated_at":"2025-12-28 09:20:55","created_at":"2025-12-28 09:20:55","id":897}	http://127.0.0.1:8000/budget/compromises/24	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:20:55	2025-12-28 09:20:55
 17839	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccountOpen	1481	{"total_year_amount_m":"2394498.79"}	{"total_year_amount_m":2394214.04}	http://127.0.0.1:8000/budget/compromises/24	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:20:55	2025-12-28 09:20:55
 17840	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetCompromise	24	{"document_status_id":1,"updated_at":"2025-12-28 09:20:54"}	{"document_status_id":3,"updated_at":"2025-12-28 09:21:08"}	http://127.0.0.1:8000/budget/compromises/approve	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:21:08	2025-12-28 09:21:08
+17842	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2025-12-28 08:13:31","updated_at":"2025-12-28 08:13:31"}	{"last_login":"2025-12-28 09:25:46","updated_at":"2025-12-28 09:25:46"}	http://127.0.0.1:8000/login	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:25:46	2025-12-28 09:25:46
+17843	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromise	25	[]	{"document_number":"VIATICO 0001","institution_id":"1","compromised_at":"2025-01-21 00:00:00","description":"<p>TRASLADO A LA GOBERNACION DEL ESTADO TRUJILLO Y AL SATET<\\/p>","code":"CDC-24-2025","document_status_id":1,"updated_at":"2025-12-28 09:33:56","created_at":"2025-12-28 09:33:56","id":25}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:33:56	2025-12-28 09:33:56
+17844	App\\Models\\User	1	created	App\\Models\\Receiver	9	[]	{"receiverable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollEmployment","receiverable_id":15,"associateable_type":"Modules\\\\Accounting\\\\Models\\\\AccountingAccount","associateable_id":"744","group":"Trabajadores","description":"15583745 - Alexander Javier Brice\\u00f1o Araujo","id":9}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:33:56	2025-12-28 09:33:56
+17845	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromiseDetail	898	[]	{"description":"VIATICO 0001","amount":"330","tax_amount":0,"tax_id":null,"budget_account_id":"1205","budget_sub_specific_formulation_id":4,"budget_tax_key":1,"budget_compromise_id":25,"updated_at":"2025-12-28 09:33:56","created_at":"2025-12-28 09:33:56","id":898}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:33:56	2025-12-28 09:33:56
+17846	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccountOpen	1470	{"total_year_amount_m":"168286.25"}	{"total_year_amount_m":167956.25}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:33:56	2025-12-28 09:33:56
+17847	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	25	[]	{"code":"CDC-24-2025","registered_at":"2025-01-21 00:00:00","type":"COM","amount":330,"budget_compromise_id":25,"updated_at":"2025-12-28 09:33:56","created_at":"2025-12-28 09:33:56","id":25}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:33:56	2025-12-28 09:33:56
+17848	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetCompromise	25	{"document_status_id":1,"updated_at":"2025-12-28 09:33:56"}	{"document_status_id":3,"updated_at":"2025-12-28 09:34:15"}	http://127.0.0.1:8000/budget/compromises/approve	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:34:15	2025-12-28 09:34:15
+17849	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromise	26	[]	{"document_number":"VIATICO 0002","institution_id":"1","compromised_at":"2025-01-23 00:00:00","description":"<p>TRASLADO AL CIRCUITO JUDICIAL DE PROTECCION DE NI\\u00d1OS, NI\\u00d1AS Y ADOLESCENTES Y A LA GOBERNACION&nbsp;<\\/p>","code":"CDC-25-2025","document_status_id":1,"updated_at":"2025-12-28 09:38:37","created_at":"2025-12-28 09:38:37","id":26}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:38:37	2025-12-28 09:38:37
+17850	App\\Models\\User	1	created	App\\Models\\Receiver	10	[]	{"receiverable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollEmployment","receiverable_id":7,"associateable_type":"Modules\\\\Accounting\\\\Models\\\\AccountingAccount","associateable_id":"744","group":"Trabajadores","description":"8719807 - Isabel Teresa Perez Saavedra","id":10}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:38:37	2025-12-28 09:38:37
+17851	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromiseDetail	899	[]	{"description":"viatico 0002","amount":"330","tax_amount":0,"tax_id":null,"budget_account_id":"1205","budget_sub_specific_formulation_id":4,"budget_tax_key":1,"budget_compromise_id":26,"updated_at":"2025-12-28 09:38:37","created_at":"2025-12-28 09:38:37","id":899}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:38:37	2025-12-28 09:38:37
+17852	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccountOpen	1470	{"total_year_amount_m":"167956.25"}	{"total_year_amount_m":167626.25}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:38:37	2025-12-28 09:38:37
+17853	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	26	[]	{"code":"CDC-25-2025","registered_at":"2025-01-23 00:00:00","type":"COM","amount":330,"budget_compromise_id":26,"updated_at":"2025-12-28 09:38:37","created_at":"2025-12-28 09:38:37","id":26}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:38:37	2025-12-28 09:38:37
+17854	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetCompromise	26	{"document_status_id":1,"updated_at":"2025-12-28 09:38:37"}	{"document_status_id":3,"updated_at":"2025-12-28 09:38:46"}	http://127.0.0.1:8000/budget/compromises/approve	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:38:46	2025-12-28 09:38:46
+17855	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromise	27	[]	{"document_number":"VIATICO 0003","institution_id":"1","compromised_at":"2025-01-28 00:00:00","description":"<p>TRASLADO AL CIRCUITO JUDICIAL DE PROTECCION DE NI\\u00d1OS, NI\\u00d1AS Y ADOLESCENTES&nbsp;<\\/p>","code":"CDC-26-2025","document_status_id":1,"updated_at":"2025-12-28 09:41:50","created_at":"2025-12-28 09:41:50","id":27}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:41:50	2025-12-28 09:41:50
+17856	App\\Models\\User	1	created	App\\Models\\Receiver	11	[]	{"receiverable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollEmployment","receiverable_id":335,"associateable_type":"Modules\\\\Accounting\\\\Models\\\\AccountingAccount","associateable_id":"744","group":"Trabajadores","description":"26114271 - Ruddy Bellaliz Moncayo Perez","id":11}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:41:50	2025-12-28 09:41:50
+17857	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromiseDetail	900	[]	{"description":"VIATICO 0003","amount":"288","tax_amount":0,"tax_id":null,"budget_account_id":"1205","budget_sub_specific_formulation_id":4,"budget_tax_key":1,"budget_compromise_id":27,"updated_at":"2025-12-28 09:41:50","created_at":"2025-12-28 09:41:50","id":900}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:41:50	2025-12-28 09:41:50
+17858	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccountOpen	1470	{"total_year_amount_m":"167626.25"}	{"total_year_amount_m":167338.25}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:41:50	2025-12-28 09:41:50
+17859	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	27	[]	{"code":"CDC-26-2025","registered_at":"2025-01-28 00:00:00","type":"COM","amount":288,"budget_compromise_id":27,"updated_at":"2025-12-28 09:41:50","created_at":"2025-12-28 09:41:50","id":27}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:41:50	2025-12-28 09:41:50
+17860	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetCompromise	27	{"document_status_id":1,"updated_at":"2025-12-28 09:41:50"}	{"document_status_id":3,"updated_at":"2025-12-28 09:42:00"}	http://127.0.0.1:8000/budget/compromises/approve	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:42:00	2025-12-28 09:42:00
+17861	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromise	28	[]	{"document_number":"VIATICO 0004","institution_id":"1","compromised_at":"2025-01-28 00:00:00","description":"<p>TRASLADO AL CIRCUITO JUDICIAL DE PROTECCION DE NI\\u00d1OS, NI\\u00d1AS Y ADOLESCENTES&nbsp;<\\/p>","code":"CDC-27-2025","document_status_id":1,"updated_at":"2025-12-28 09:43:36","created_at":"2025-12-28 09:43:36","id":28}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:43:36	2025-12-28 09:43:36
+17862	App\\Models\\User	1	created	App\\Models\\Receiver	12	[]	{"receiverable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollEmployment","receiverable_id":336,"associateable_type":"Modules\\\\Accounting\\\\Models\\\\AccountingAccount","associateable_id":"744","group":"Trabajadores","description":"26191823 - Brayhan Jose Brice\\u00f1o Espinoza","id":12}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:43:36	2025-12-28 09:43:36
+17863	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromiseDetail	901	[]	{"description":"VIATICO 0004","amount":"288","tax_amount":0,"tax_id":null,"budget_account_id":"1205","budget_sub_specific_formulation_id":4,"budget_tax_key":1,"budget_compromise_id":28,"updated_at":"2025-12-28 09:43:36","created_at":"2025-12-28 09:43:36","id":901}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:43:36	2025-12-28 09:43:36
+17864	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccountOpen	1470	{"total_year_amount_m":"167338.25"}	{"total_year_amount_m":167050.25}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:43:36	2025-12-28 09:43:36
+17865	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	28	[]	{"code":"CDC-27-2025","registered_at":"2025-01-28 00:00:00","type":"COM","amount":288,"budget_compromise_id":28,"updated_at":"2025-12-28 09:43:36","created_at":"2025-12-28 09:43:36","id":28}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:43:36	2025-12-28 09:43:36
+17866	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetCompromise	28	{"document_status_id":1,"updated_at":"2025-12-28 09:43:36"}	{"document_status_id":3,"updated_at":"2025-12-28 09:43:46"}	http://127.0.0.1:8000/budget/compromises/approve	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:43:46	2025-12-28 09:43:46
+17867	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromise	29	[]	{"document_number":"VIATICO 0005","institution_id":"1","compromised_at":"2025-01-28 00:00:00","description":"<p>TRASLADO A LA TIMOTES<\\/p>","code":"CDC-28-2025","document_status_id":1,"updated_at":"2025-12-28 09:46:39","created_at":"2025-12-28 09:46:39","id":29}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:46:39	2025-12-28 09:46:39
+17868	App\\Models\\User	1	created	App\\Models\\Receiver	13	[]	{"receiverable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollEmployment","receiverable_id":88,"associateable_type":"Modules\\\\Accounting\\\\Models\\\\AccountingAccount","associateable_id":"744","group":"Trabajadores","description":"13462933 - Maria Yaritza Frias Aldana","id":13}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:46:39	2025-12-28 09:46:39
+17869	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromiseDetail	902	[]	{"description":"VIATICO 0005","amount":"631.74","tax_amount":0,"tax_id":null,"budget_account_id":"1205","budget_sub_specific_formulation_id":4,"budget_tax_key":1,"budget_compromise_id":29,"updated_at":"2025-12-28 09:46:39","created_at":"2025-12-28 09:46:39","id":902}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:46:39	2025-12-28 09:46:39
+17870	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccountOpen	1470	{"total_year_amount_m":"167050.25"}	{"total_year_amount_m":166418.51}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:46:39	2025-12-28 09:46:39
+17871	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	29	[]	{"code":"CDC-28-2025","registered_at":"2025-01-28 00:00:00","type":"COM","amount":631.74,"budget_compromise_id":29,"updated_at":"2025-12-28 09:46:39","created_at":"2025-12-28 09:46:39","id":29}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:46:39	2025-12-28 09:46:39
+17872	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetCompromise	29	{"document_status_id":1,"updated_at":"2025-12-28 09:46:39"}	{"document_status_id":3,"updated_at":"2025-12-28 09:46:52"}	http://127.0.0.1:8000/budget/compromises/approve	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:46:52	2025-12-28 09:46:52
+17873	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromise	30	[]	{"document_number":"VIATICO 0006","institution_id":"1","compromised_at":"2025-01-30 00:00:00","description":"<p>BARQUISIMETO<\\/p>","code":"CDC-29-2025","document_status_id":1,"updated_at":"2025-12-28 09:49:29","created_at":"2025-12-28 09:49:29","id":30}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:49:29	2025-12-28 09:49:29
+17874	App\\Models\\User	1	created	App\\Models\\Receiver	14	[]	{"receiverable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollEmployment","receiverable_id":6,"associateable_type":"Modules\\\\Accounting\\\\Models\\\\AccountingAccount","associateable_id":"744","group":"Trabajadores","description":"11894534 - Eberto de Jesus Olmos Rodriguez","id":14}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:49:29	2025-12-28 09:49:29
+17875	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromiseDetail	903	[]	{"description":"VIATICO 0006","amount":"5751.20","tax_amount":0,"tax_id":null,"budget_account_id":"1205","budget_sub_specific_formulation_id":4,"budget_tax_key":1,"budget_compromise_id":30,"updated_at":"2025-12-28 09:49:29","created_at":"2025-12-28 09:49:29","id":903}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:49:29	2025-12-28 09:49:29
+17876	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccountOpen	1470	{"total_year_amount_m":"166418.51"}	{"total_year_amount_m":160667.31}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:49:29	2025-12-28 09:49:29
+17877	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	30	[]	{"code":"CDC-29-2025","registered_at":"2025-01-30 00:00:00","type":"COM","amount":5751.2,"budget_compromise_id":30,"updated_at":"2025-12-28 09:49:29","created_at":"2025-12-28 09:49:29","id":30}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:49:29	2025-12-28 09:49:29
+17878	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetCompromise	30	{"document_status_id":1,"updated_at":"2025-12-28 09:49:29"}	{"document_status_id":3,"updated_at":"2025-12-28 09:49:59"}	http://127.0.0.1:8000/budget/compromises/approve	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:49:59	2025-12-28 09:49:59
+17885	App\\Models\\User	1	updated	App\\Models\\User	1	[]	[]	http://127.0.0.1:8000/logout	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:53:28	2025-12-28 09:53:28
+17879	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromise	31	[]	{"document_number":"VIATICO 0007","institution_id":"1","compromised_at":"2025-01-30 00:00:00","description":"<p>BARQUISIMETO<\\/p>","code":"CDC-30-2025","document_status_id":1,"updated_at":"2025-12-28 09:52:36","created_at":"2025-12-28 09:52:36","id":31}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:52:36	2025-12-28 09:52:36
+17880	App\\Models\\User	1	created	App\\Models\\Receiver	15	[]	{"receiverable_type":"Modules\\\\Payroll\\\\Models\\\\PayrollEmployment","receiverable_id":8,"associateable_type":"Modules\\\\Accounting\\\\Models\\\\AccountingAccount","associateable_id":"744","group":"Trabajadores","description":"10404528 - Javier Horacio Perez Castellano","id":15}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:52:36	2025-12-28 09:52:36
+17881	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetCompromiseDetail	904	[]	{"description":"VIATICO 0007","amount":"5751.20","tax_amount":0,"tax_id":null,"budget_account_id":"1205","budget_sub_specific_formulation_id":4,"budget_tax_key":1,"budget_compromise_id":31,"updated_at":"2025-12-28 09:52:36","created_at":"2025-12-28 09:52:36","id":904}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:52:36	2025-12-28 09:52:36
+17882	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccountOpen	1470	{"total_year_amount_m":"160667.31"}	{"total_year_amount_m":154916.11}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:52:36	2025-12-28 09:52:36
+17883	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	31	[]	{"code":"CDC-30-2025","registered_at":"2025-01-30 00:00:00","type":"COM","amount":5751.2,"budget_compromise_id":31,"updated_at":"2025-12-28 09:52:36","created_at":"2025-12-28 09:52:36","id":31}	http://127.0.0.1:8000/budget/compromises	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:52:36	2025-12-28 09:52:36
+17884	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetCompromise	31	{"document_status_id":1,"updated_at":"2025-12-28 09:52:36"}	{"document_status_id":3,"updated_at":"2025-12-28 09:52:47"}	http://127.0.0.1:8000/budget/compromises/approve	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-28 09:52:47	2025-12-28 09:52:47
 \.
 
 
@@ -48344,7 +48386,6 @@ COPY public.budget_account_opens (id, jan_amount, feb_amount, mar_amount, apr_am
 1446	26887.22	26887.22	26887.22	26887.22	26887.22	26887.22	26887.22	26887.22	26887.22	26887.22	26887.22	26887.22	322646.64	0	0	1143	4	2025-10-11 15:47:47	2025-12-27 16:03:37	\N	192644.04
 1445	36168.44	36168.44	36168.44	36168.44	36168.44	36168.44	36168.44	36168.44	36168.44	36168.44	36168.44	36168.44	434021.24	0	0	1142	4	2025-10-11 15:47:47	2025-12-27 16:03:37	\N	304023.93
 1430	17788.84	17788.84	17788.84	17788.84	17788.84	17788.84	17788.84	17788.84	17788.84	17788.84	17788.84	17788.84	213466.03	0	0	1119	4	2025-10-11 15:47:46	2025-12-27 16:29:34	\N	195603.43
-1470	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	168286.25	0	0	1205	4	2025-10-11 15:47:48	2025-10-11 15:47:48	\N	168286.25
 1471	20564.58	20564.58	20564.58	20564.58	20564.58	20564.58	20564.58	20564.58	20564.58	20564.58	20564.58	20564.58	246775	0	0	1208	4	2025-10-11 15:47:48	2025-10-11 15:47:48	\N	246775
 1472	9166.67	9166.67	9166.67	9166.67	9166.67	9166.67	9166.67	9166.67	9166.67	9166.67	9166.67	9166.67	110000	0	0	1211	4	2025-10-11 15:47:48	2025-10-11 15:47:48	\N	110000
 1473	6814.58	6814.58	6814.58	6814.58	6814.58	6814.58	6814.58	6814.58	6814.58	6814.58	6814.58	6814.58	81775	0	0	1213	4	2025-10-11 15:47:48	2025-10-11 15:47:48	\N	81775
@@ -48453,6 +48494,7 @@ COPY public.budget_account_opens (id, jan_amount, feb_amount, mar_amount, apr_am
 1418	100533.17	100533.17	100533.17	100533.17	100533.17	100533.17	100533.17	100533.17	100533.17	100533.17	100533.17	100533.17	1206398.01	0	0	1103	4	2025-10-11 15:47:46	2025-12-28 09:20:55	\N	1178068.28
 1481	213475.18	213475.18	213475.18	213475.18	213475.18	213475.18	213475.18	213475.18	213475.18	213475.18	213475.18	213475.18	2561702.11	0	0	1247	4	2025-10-11 15:47:48	2025-12-28 09:20:55	\N	2394214.04
 1408	35219.56	35219.56	35219.56	35219.56	35219.56	35219.56	35219.56	35219.56	35219.56	35219.56	35219.56	35219.56	422634.69	0	0	1091	4	2025-10-11 15:47:46	2025-12-28 09:20:54	\N	402232.11
+1470	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	14023.85	168286.25	0	0	1205	4	2025-10-11 15:47:48	2025-12-28 09:52:36	\N	154916.11
 1419	37849.67	37849.67	37849.67	37849.67	37849.67	37849.67	37849.67	37849.67	37849.67	37849.67	37849.67	37849.67	454196	0	0	1104	4	2025-10-11 15:47:46	2025-12-27 11:36:18	\N	413863.62
 1440	6294.95	6294.95	6294.95	6294.95	6294.95	6294.95	6294.95	6294.95	6294.95	6294.95	6294.95	6294.95	75539.38	0	0	1135	4	2025-10-11 15:47:47	2025-12-28 09:20:55	\N	74897.26
 1438	20072.63	20072.63	20072.63	20072.63	20072.63	20072.63	20072.63	20072.63	20072.63	20072.63	20072.63	20072.63	240871.56	0	0	1133	4	2025-10-11 15:47:47	2025-12-27 11:36:18	\N	206406.37
@@ -51596,6 +51638,13 @@ COPY public.budget_compromise_details (id, description, amount, tax_amount, tax_
 895	FARMACIA	110.14	0	\N	24	1103	4	2025-12-28 09:20:55	2025-12-28 09:20:55	\N	\N	19
 896	FARMACIA	134.49	0	\N	24	1103	4	2025-12-28 09:20:55	2025-12-28 09:20:55	\N	\N	20
 897	IMPUESTOS	284.75	0	\N	24	1247	4	2025-12-28 09:20:55	2025-12-28 09:20:55	\N	\N	21
+898	VIATICO 0001	330	0	\N	25	1205	4	2025-12-28 09:33:56	2025-12-28 09:33:56	\N	\N	1
+899	viatico 0002	330	0	\N	26	1205	4	2025-12-28 09:38:37	2025-12-28 09:38:37	\N	\N	1
+900	VIATICO 0003	288	0	\N	27	1205	4	2025-12-28 09:41:50	2025-12-28 09:41:50	\N	\N	1
+901	VIATICO 0004	288	0	\N	28	1205	4	2025-12-28 09:43:36	2025-12-28 09:43:36	\N	\N	1
+902	VIATICO 0005	631.74	0	\N	29	1205	4	2025-12-28 09:46:39	2025-12-28 09:46:39	\N	\N	1
+903	VIATICO 0006	5751.2	0	\N	30	1205	4	2025-12-28 09:49:29	2025-12-28 09:49:29	\N	\N	1
+904	VIATICO 0007	5751.2	0	\N	31	1205	4	2025-12-28 09:52:36	2025-12-28 09:52:36	\N	\N	1
 \.
 
 
@@ -51627,6 +51676,13 @@ COPY public.budget_compromises (id, compromised_at, description, code, document_
 22	2025-01-23	<p>DESRIPCION</p>	CDC-21-2025	3	\N	\N	2025-12-27 20:32:45	2025-12-27 20:56:48	\N	COC-18-2025	1	Modules\\Purchase\\Models\\PurchaseDirectHire	21
 23	2025-01-29	<p>DESCRIPCION</p>	CDC-22-2025	3	\N	\N	2025-12-28 08:36:28	2025-12-28 08:41:56	\N	COC-19-2025	1	Modules\\Purchase\\Models\\PurchaseDirectHire	22
 24	2025-01-31	<p>DESCRIPCION</p>	CDC-23-2025	3	\N	\N	2025-12-28 09:11:32	2025-12-28 09:21:08	\N	COC-20-2025	1	Modules\\Purchase\\Models\\PurchaseDirectHire	23
+25	2025-01-21	<p>TRASLADO A LA GOBERNACION DEL ESTADO TRUJILLO Y AL SATET</p>	CDC-24-2025	3	\N	\N	2025-12-28 09:33:56	2025-12-28 09:34:15	\N	VIATICO 0001	1	\N	\N
+26	2025-01-23	<p>TRASLADO AL CIRCUITO JUDICIAL DE PROTECCION DE NIÑOS, NIÑAS Y ADOLESCENTES Y A LA GOBERNACION&nbsp;</p>	CDC-25-2025	3	\N	\N	2025-12-28 09:38:37	2025-12-28 09:38:46	\N	VIATICO 0002	1	\N	\N
+27	2025-01-28	<p>TRASLADO AL CIRCUITO JUDICIAL DE PROTECCION DE NIÑOS, NIÑAS Y ADOLESCENTES&nbsp;</p>	CDC-26-2025	3	\N	\N	2025-12-28 09:41:50	2025-12-28 09:42:00	\N	VIATICO 0003	1	\N	\N
+28	2025-01-28	<p>TRASLADO AL CIRCUITO JUDICIAL DE PROTECCION DE NIÑOS, NIÑAS Y ADOLESCENTES&nbsp;</p>	CDC-27-2025	3	\N	\N	2025-12-28 09:43:36	2025-12-28 09:43:46	\N	VIATICO 0004	1	\N	\N
+29	2025-01-28	<p>TRASLADO A LA TIMOTES</p>	CDC-28-2025	3	\N	\N	2025-12-28 09:46:39	2025-12-28 09:46:52	\N	VIATICO 0005	1	\N	\N
+30	2025-01-30	<p>BARQUISIMETO</p>	CDC-29-2025	3	\N	\N	2025-12-28 09:49:29	2025-12-28 09:49:59	\N	VIATICO 0006	1	\N	\N
+31	2025-01-30	<p>BARQUISIMETO</p>	CDC-30-2025	3	\N	\N	2025-12-28 09:52:36	2025-12-28 09:52:47	\N	VIATICO 0007	1	\N	\N
 \.
 
 
@@ -51749,7 +51805,14 @@ COPY public.budget_stages (id, code, registered_at, amount, budget_compromise_id
 16	CDC-15-2025	2025-12-27	101255.6	16	2025-12-27 11:23:35	2025-12-27 11:36:18	\N	\N	\N	COM
 19	CDC-18-2025	2025-12-27	15590.4	19	2025-12-27 16:25:10	2025-12-27 16:29:34	\N	\N	\N	COM
 24	CDC-23-2025	2025-12-28	10482.24	24	2025-12-28 09:11:32	2025-12-28 09:20:55	\N	\N	\N	COM
+25	CDC-24-2025	2025-01-21	330	25	2025-12-28 09:33:56	2025-12-28 09:33:56	\N	\N	\N	COM
+26	CDC-25-2025	2025-01-23	330	26	2025-12-28 09:38:37	2025-12-28 09:38:37	\N	\N	\N	COM
+27	CDC-26-2025	2025-01-28	288	27	2025-12-28 09:41:50	2025-12-28 09:41:50	\N	\N	\N	COM
 20	CDC-19-2025	2025-12-27	25985.16	20	2025-12-27 16:45:26	2025-12-27 16:49:44	\N	\N	\N	COM
+28	CDC-27-2025	2025-01-28	288	28	2025-12-28 09:43:36	2025-12-28 09:43:36	\N	\N	\N	COM
+29	CDC-28-2025	2025-01-28	631.74	29	2025-12-28 09:46:39	2025-12-28 09:46:39	\N	\N	\N	COM
+30	CDC-29-2025	2025-01-30	5751.2	30	2025-12-28 09:49:29	2025-12-28 09:49:29	\N	\N	\N	COM
+31	CDC-30-2025	2025-01-30	5751.2	31	2025-12-28 09:52:36	2025-12-28 09:52:36	\N	\N	\N	COM
 21	CDC-20-2025	2025-12-27	183834	21	2025-12-27 17:05:32	2025-12-27 17:09:20	\N	\N	\N	COM
 22	CDC-21-2025	2025-12-27	111978.97	22	2025-12-27 20:32:45	2025-12-27 20:55:51	\N	\N	\N	COM
 17	CDC-16-2025	2025-12-27	21909.03	17	2025-12-27 14:56:26	2025-12-27 15:12:21	\N	\N	\N	COM
@@ -65974,6 +66037,13 @@ COPY public.receivers (id, "group", description, receiverable_type, receiverable
 6	Proveedores	J501143510 - FARMACIA ARIAN (FARMARIAN), C.A.	Modules\\Purchase\\Models\\PurchaseSupplier	9	2025-12-24 16:03:54	2025-12-24 16:03:54	\N	\N	\N
 7	Proveedores	J317465253 - TUBIPLASCA TUBERIAS PLASTICAS, C.A.	Modules\\Purchase\\Models\\PurchaseSupplier	4	2025-12-27 15:50:14	2025-12-27 15:50:14	\N	\N	\N
 8	Proveedores	J412838075 - DISTRIBUIDORA Y COMERCIALIZADORA GUADALUPANA, C.A.	Modules\\Purchase\\Models\\PurchaseSupplier	7	2025-12-27 16:45:15	2025-12-27 16:45:15	\N	\N	\N
+9	Trabajadores	15583745 - Alexander Javier Briceño Araujo	Modules\\Payroll\\Models\\PayrollEmployment	15	2025-12-28 09:33:56	2025-12-28 09:33:56	\N	Modules\\Accounting\\Models\\AccountingAccount	744
+10	Trabajadores	8719807 - Isabel Teresa Perez Saavedra	Modules\\Payroll\\Models\\PayrollEmployment	7	2025-12-28 09:38:37	2025-12-28 09:38:37	\N	Modules\\Accounting\\Models\\AccountingAccount	744
+11	Trabajadores	26114271 - Ruddy Bellaliz Moncayo Perez	Modules\\Payroll\\Models\\PayrollEmployment	335	2025-12-28 09:41:50	2025-12-28 09:41:50	\N	Modules\\Accounting\\Models\\AccountingAccount	744
+12	Trabajadores	26191823 - Brayhan Jose Briceño Espinoza	Modules\\Payroll\\Models\\PayrollEmployment	336	2025-12-28 09:43:36	2025-12-28 09:43:36	\N	Modules\\Accounting\\Models\\AccountingAccount	744
+13	Trabajadores	13462933 - Maria Yaritza Frias Aldana	Modules\\Payroll\\Models\\PayrollEmployment	88	2025-12-28 09:46:39	2025-12-28 09:46:39	\N	Modules\\Accounting\\Models\\AccountingAccount	744
+14	Trabajadores	11894534 - Eberto de Jesus Olmos Rodriguez	Modules\\Payroll\\Models\\PayrollEmployment	6	2025-12-28 09:49:29	2025-12-28 09:49:29	\N	Modules\\Accounting\\Models\\AccountingAccount	744
+15	Trabajadores	10404528 - Javier Horacio Perez Castellano	Modules\\Payroll\\Models\\PayrollEmployment	8	2025-12-28 09:52:36	2025-12-28 09:52:36	\N	Modules\\Accounting\\Models\\AccountingAccount	744
 \.
 
 
@@ -66099,6 +66169,13 @@ COPY public.signprofiles (id, user_id, cert, pkey, created_at, updated_at, delet
 --
 
 COPY public.sources (id, sourceable_type, sourceable_id, receiver_id, created_at, updated_at) FROM stdin;
+1	Modules\\Budget\\Models\\BudgetCompromise	25	9	2025-12-28 09:33:56	2025-12-28 09:33:56
+2	Modules\\Budget\\Models\\BudgetCompromise	26	10	2025-12-28 09:38:37	2025-12-28 09:38:37
+3	Modules\\Budget\\Models\\BudgetCompromise	27	11	2025-12-28 09:41:50	2025-12-28 09:41:50
+4	Modules\\Budget\\Models\\BudgetCompromise	28	12	2025-12-28 09:43:36	2025-12-28 09:43:36
+5	Modules\\Budget\\Models\\BudgetCompromise	29	13	2025-12-28 09:46:39	2025-12-28 09:46:39
+6	Modules\\Budget\\Models\\BudgetCompromise	30	14	2025-12-28 09:49:29	2025-12-28 09:49:29
+7	Modules\\Budget\\Models\\BudgetCompromise	31	15	2025-12-28 09:52:36	2025-12-28 09:52:36
 \.
 
 
@@ -66166,7 +66243,7 @@ COPY public.users (id, name, email, username, password, level, last_login, lock_
 7	MARIA	mariesper4@gmail.com	maria	$2y$10$dD/pdIzvxj1TQ8YxqxgIgOGf1voj/59.nxGvcyeDnrg58pWe0TtVy	0	2025-08-08 10:06:30	f	10	\N	t	2025-07-17 22:24:27	\N	FwHmCuul9mTii1cwhUpXZyDw0ZZSWMOiaejl9e5vkt4LXhu3QjDa0vmBOgdW	2025-08-08 09:52:59	2025-08-08 10:06:30	\N
 8	maria elena mendoza	mary2015mendoza@gmail.com	mary	$2y$10$/ber0hXI4.2X9FnSifJN/.HLCC73m4jHE8igxazimn7Ln1P0QuOvG	0	2025-12-02 09:37:22	f	10	\N	t	2025-11-24 09:13:22	\N	MOvUGhIyhvXTc912vsek3tJX3sNjWRbe6lebL7dkbzWeKhE022yNSBKdVwUB	2025-11-24 09:02:14	2025-12-02 09:56:50	\N
 3	jose	edu.jose.olmos@gmail.com	jose	$2y$10$WHkGxOF7HEdhe.MaCHtUNubf3izAo/mNovQoSszNfpd48PoQJp4K6	0	2025-12-03 14:34:02	f	10	\N	t	2025-07-17 22:24:23	\N	K0BnJEI6u3HmhMRCqliJyOjwBAptdGTm8bhUyZjCS6AThZgHxbd12DMdxnQq	2025-07-25 12:27:41	2025-12-03 14:34:02	\N
-1	EDUARDO	edujosepeolms@gmail.com	eduardo	$2y$10$ATB2UmsNAOErXu4QR1qbD.E44rBcrwyB9YN12iu8b7ZXP3Tr8YX6G	1	2025-12-28 08:13:31	f	10	\N	t	2025-07-21 18:23:44	\N	0HqpFvVG95ViGxZrTXmMc9piDAJNQacEYQA65ydtbkibcZYpbfqPA998DKpd	2025-07-21 18:23:44	2025-12-28 08:13:31	\N
+1	EDUARDO	edujosepeolms@gmail.com	eduardo	$2y$10$ATB2UmsNAOErXu4QR1qbD.E44rBcrwyB9YN12iu8b7ZXP3Tr8YX6G	1	2025-12-28 09:25:46	f	10	\N	t	2025-07-21 18:23:44	\N	2q0YvbEsSuE5UXGTUHiTEMCaUrtodVj9tb5etfE3EW2FH2AuBHYouwMPzprN	2025-07-21 18:23:44	2025-12-28 09:25:46	\N
 \.
 
 
@@ -66667,7 +66744,7 @@ SELECT pg_catalog.setval('public.assets_id_seq', 1, false);
 -- Name: audits_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.audits_id_seq', 17841, true);
+SELECT pg_catalog.setval('public.audits_id_seq', 17885, true);
 
 
 --
@@ -66730,14 +66807,14 @@ SELECT pg_catalog.setval('public.budget_component_manager_histories_id_seq', 8, 
 -- Name: budget_compromise_details_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.budget_compromise_details_id_seq', 897, true);
+SELECT pg_catalog.setval('public.budget_compromise_details_id_seq', 904, true);
 
 
 --
 -- Name: budget_compromises_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.budget_compromises_id_seq', 24, true);
+SELECT pg_catalog.setval('public.budget_compromises_id_seq', 31, true);
 
 
 --
@@ -66786,7 +66863,7 @@ SELECT pg_catalog.setval('public.budget_specific_actions_id_seq', 6, true);
 -- Name: budget_stages_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.budget_stages_id_seq', 24, true);
+SELECT pg_catalog.setval('public.budget_stages_id_seq', 31, true);
 
 
 --
@@ -68319,7 +68396,7 @@ SELECT pg_catalog.setval('public.purchase_types_id_seq', 2, true);
 -- Name: receivers_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.receivers_id_seq', 8, true);
+SELECT pg_catalog.setval('public.receivers_id_seq', 15, true);
 
 
 --
@@ -68375,7 +68452,7 @@ SELECT pg_catalog.setval('public.signprofiles_id_seq', 1, false);
 -- Name: sources_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.sources_id_seq', 1, false);
+SELECT pg_catalog.setval('public.sources_id_seq', 7, true);
 
 
 --
@@ -76895,5 +76972,5 @@ ALTER TABLE ONLY public.work_attendances
 -- PostgreSQL database dump complete
 --
 
-\unrestrict hVQqtrdlWhqVCSKRoLFtwRDA5Ld4Nh06z5KQd30XskkbagSIuPWudQRAcXukxTU
+\unrestrict wQpaUYh2ikympGOTe2Pca0HQHN1wT7UgxYLEzqqHFBt22txBGHCyTerGAEWivcc
 
