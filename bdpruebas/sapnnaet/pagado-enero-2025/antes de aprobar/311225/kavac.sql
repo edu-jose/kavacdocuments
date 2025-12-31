@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict psm6efWwNo5xr9xURvNfZN1QvB137UYxK2lhvhd8a8xutEMN7OMRiBhycoxluWo
+\restrict Z6sgCrPkhEgPdnlyeoQkNdhdyBTXnTDRfn5aFcpUl4P3Xz7HXEDiBcs7AoUVhji
 
 -- Dumped from database version 15.14 (Debian 15.14-0+deb12u1)
 -- Dumped by pg_dump version 15.14 (Debian 15.14-0+deb12u1)
@@ -49844,7 +49844,6 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 19077	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	659	[]	{"code":"STG-624-4","registered_at":"2025-01-17 00:00:00","type":"PAG","amount":"101.3","stageable_type":"Modules\\\\Finance\\\\Models\\\\FinancePaymentExecute","stageable_id":11,"budget_compromise_id":10,"updated_at":"2025-12-30 10:25:45","created_at":"2025-12-30 10:25:45","id":659}	https://192.168.10.221/finance/payment-execute	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-30 10:25:45	2025-12-30 10:25:45
 19078	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	660	[]	{"code":"STG-625-4","registered_at":"2025-01-17 00:00:00","type":"PAG","amount":"604.55","stageable_type":"Modules\\\\Finance\\\\Models\\\\FinancePaymentExecute","stageable_id":11,"budget_compromise_id":10,"updated_at":"2025-12-30 10:25:45","created_at":"2025-12-30 10:25:45","id":660}	https://192.168.10.221/finance/payment-execute	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-30 10:25:45	2025-12-30 10:25:45
 19079	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	661	[]	{"code":"STG-626-4","registered_at":"2025-01-17 00:00:00","type":"PAG","amount":"38.87","stageable_type":"Modules\\\\Finance\\\\Models\\\\FinancePaymentExecute","stageable_id":11,"budget_compromise_id":10,"updated_at":"2025-12-30 10:25:45","created_at":"2025-12-30 10:25:45","id":661}	https://192.168.10.221/finance/payment-execute	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-30 10:25:45	2025-12-30 10:25:45
-19730	App\\Models\\User	1	updated	App\\Models\\User	1	{"lock_screen":false,"updated_at":"2025-12-31 08:49:02"}	{"lock_screen":true,"updated_at":"2025-12-31 09:26:15"}	http://127.0.0.1:8000/set-lockscreen-data	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-31 09:26:15	2025-12-31 09:26:15
 19080	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	662	[]	{"code":"STG-627-4","registered_at":"2025-01-17 00:00:00","type":"PAG","amount":"1808.72","stageable_type":"Modules\\\\Finance\\\\Models\\\\FinancePaymentExecute","stageable_id":11,"budget_compromise_id":10,"updated_at":"2025-12-30 10:25:45","created_at":"2025-12-30 10:25:45","id":662}	https://192.168.10.221/finance/payment-execute	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-30 10:25:45	2025-12-30 10:25:45
 19081	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	663	[]	{"code":"STG-628-4","registered_at":"2025-01-17 00:00:00","type":"PAG","amount":"9380.34","stageable_type":"Modules\\\\Finance\\\\Models\\\\FinancePaymentExecute","stageable_id":11,"budget_compromise_id":10,"updated_at":"2025-12-30 10:25:45","created_at":"2025-12-30 10:25:45","id":663}	https://192.168.10.221/finance/payment-execute	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-30 10:25:45	2025-12-30 10:25:45
 19082	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	664	[]	{"code":"STG-629-4","registered_at":"2025-01-17 00:00:00","type":"PAG","amount":"498.86","stageable_type":"Modules\\\\Finance\\\\Models\\\\FinancePaymentExecute","stageable_id":11,"budget_compromise_id":10,"updated_at":"2025-12-30 10:25:45","created_at":"2025-12-30 10:25:45","id":664}	https://192.168.10.221/finance/payment-execute	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-30 10:25:45	2025-12-30 10:25:45
@@ -50292,6 +50291,7 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 19518	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	918	[]	{"code":"STG-883-4","registered_at":"2025-01-30 00:00:00","type":"PAG","amount":"4200","stageable_type":"Modules\\\\Finance\\\\Models\\\\FinancePaymentExecute","stageable_id":28,"budget_compromise_id":22,"updated_at":"2025-12-30 13:07:32","created_at":"2025-12-30 13:07:32","id":918}	https://192.168.10.221/finance/payment-execute	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-30 13:07:32	2025-12-30 13:07:32
 19519	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	919	[]	{"code":"STG-884-4","registered_at":"2025-01-30 00:00:00","type":"PAG","amount":"1101.8","stageable_type":"Modules\\\\Finance\\\\Models\\\\FinancePaymentExecute","stageable_id":28,"budget_compromise_id":22,"updated_at":"2025-12-30 13:07:32","created_at":"2025-12-30 13:07:32","id":919}	https://192.168.10.221/finance/payment-execute	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-30 13:07:32	2025-12-30 13:07:32
 19520	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	920	[]	{"code":"STG-885-4","registered_at":"2025-01-30 00:00:00","type":"PAG","amount":"810","stageable_type":"Modules\\\\Finance\\\\Models\\\\FinancePaymentExecute","stageable_id":28,"budget_compromise_id":22,"updated_at":"2025-12-30 13:07:32","created_at":"2025-12-30 13:07:32","id":920}	https://192.168.10.221/finance/payment-execute	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-30 13:07:32	2025-12-30 13:07:32
+19787	App\\Models\\User	1	updated	App\\Models\\User	1	[]	[]	http://127.0.0.1:8000/logout	127.0.0.1	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-31 11:51:29	2025-12-31 11:51:29
 19521	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	921	[]	{"code":"STG-886-4","registered_at":"2025-01-30 00:00:00","type":"PAG","amount":"1440","stageable_type":"Modules\\\\Finance\\\\Models\\\\FinancePaymentExecute","stageable_id":28,"budget_compromise_id":22,"updated_at":"2025-12-30 13:07:32","created_at":"2025-12-30 13:07:32","id":921}	https://192.168.10.221/finance/payment-execute	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-30 13:07:32	2025-12-30 13:07:32
 19522	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	922	[]	{"code":"STG-887-4","registered_at":"2025-01-30 00:00:00","type":"PAG","amount":"4920","stageable_type":"Modules\\\\Finance\\\\Models\\\\FinancePaymentExecute","stageable_id":28,"budget_compromise_id":22,"updated_at":"2025-12-30 13:07:32","created_at":"2025-12-30 13:07:32","id":922}	https://192.168.10.221/finance/payment-execute	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-30 13:07:32	2025-12-30 13:07:32
 19523	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetStage	923	[]	{"code":"STG-888-4","registered_at":"2025-01-30 00:00:00","type":"PAG","amount":"4080","stageable_type":"Modules\\\\Finance\\\\Models\\\\FinancePaymentExecute","stageable_id":28,"budget_compromise_id":22,"updated_at":"2025-12-30 13:07:32","created_at":"2025-12-30 13:07:32","id":923}	https://192.168.10.221/finance/payment-execute	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-30 13:07:32	2025-12-30 13:07:32
@@ -69765,7 +69765,7 @@ COPY public.users (id, name, email, username, password, level, last_login, lock_
 7	MARIA	mariesper4@gmail.com	maria	$2y$10$dD/pdIzvxj1TQ8YxqxgIgOGf1voj/59.nxGvcyeDnrg58pWe0TtVy	0	2025-08-08 10:06:30	f	10	\N	t	2025-07-17 22:24:27	\N	FwHmCuul9mTii1cwhUpXZyDw0ZZSWMOiaejl9e5vkt4LXhu3QjDa0vmBOgdW	2025-08-08 09:52:59	2025-08-08 10:06:30	\N
 8	maria elena mendoza	mary2015mendoza@gmail.com	mary	$2y$10$/ber0hXI4.2X9FnSifJN/.HLCC73m4jHE8igxazimn7Ln1P0QuOvG	0	2025-12-02 09:37:22	f	10	\N	t	2025-11-24 09:13:22	\N	MOvUGhIyhvXTc912vsek3tJX3sNjWRbe6lebL7dkbzWeKhE022yNSBKdVwUB	2025-11-24 09:02:14	2025-12-02 09:56:50	\N
 3	jose	edu.jose.olmos@gmail.com	jose	$2y$10$WHkGxOF7HEdhe.MaCHtUNubf3izAo/mNovQoSszNfpd48PoQJp4K6	0	2025-12-03 14:34:02	f	10	\N	t	2025-07-17 22:24:23	\N	K0BnJEI6u3HmhMRCqliJyOjwBAptdGTm8bhUyZjCS6AThZgHxbd12DMdxnQq	2025-07-25 12:27:41	2025-12-03 14:34:02	\N
-1	EDUARDO	edujosepeolms@gmail.com	eduardo	$2y$10$ATB2UmsNAOErXu4QR1qbD.E44rBcrwyB9YN12iu8b7ZXP3Tr8YX6G	1	2025-12-31 10:57:35	f	10	\N	t	2025-07-21 18:23:44	\N	NaNVhX8YHcdJu0NC8guro5eVJQbyDAjFy4i5hlacLOjkOPC5kKJ6LXNzhph5	2025-07-21 18:23:44	2025-12-31 11:33:53	\N
+1	EDUARDO	edujosepeolms@gmail.com	eduardo	$2y$10$ATB2UmsNAOErXu4QR1qbD.E44rBcrwyB9YN12iu8b7ZXP3Tr8YX6G	1	2025-12-31 10:57:35	f	10	\N	t	2025-07-21 18:23:44	\N	wPS8R2SFb9JN89lejK0prnQm2buePirKBi1izSlr6KyKKbTqmXh0GSSIeFAv	2025-07-21 18:23:44	2025-12-31 11:33:53	\N
 \.
 
 
@@ -70266,7 +70266,7 @@ SELECT pg_catalog.setval('public.assets_id_seq', 1, false);
 -- Name: audits_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.audits_id_seq', 19786, true);
+SELECT pg_catalog.setval('public.audits_id_seq', 19787, true);
 
 
 --
@@ -80494,5 +80494,5 @@ ALTER TABLE ONLY public.work_attendances
 -- PostgreSQL database dump complete
 --
 
-\unrestrict psm6efWwNo5xr9xURvNfZN1QvB137UYxK2lhvhd8a8xutEMN7OMRiBhycoxluWo
+\unrestrict Z6sgCrPkhEgPdnlyeoQkNdhdyBTXnTDRfn5aFcpUl4P3Xz7HXEDiBcs7AoUVhji
 
