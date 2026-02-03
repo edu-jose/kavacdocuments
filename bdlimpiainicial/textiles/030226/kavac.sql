@@ -2,10 +2,10 @@
 -- PostgreSQL database dump
 --
 
-\restrict rmo21vfRSQL0fTMokpU4ZhMTnd2FCAQM3bqUbZe5fAndTEDLzPUwQ8Ct0QdGWhM
+\restrict kRzveGP5zj1gxaeBjLIyqDfdrLsZ3J7bB8a9fibVyIyk5jtefpjP3XbkOcO28Af
 
--- Dumped from database version 15.14 (Debian 15.14-0+deb12u1)
--- Dumped by pg_dump version 15.14 (Debian 15.14-0+deb12u1)
+-- Dumped from database version 15.15 (Debian 15.15-0+deb12u1)
+-- Dumped by pg_dump version 15.15 (Debian 15.15-0+deb12u1)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -7058,7 +7058,7 @@ CREATE TABLE public.budget_modification_accounts (
     created_at timestamp(0) without time zone,
     updated_at timestamp(0) without time zone,
     deleted_at timestamp(0) without time zone,
-    CONSTRAINT budget_modification_accounts_operation_check CHECK (((operation)::text = ANY ((ARRAY['I'::character varying, 'D'::character varying])::text[])))
+    CONSTRAINT budget_modification_accounts_operation_check CHECK (((operation)::text = ANY (ARRAY[('I'::character varying)::text, ('D'::character varying)::text])))
 );
 
 
@@ -7132,7 +7132,7 @@ CREATE TABLE public.budget_modifications (
     status character varying(255) DEFAULT 'PE'::character varying,
     currency_id bigint,
     approved_date date,
-    CONSTRAINT budget_modifications_type_check CHECK (((type)::text = ANY ((ARRAY['C'::character varying, 'R'::character varying, 'T'::character varying])::text[])))
+    CONSTRAINT budget_modifications_type_check CHECK (((type)::text = ANY (ARRAY[('C'::character varying)::text, ('R'::character varying)::text, ('T'::character varying)::text])))
 );
 
 
@@ -9326,7 +9326,7 @@ CREATE TABLE public.code_settings (
     created_at timestamp(0) without time zone,
     updated_at timestamp(0) without time zone,
     deleted_at timestamp(0) without time zone,
-    CONSTRAINT code_settings_format_year_check CHECK (((format_year)::text = ANY ((ARRAY[''::character varying, 'YY'::character varying, 'YYYY'::character varying])::text[])))
+    CONSTRAINT code_settings_format_year_check CHECK (((format_year)::text = ANY (ARRAY[(''::character varying)::text, ('YY'::character varying)::text, ('YYYY'::character varying)::text])))
 );
 
 
@@ -9811,7 +9811,7 @@ CREATE TABLE public.document_status (
     created_at timestamp(0) without time zone,
     updated_at timestamp(0) without time zone,
     deleted_at timestamp(0) without time zone,
-    CONSTRAINT document_status_action_check CHECK (((action)::text = ANY ((ARRAY['AP'::character varying, 'RE'::character varying, 'EL'::character varying, 'PR'::character varying, 'AN'::character varying, 'CE'::character varying])::text[])))
+    CONSTRAINT document_status_action_check CHECK (((action)::text = ANY (ARRAY[('AP'::character varying)::text, ('RE'::character varying)::text, ('EL'::character varying)::text, ('PR'::character varying)::text, ('AN'::character varying)::text, ('CE'::character varying)::text])))
 );
 
 
@@ -11028,7 +11028,7 @@ CREATE TABLE public.finance_pay_orders (
     document_type character varying(255) DEFAULT 'C'::character varying NOT NULL,
     month character varying(2),
     period character varying(2),
-    CONSTRAINT finance_pay_orders_type_check CHECK (((type)::text = ANY ((ARRAY['PR'::character varying, 'NP'::character varying])::text[])))
+    CONSTRAINT finance_pay_orders_type_check CHECK (((type)::text = ANY (ARRAY[('PR'::character varying)::text, ('NP'::character varying)::text])))
 );
 
 
@@ -12777,7 +12777,7 @@ CREATE TABLE public.notification_setting_user (
     user_id bigint,
     created_at timestamp(0) without time zone,
     updated_at timestamp(0) without time zone,
-    CONSTRAINT notification_setting_user_type_check CHECK (((type)::text = ANY ((ARRAY['N'::character varying, 'E'::character varying, 'S'::character varying])::text[])))
+    CONSTRAINT notification_setting_user_type_check CHECK (((type)::text = ANY (ARRAY[('N'::character varying)::text, ('E'::character varying)::text, ('S'::character varying)::text])))
 );
 
 
@@ -15635,7 +15635,7 @@ CREATE TABLE public.payroll_payment_periods (
     deleted_at timestamp(0) without time zone,
     availability_status character varying(255),
     payment_status character varying(255) DEFAULT 'pending'::character varying NOT NULL,
-    CONSTRAINT payroll_payment_periods_payment_status_check CHECK (((payment_status)::text = ANY ((ARRAY['pending'::character varying, 'generated'::character varying, 'approved'::character varying])::text[])))
+    CONSTRAINT payroll_payment_periods_payment_status_check CHECK (((payment_status)::text = ANY (ARRAY[('pending'::character varying)::text, ('generated'::character varying)::text, ('approved'::character varying)::text])))
 );
 
 
@@ -15803,8 +15803,8 @@ CREATE TABLE public.payroll_payment_types (
     ordinary_payment boolean DEFAULT false NOT NULL,
     is_trust boolean DEFAULT false NOT NULL,
     is_survivor boolean DEFAULT false NOT NULL,
-    CONSTRAINT payroll_payment_types_payment_periodicity_check CHECK (((payment_periodicity)::text = ANY ((ARRAY['daily'::character varying, 'weekly'::character varying, 'biweekly'::character varying, 'monthly'::character varying, 'bimonthly'::character varying, 'three-monthly'::character varying, 'four-monthly'::character varying, 'biannual'::character varying, 'annual'::character varying, 'not_apply'::character varying])::text[]))),
-    CONSTRAINT payroll_payment_types_payment_relationship_check CHECK (((payment_relationship)::text = ANY ((ARRAY['payroll'::character varying, 'comprehensive_wages'::character varying, 'utilities'::character varying, 'vacations'::character varying, 'social_benefits_guarantees'::character varying, 'social_benefit_interests'::character varying, 'liquidations'::character varying, 'ticket_basket'::character varying, 'kindergarten'::character varying, 'special_payroll'::character varying, 'others'::character varying])::text[])))
+    CONSTRAINT payroll_payment_types_payment_periodicity_check CHECK (((payment_periodicity)::text = ANY (ARRAY[('daily'::character varying)::text, ('weekly'::character varying)::text, ('biweekly'::character varying)::text, ('monthly'::character varying)::text, ('bimonthly'::character varying)::text, ('three-monthly'::character varying)::text, ('four-monthly'::character varying)::text, ('biannual'::character varying)::text, ('annual'::character varying)::text, ('not_apply'::character varying)::text]))),
+    CONSTRAINT payroll_payment_types_payment_relationship_check CHECK (((payment_relationship)::text = ANY (ARRAY[('payroll'::character varying)::text, ('comprehensive_wages'::character varying)::text, ('utilities'::character varying)::text, ('vacations'::character varying)::text, ('social_benefits_guarantees'::character varying)::text, ('social_benefit_interests'::character varying)::text, ('liquidations'::character varying)::text, ('ticket_basket'::character varying)::text, ('kindergarten'::character varying)::text, ('special_payroll'::character varying)::text, ('others'::character varying)::text])))
 );
 
 
@@ -18549,7 +18549,7 @@ CREATE TABLE public.payroll_vacation_policies (
     old_jobs boolean DEFAULT false,
     from_year integer,
     years_for_additional_days integer DEFAULT 1,
-    CONSTRAINT payroll_vacation_policies_vacation_type_check CHECK (((vacation_type)::text = ANY ((ARRAY['collective_vacations'::character varying, 'vacation_period'::character varying])::text[])))
+    CONSTRAINT payroll_vacation_policies_vacation_type_check CHECK (((vacation_type)::text = ANY (ARRAY[('collective_vacations'::character varying)::text, ('vacation_period'::character varying)::text])))
 );
 
 
@@ -19394,7 +19394,7 @@ CREATE TABLE public.phones (
     created_at timestamp(0) without time zone,
     updated_at timestamp(0) without time zone,
     deleted_at timestamp(0) without time zone,
-    CONSTRAINT phones_type_check CHECK (((type)::text = ANY ((ARRAY['M'::character varying, 'T'::character varying, 'F'::character varying])::text[])))
+    CONSTRAINT phones_type_check CHECK (((type)::text = ANY (ARRAY[('M'::character varying)::text, ('T'::character varying)::text, ('F'::character varying)::text])))
 );
 
 
@@ -21417,7 +21417,7 @@ CREATE TABLE public.purchase_base_budgets (
     second_signature_id bigint,
     status character varying(255) DEFAULT 'WAIT'::character varying NOT NULL,
     send_notify boolean,
-    CONSTRAINT purchase_base_budgets_status_check CHECK (((status)::text = ANY ((ARRAY['WAIT'::character varying, 'QUOTED'::character varying, 'PARTIALLY_QUOTED'::character varying, 'WAIT_QUOTATION'::character varying, 'BOUGHT'::character varying])::text[])))
+    CONSTRAINT purchase_base_budgets_status_check CHECK (((status)::text = ANY (ARRAY[('WAIT'::character varying)::text, ('QUOTED'::character varying)::text, ('PARTIALLY_QUOTED'::character varying)::text, ('WAIT_QUOTATION'::character varying)::text, ('BOUGHT'::character varying)::text])))
 );
 
 
@@ -21716,7 +21716,7 @@ CREATE TABLE public.purchase_direct_hires (
     due_date text,
     hiring_number text,
     status character varying(255) DEFAULT 'WAIT'::character varying NOT NULL,
-    CONSTRAINT purchase_direct_hires_status_check CHECK (((status)::text = ANY ((ARRAY['WAIT'::character varying, 'APPROVED'::character varying])::text[])))
+    CONSTRAINT purchase_direct_hires_status_check CHECK (((status)::text = ANY (ARRAY[('WAIT'::character varying)::text, ('APPROVED'::character varying)::text])))
 );
 
 
@@ -22363,7 +22363,7 @@ CREATE TABLE public.purchase_quotations (
     orderable_type character varying(255),
     orderable_id bigint,
     date date,
-    CONSTRAINT purchase_quotations_status_check CHECK (((status)::text = ANY ((ARRAY['WAIT'::character varying, 'QUOTED'::character varying, 'APPROVED'::character varying])::text[])))
+    CONSTRAINT purchase_quotations_status_check CHECK (((status)::text = ANY (ARRAY[('WAIT'::character varying)::text, ('QUOTED'::character varying)::text, ('APPROVED'::character varying)::text])))
 );
 
 
@@ -22547,7 +22547,7 @@ CREATE TABLE public.purchase_requirements (
     first_signature_id bigint,
     second_signature_id bigint,
     requirement_type character varying(100),
-    CONSTRAINT purchase_requirements_requirement_status_check CHECK (((requirement_status)::text = ANY ((ARRAY['WAIT'::character varying, 'PROCESSED'::character varying, 'QUOTED'::character varying, 'BOUGHT'::character varying])::text[])))
+    CONSTRAINT purchase_requirements_requirement_status_check CHECK (((requirement_status)::text = ANY (ARRAY[('WAIT'::character varying)::text, ('PROCESSED'::character varying)::text, ('QUOTED'::character varying)::text, ('BOUGHT'::character varying)::text])))
 );
 
 
@@ -22743,7 +22743,7 @@ CREATE TABLE public.purchase_states (
     created_at timestamp(0) without time zone,
     updated_at timestamp(0) without time zone,
     deleted_at timestamp(0) without time zone,
-    CONSTRAINT purchase_states_type_check CHECK (((type)::text = ANY ((ARRAY['PRE'::character varying, 'PRO'::character varying, 'COM'::character varying, 'CAU'::character varying, 'PAG'::character varying])::text[])))
+    CONSTRAINT purchase_states_type_check CHECK (((type)::text = ANY (ARRAY[('PRE'::character varying)::text, ('PRO'::character varying)::text, ('COM'::character varying)::text, ('CAU'::character varying)::text, ('PAG'::character varying)::text])))
 );
 
 
@@ -22868,7 +22868,7 @@ CREATE TABLE public.purchase_supplier_objects (
     created_at timestamp(0) without time zone,
     updated_at timestamp(0) without time zone,
     deleted_at timestamp(0) without time zone,
-    CONSTRAINT purchase_supplier_objects_type_check CHECK (((type)::text = ANY ((ARRAY['B'::character varying, 'O'::character varying, 'S'::character varying])::text[])))
+    CONSTRAINT purchase_supplier_objects_type_check CHECK (((type)::text = ANY (ARRAY[('B'::character varying)::text, ('O'::character varying)::text, ('S'::character varying)::text])))
 );
 
 
@@ -23059,8 +23059,8 @@ CREATE TABLE public.purchase_suppliers (
     social_purpose character varying(255),
     accounting_account_id bigint,
     file_number character varying(255),
-    CONSTRAINT purchase_suppliers_company_type_check CHECK (((company_type)::text = ANY ((ARRAY['PU'::character varying, 'PR'::character varying])::text[]))),
-    CONSTRAINT purchase_suppliers_rnc_status_check CHECK (((rnc_status)::text = ANY ((ARRAY['INH'::character varying, 'ISH'::character varying, 'IHC'::character varying, 'NOI'::character varying])::text[])))
+    CONSTRAINT purchase_suppliers_company_type_check CHECK (((company_type)::text = ANY (ARRAY[('PU'::character varying)::text, ('PR'::character varying)::text]))),
+    CONSTRAINT purchase_suppliers_rnc_status_check CHECK (((rnc_status)::text = ANY (ARRAY[('INH'::character varying)::text, ('ISH'::character varying)::text, ('IHC'::character varying)::text, ('NOI'::character varying)::text])))
 );
 
 
@@ -25054,7 +25054,7 @@ CREATE TABLE public.warehouse_movements (
     supplier character varying(255),
     purchase_supplier_id bigint,
     general_observations text,
-    CONSTRAINT warehouse_movements_type_check CHECK (((type)::text = ANY ((ARRAY['C'::character varying, 'M'::character varying, 'V'::character varying])::text[])))
+    CONSTRAINT warehouse_movements_type_check CHECK (((type)::text = ANY (ARRAY[('C'::character varying)::text, ('M'::character varying)::text, ('V'::character varying)::text])))
 );
 
 
@@ -25978,7 +25978,7 @@ CREATE TABLE public.work_attendance_permissions (
     created_at timestamp(0) without time zone,
     updated_at timestamp(0) without time zone,
     deleted_at timestamp(0) without time zone,
-    CONSTRAINT work_attendance_permissions_status_check CHECK (((status)::text = ANY ((ARRAY['pending'::character varying, 'approved'::character varying, 'rejected'::character varying])::text[])))
+    CONSTRAINT work_attendance_permissions_status_check CHECK (((status)::text = ANY (ARRAY[('pending'::character varying)::text, ('approved'::character varying)::text, ('rejected'::character varying)::text])))
 );
 
 
@@ -36843,6 +36843,30 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 5562	App\\Models\\User	1	updated	App\\Models\\User	1	{"lock_screen":false,"updated_at":"2026-02-02 09:47:03"}	{"lock_screen":true,"updated_at":"2026-02-02 10:36:22"}	https://192.168.1.180/set-lockscreen-data	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-02 10:36:22	2026-02-02 10:36:22
 5563	App\\Models\\User	1	updated	App\\Models\\User	1	{"lock_screen":true,"updated_at":"2026-02-02 10:36:22"}	{"lock_screen":false,"updated_at":"2026-02-02 10:36:42"}	https://192.168.1.180/unlockscreen	192.168.1.180	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-02 10:36:42	2026-02-02 10:36:42
 5564	App\\Models\\User	3	updated	App\\Models\\User	3	{"lock_screen":false,"updated_at":"2026-02-02 10:27:47"}	{"lock_screen":true,"updated_at":"2026-02-02 11:01:23"}	https://192.168.1.180/set-lockscreen-data	192.168.1.106	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-02 11:01:23	2026-02-02 11:01:23
+5565	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2026-02-02 09:22:58","updated_at":"2026-02-02 10:36:42"}	{"last_login":"2026-02-03 09:53:28","updated_at":"2026-02-03 09:53:28"}	https://192.168.10.221/login	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 09:53:28	2026-02-03 09:53:28
+5566	App\\Models\\User	1	created	App\\Models\\Tax	1	[]	{"name":"Iva","description":"IVA 16%","affect_tax":false,"active":true,"id":1}	https://192.168.10.221/taxes	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 09:58:21	2026-02-03 09:58:21
+5567	App\\Models\\User	1	created	App\\Models\\HistoryTax	1	[]	{"operation_date":"2021-01-01","percentage":"16.00","tax_id":1,"updated_at":"2026-02-03 09:58:22","created_at":"2026-02-03 09:58:22","id":1}	https://192.168.10.221/taxes	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 09:58:22	2026-02-03 09:58:22
+5568	App\\Models\\User	1	created	App\\Models\\HistoryTax	2	[]	{"operation_date":"2020-01-01","percentage":"16.00","tax_id":1,"updated_at":"2026-02-03 09:58:32","created_at":"2026-02-03 09:58:32","id":2}	https://192.168.10.221/taxes/1	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 09:58:32	2026-02-03 09:58:32
+5569	App\\Models\\User	1	created	App\\Models\\TaxUnit	1	[]	{"value":"43","start_date":"2025-06-02 00:00:00","end_date":null,"active":true,"id":1}	https://192.168.10.221/tax-units	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:00:15	2026-02-03 10:00:15
+5570	App\\Models\\User	1	created	App\\Models\\CodeSetting	1	[]	{"module":"payroll","table":"payroll_staffs","field":"code","format_prefix":"PER","format_digits":"00000000","format_year":"YYYY","model":"Modules\\\\Payroll\\\\Models\\\\PayrollStaff","updated_at":"2026-02-03 10:03:32","created_at":"2026-02-03 10:03:32","id":1}	https://192.168.10.221/payroll/settings	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:03:32	2026-02-03 10:03:32
+5571	App\\Models\\User	1	created	App\\Models\\CodeSetting	2	[]	{"module":"payroll","table":"payroll_vacation_requests","field":"code","format_prefix":"VAC","format_digits":"00000000","format_year":"YYYY","model":"Modules\\\\Payroll\\\\Models\\\\PayrollVacationRequest","updated_at":"2026-02-03 10:03:32","created_at":"2026-02-03 10:03:32","id":2}	https://192.168.10.221/payroll/settings	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:03:32	2026-02-03 10:03:32
+5572	App\\Models\\User	1	created	App\\Models\\CodeSetting	3	[]	{"module":"payroll","table":"payroll_benefits_requests","field":"code","format_prefix":"PRE","format_digits":"00000000","format_year":"YYYY","model":"Modules\\\\Payroll\\\\Models\\\\PayrollBenefitsRequest","updated_at":"2026-02-03 10:03:32","created_at":"2026-02-03 10:03:32","id":3}	https://192.168.10.221/payroll/settings	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:03:32	2026-02-03 10:03:32
+5573	App\\Models\\User	1	created	App\\Models\\CodeSetting	4	[]	{"module":"payroll","table":"payrolls","field":"code","format_prefix":"NOM","format_digits":"00000000","format_year":"YYYY","model":"Modules\\\\Payroll\\\\Models\\\\Payroll","updated_at":"2026-02-03 10:03:32","created_at":"2026-02-03 10:03:32","id":4}	https://192.168.10.221/payroll/settings	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:03:32	2026-02-03 10:03:32
+5574	App\\Models\\User	1	created	App\\Models\\CodeSetting	5	[]	{"module":"payroll","table":"payroll_salary_scales","field":"code","format_prefix":"ESC","format_digits":"00000000","format_year":"YYYY","model":"Modules\\\\Payroll\\\\Models\\\\PayrollSalaryScale","updated_at":"2026-02-03 10:03:32","created_at":"2026-02-03 10:03:32","id":5}	https://192.168.10.221/payroll/settings	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:03:32	2026-02-03 10:03:32
+5575	App\\Models\\User	1	created	App\\Models\\CodeSetting	6	[]	{"module":"payroll","table":"payroll_salary_tabulators","field":"code","format_prefix":"TAB","format_digits":"00000000","format_year":"YYYY","model":"Modules\\\\Payroll\\\\Models\\\\PayrollSalaryTabulator","updated_at":"2026-02-03 10:03:32","created_at":"2026-02-03 10:03:32","id":6}	https://192.168.10.221/payroll/settings	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:03:32	2026-02-03 10:03:32
+5576	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\Parameter	8	{"p_value":"16","updated_at":"2026-02-02 09:16:36"}	{"p_value":"18","updated_at":"2026-02-03 10:03:43"}	https://192.168.10.221/payroll/update-report-parameters	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:03:43	2026-02-03 10:03:43
+5577	App\\Models\\User	1	updated	Modules\\Payroll\\Models\\Parameter	12	{"p_value":"true","updated_at":"2026-02-02 09:16:36"}	{"p_value":"false","updated_at":"2026-02-03 10:03:51"}	https://192.168.10.221/payroll/update-report-parameters	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:03:51	2026-02-03 10:03:51
+5578	App\\Models\\User	1	created	App\\Models\\Department	1	[]	{"institution_id":"1","parent_id":null,"acronym":"Gob","name":"Gobierno Bolivariano Del Estado Trujillo","active":true,"hierarchy":0,"id":1}	https://192.168.10.221/departments	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:06:22	2026-02-03 10:06:22
+5579	App\\Models\\User	1	created	App\\Models\\Department	2	[]	{"institution_id":"1","parent_id":"1","acronym":"Pre","name":"Presidencia","active":true,"hierarchy":0,"id":2}	https://192.168.10.221/departments	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:07:24	2026-02-03 10:07:24
+5580	App\\Models\\User	1	updated	App\\Models\\Department	2	{"name":"Presidencia","hierarchy":0}	{"name":"Presidente","hierarchy":1}	https://192.168.10.221/departments/2	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:14:17	2026-02-03 10:14:17
+5581	App\\Models\\User	1	created	App\\Models\\Department	3	[]	{"institution_id":"1","parent_id":"2","acronym":"Vice","name":"Vicepresidente","active":false,"hierarchy":0,"id":3}	https://192.168.10.221/departments	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:15:14	2026-02-03 10:15:14
+5582	App\\Models\\User	1	updated	App\\Models\\Department	3	{"active":false,"parent_id":2}	{"active":true,"parent_id":null}	https://192.168.10.221/departments/3	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:15:43	2026-02-03 10:15:43
+5583	App\\Models\\User	1	updated	App\\Models\\Department	3	{"parent_id":null}	{"parent_id":"2"}	https://192.168.10.221/departments/3	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:16:02	2026-02-03 10:16:02
+5584	App\\Models\\User	1	created	App\\Models\\Department	4	[]	{"institution_id":"1","parent_id":"3","acronym":"Dir","name":"Director Admijnstrativo","active":true,"hierarchy":0,"id":4}	https://192.168.10.221/departments	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:17:00	2026-02-03 10:17:00
+5585	App\\Models\\User	1	created	App\\Models\\Department	5	[]	{"institution_id":"1","parent_id":"4","acronym":"Adm","name":"Departamento de Administracion","active":true,"hierarchy":0,"id":5}	https://192.168.10.221/departments	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:17:36	2026-02-03 10:17:36
+5586	App\\Models\\User	1	updated	App\\Models\\Department	4	{"name":"Director Admijnstrativo","hierarchy":0}	{"name":"Director Administrativo","hierarchy":1}	https://192.168.10.221/departments/4	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:18:29	2026-02-03 10:18:29
+5587	App\\Models\\User	1	created	App\\Models\\Department	6	[]	{"institution_id":"1","parent_id":"4","acronym":"Pro","name":"Departamento de Produccion y Comercializacion","active":true,"hierarchy":1,"id":6}	https://192.168.10.221/departments	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:19:20	2026-02-03 10:19:20
+5588	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollPosition	1	[]	{"name":"Abogado I","description":null,"number_positions_assigned":"1","responsible":false,"process_type":null,"updated_at":"2026-02-03 10:29:02","created_at":"2026-02-03 10:29:02","id":1}	https://192.168.10.221/payroll/positions	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-03 10:29:02	2026-02-03 10:29:02
 \.
 
 
@@ -39629,6 +39653,12 @@ COPY public.citizen_service_transaction_types (id, name, description, created_at
 --
 
 COPY public.code_settings (id, module, model, "table", field, active, format_prefix, format_digits, format_year, description, type, created_at, updated_at, deleted_at) FROM stdin;
+1	payroll	Modules\\Payroll\\Models\\PayrollStaff	payroll_staffs	code	t	PER	00000000	YYYY	\N	\N	2026-02-03 10:03:32	2026-02-03 10:03:32	\N
+2	payroll	Modules\\Payroll\\Models\\PayrollVacationRequest	payroll_vacation_requests	code	t	VAC	00000000	YYYY	\N	\N	2026-02-03 10:03:32	2026-02-03 10:03:32	\N
+3	payroll	Modules\\Payroll\\Models\\PayrollBenefitsRequest	payroll_benefits_requests	code	t	PRE	00000000	YYYY	\N	\N	2026-02-03 10:03:32	2026-02-03 10:03:32	\N
+4	payroll	Modules\\Payroll\\Models\\Payroll	payrolls	code	t	NOM	00000000	YYYY	\N	\N	2026-02-03 10:03:32	2026-02-03 10:03:32	\N
+5	payroll	Modules\\Payroll\\Models\\PayrollSalaryScale	payroll_salary_scales	code	t	ESC	00000000	YYYY	\N	\N	2026-02-03 10:03:32	2026-02-03 10:03:32	\N
+6	payroll	Modules\\Payroll\\Models\\PayrollSalaryTabulator	payroll_salary_tabulators	code	t	TAB	00000000	YYYY	\N	\N	2026-02-03 10:03:32	2026-02-03 10:03:32	\N
 \.
 
 
@@ -39671,6 +39701,12 @@ COPY public.deductions (id, name, description, formula, active, accounting_accou
 --
 
 COPY public.departments (id, name, acronym, hierarchy, issue_requests, active, administrative, parent_id, institution_id, created_at, updated_at, deleted_at) FROM stdin;
+1	Gobierno Bolivariano Del Estado Trujillo	Gob	0	t	t	f	\N	1	2026-02-03 10:06:22	2026-02-03 10:06:22	\N
+2	Presidente	Pre	1	t	t	f	1	1	2026-02-03 10:07:24	2026-02-03 10:14:17	\N
+3	Vicepresidente	Vice	0	t	t	f	2	1	2026-02-03 10:15:14	2026-02-03 10:16:02	\N
+5	Departamento de Administracion	Adm	0	t	t	f	4	1	2026-02-03 10:17:36	2026-02-03 10:17:36	\N
+4	Director Administrativo	Dir	1	t	t	f	3	1	2026-02-03 10:17:00	2026-02-03 10:18:29	\N
+6	Departamento de Produccion y Comercializacion	Pro	1	t	t	f	4	1	2026-02-03 10:19:20	2026-02-03 10:19:20	\N
 \.
 
 
@@ -39944,6 +39980,8 @@ COPY public.headquarters (id, name, created_at, updated_at, deleted_at, rif, add
 --
 
 COPY public.history_taxes (id, operation_date, percentage, tax_id, created_at, updated_at, deleted_at) FROM stdin;
+1	2021-01-01	16.00	1	2026-02-03 09:58:22	2026-02-03 09:58:22	\N
+2	2020-01-01	16.00	1	2026-02-03 09:58:32	2026-02-03 09:58:32	\N
 \.
 
 
@@ -41283,6 +41321,26 @@ c5c71032-e5ee-4c6b-87e4-d7920cb9a8f1	App\\Notifications\\SystemNotification	App\
 31b442da-e44f-4111-94c5-0abde06a1467	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Sector de Organizaci\\u00f3n creado(a)","message":"Se realiz\\u00f3 un registro de datos en Sector de Organizaci\\u00f3n","currentTimestamp":"2026-02-02T14:14:24.824638Z"}	\N	2026-02-02 10:14:25	2026-02-02 10:14:25
 8d4db62e-2003-41d2-9dc1-d5df49015741	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Organizaci\\u00f3n actualizado(a)","message":"Se realiz\\u00f3 una actualizaci\\u00f3n de datos en Organizaci\\u00f3n","currentTimestamp":"2026-02-02T14:15:40.246257Z"}	\N	2026-02-02 10:15:40	2026-02-02 10:15:40
 2829ad27-0473-4c7b-ba22-21abea39c2ce	App\\Notifications\\UserRegistered	App\\Models\\User	3	{"title":"Modificar contrase\\u00f1a","module":null,"message":"Bienvenido al sistema, recuerde modificar su contrase\\u00f1a en el primer acceso"}	\N	2026-02-02 10:19:06	2026-02-02 10:19:06
+37e9da31-26a9-49ed-97c8-53f50d9f6280	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Impuesto creado(a)","message":"Se realiz\\u00f3 un registro de datos en Impuesto","currentTimestamp":"2026-02-03T13:58:21.882653Z"}	\N	2026-02-03 09:58:23	2026-02-03 09:58:23
+a10ddb1e-0a03-48f8-95e3-39bfbfa2a7f8	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Hist\\u00f3rico de impuesto creado(a)","message":"Se realiz\\u00f3 un registro de datos en Hist\\u00f3rico de impuesto","currentTimestamp":"2026-02-03T13:58:22.153139Z"}	\N	2026-02-03 09:58:23	2026-02-03 09:58:23
+8246a1f3-a539-4b00-bcf0-843d1623abf4	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Hist\\u00f3rico de impuesto creado(a)","message":"Se realiz\\u00f3 un registro de datos en Hist\\u00f3rico de impuesto","currentTimestamp":"2026-02-03T13:58:32.494588Z"}	\N	2026-02-03 09:58:33	2026-02-03 09:58:33
+ed61c744-95a3-449c-8961-f52604aa1613	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Unidad Tributaria creado(a)","message":"Se realiz\\u00f3 un registro de datos en Unidad Tributaria","currentTimestamp":"2026-02-03T14:00:15.901264Z"}	\N	2026-02-03 10:00:18	2026-02-03 10:00:18
+2b3aab6a-ee8d-426d-8275-22c08a16c204	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Configuraci\\u00f3n de c\\u00f3digo creado(a)","message":"Se realiz\\u00f3 un registro de datos en Configuraci\\u00f3n de c\\u00f3digo","currentTimestamp":"2026-02-03T14:03:32.153298Z"}	\N	2026-02-03 10:03:33	2026-02-03 10:03:33
+7b7e0438-7334-4f52-a6f9-47e9006450b1	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Configuraci\\u00f3n de c\\u00f3digo creado(a)","message":"Se realiz\\u00f3 un registro de datos en Configuraci\\u00f3n de c\\u00f3digo","currentTimestamp":"2026-02-03T14:03:32.206189Z"}	\N	2026-02-03 10:03:34	2026-02-03 10:03:34
+73e9cba7-89ae-4ce1-b0ed-4862d76c5bc9	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Configuraci\\u00f3n de c\\u00f3digo creado(a)","message":"Se realiz\\u00f3 un registro de datos en Configuraci\\u00f3n de c\\u00f3digo","currentTimestamp":"2026-02-03T14:03:32.265040Z"}	\N	2026-02-03 10:03:34	2026-02-03 10:03:34
+42f4b974-8e2d-48af-bd22-2013a27015c9	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Configuraci\\u00f3n de c\\u00f3digo creado(a)","message":"Se realiz\\u00f3 un registro de datos en Configuraci\\u00f3n de c\\u00f3digo","currentTimestamp":"2026-02-03T14:03:32.319324Z"}	\N	2026-02-03 10:03:34	2026-02-03 10:03:34
+28518a5e-382e-44a1-a13c-25e80f04503a	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Configuraci\\u00f3n de c\\u00f3digo creado(a)","message":"Se realiz\\u00f3 un registro de datos en Configuraci\\u00f3n de c\\u00f3digo","currentTimestamp":"2026-02-03T14:03:32.376077Z"}	\N	2026-02-03 10:03:34	2026-02-03 10:03:34
+39142ea0-8c20-4917-9a29-89372572a1d3	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Configuraci\\u00f3n de c\\u00f3digo creado(a)","message":"Se realiz\\u00f3 un registro de datos en Configuraci\\u00f3n de c\\u00f3digo","currentTimestamp":"2026-02-03T14:03:32.427212Z"}	\N	2026-02-03 10:03:34	2026-02-03 10:03:34
+7b92ea3d-759b-44ca-b57c-fc9044c501f8	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Departamento creado(a)","message":"Se realiz\\u00f3 un registro de datos en Departamento","currentTimestamp":"2026-02-03T14:06:22.342221Z"}	\N	2026-02-03 10:06:22	2026-02-03 10:06:22
+54508af3-4c01-4bf8-ba01-a33e7955b21c	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Departamento creado(a)","message":"Se realiz\\u00f3 un registro de datos en Departamento","currentTimestamp":"2026-02-03T14:07:24.255843Z"}	\N	2026-02-03 10:07:25	2026-02-03 10:07:25
+a250f2e6-cfe3-479f-89d3-9fea23994e1b	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Departamento actualizado(a)","message":"Se realiz\\u00f3 una actualizaci\\u00f3n de datos en Departamento","currentTimestamp":"2026-02-03T14:14:17.151719Z"}	\N	2026-02-03 10:14:17	2026-02-03 10:14:17
+053d3bb8-927d-4410-9497-1ece6145d07e	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Departamento creado(a)","message":"Se realiz\\u00f3 un registro de datos en Departamento","currentTimestamp":"2026-02-03T14:15:14.881921Z"}	\N	2026-02-03 10:15:17	2026-02-03 10:15:17
+4ad7f33c-4ef5-482b-8d8f-cb27e6756b5c	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Departamento actualizado(a)","message":"Se realiz\\u00f3 una actualizaci\\u00f3n de datos en Departamento","currentTimestamp":"2026-02-03T14:15:43.474193Z"}	\N	2026-02-03 10:15:44	2026-02-03 10:15:44
+8c0fe003-dace-4efd-80ae-fd6b1de51184	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Departamento actualizado(a)","message":"Se realiz\\u00f3 una actualizaci\\u00f3n de datos en Departamento","currentTimestamp":"2026-02-03T14:16:02.549120Z"}	\N	2026-02-03 10:16:03	2026-02-03 10:16:03
+2f1ffbe0-7a2d-4db6-b8f9-3ff88b18442d	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Departamento creado(a)","message":"Se realiz\\u00f3 un registro de datos en Departamento","currentTimestamp":"2026-02-03T14:17:00.986836Z"}	\N	2026-02-03 10:17:03	2026-02-03 10:17:03
+8f691bae-398b-4452-b4d5-b7c93b0c91b4	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Departamento creado(a)","message":"Se realiz\\u00f3 un registro de datos en Departamento","currentTimestamp":"2026-02-03T14:17:36.316560Z"}	\N	2026-02-03 10:17:36	2026-02-03 10:17:36
+eaf3f4d4-80d7-41f0-aac5-830343bda437	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Departamento actualizado(a)","message":"Se realiz\\u00f3 una actualizaci\\u00f3n de datos en Departamento","currentTimestamp":"2026-02-03T14:18:29.483100Z"}	\N	2026-02-03 10:18:30	2026-02-03 10:18:30
+2965c35f-a428-4c50-b47e-0db0e10ffd3e	App\\Notifications\\SystemNotification	App\\Models\\User	1	{"title":"Departamento creado(a)","message":"Se realiz\\u00f3 un registro de datos en Departamento","currentTimestamp":"2026-02-03T14:19:20.889395Z"}	\N	2026-02-03 10:19:21	2026-02-03 10:19:21
 \.
 
 
@@ -41298,13 +41356,13 @@ COPY public.parameters (id, p_key, p_value, required_by, active, created_at, upd
 5	multi_institution	false	core	t	2026-02-02 09:16:19	2026-02-02 09:16:19	\N
 6	digital_sign	false	core	t	2026-02-02 09:16:19	2026-02-02 09:16:19	\N
 7	online	true	core	t	2026-02-02 09:16:19	2026-02-02 09:16:19	\N
-8	work_age	16	payroll	t	2026-02-02 09:16:36	2026-02-02 09:16:36	\N
 9	global_parameter_1	{"id":1,"name":"Numero de lunes del mes","description":"<p>variable de tipo reiniciable a cero por periodo de n\\u00f3mina, que representa el n\\u00famero de lunes del mes<\\/p>","parameter_type":"resettable_variable","percentage":false,"value":"","formula":""}	payroll	t	2026-02-02 09:16:36	2026-02-02 09:16:36	\N
 10	number_decimals	2	payroll	t	2026-02-02 09:16:36	2026-02-02 09:16:36	\N
 11	round	true	payroll	t	2026-02-02 09:16:36	2026-02-02 09:16:36	\N
-12	zero_concept	true	payroll	t	2026-02-02 09:16:36	2026-02-02 09:16:36	\N
 13	max_digits	2	payroll	t	2026-02-02 09:16:36	2026-02-02 09:16:36	\N
 14	process_documents	[{"id":"1","title":"Firmas personales y compa\\u00f1\\u00edas an\\u00f3nimas","documents":{"1":"Acta Constitutiva(Registro Mercantil) y sus Modificaciones. Publicaci\\u00f3n","2":"Registro de Informaci\\u00f3n Fiscal Actualizado","3":"C\\u00e9dula de Identidad del Representante Legal de La Empresa","4":"Balance de Apertura para las Empresas Recientemente Constituidas","5":"Balance General al Cierre del Ejercicio Econ\\u00f3mico Financiero Anterior, al momento de presentar la documentaci\\u00f3n","6":"Inscripci\\u00f3n en el Registro Nacional de Contratista","7":"Solvencia Laboral ante el IVSS"}},{"id":"2","title":"Asociaciones cooperativas","documents":{"1":"Acta Constitutiva y sus Modificaciones","2":"RIF Actualizado","3":"Certificado del Fiel Cumplimiento(SUNACOOP)","4":"Balance de Apertura para Empresas Recientemente Constituidas","5":"Balance General al Cierre del Ejercicio Econ\\u00f3mico Financiero Anterior","6":"C\\u00e9dula de Identidad de los Integrantes de la Junta Directiva de La Empresa","7":"Inscripci\\u00f3n en el Registro Nacional de Contratista","8":"Solvencia del Seguro Social y Solvencia Laboral"}}]	purchase	t	2026-02-02 09:16:45	2026-02-02 09:16:45	\N
+8	work_age	18	payroll	t	2026-02-02 09:16:36	2026-02-03 10:03:43	\N
+12	zero_concept	false	payroll	t	2026-02-02 09:16:36	2026-02-03 10:03:51	\N
 \.
 
 
@@ -42877,6 +42935,7 @@ COPY public.payroll_position_types (id, name, description, created_at, updated_a
 --
 
 COPY public.payroll_positions (id, name, description, created_at, updated_at, deleted_at, number_positions_assigned, responsible, process_type) FROM stdin;
+1	Abogado I	\N	2026-02-03 10:29:02	2026-02-03 10:29:02	\N	1	f	\N
 \.
 
 
@@ -45112,6 +45171,7 @@ COPY public.permissions (id, name, slug, description, model, model_prefix, slug_
 254	Rechazar solicitud de vacaciones	payroll.vacation.requests.rejected	Acceso para Rechazar solicitudes de vacaciones	Modules\\Payroll\\Models\\PayrollVacationRequest	Talento Humano	solicitud.vacaciones.rechazar		2026-02-02 09:16:31	2026-02-02 09:16:31
 255	Ver solicitudes de suspensión de vacaciones	payroll.suspension.vacation.requests.list	Acceso para ver solicitudes de suspensión de vacaciones	Modules\\Payroll\\Models\\PayrollSuspensionVacationRequest	Talento Humano	solicitud.suspension.vacaciones.ver		2026-02-02 09:16:31	2026-02-02 09:16:31
 256	Crear solicitudes de suspensión de vacaciones	payroll.suspension.vacation.requests.create	Acceso para crear solicitudes de suspensión de vacaciones	Modules\\Payroll\\Models\\PayrollSuspensionVacationRequest	Talento Humano	solicitud.suspension.vacaciones.crear		2026-02-02 09:16:31	2026-02-02 09:16:31
+348	Crear hoja de tiempo	payroll.timesheet.create	Acceso para crear hoja de tiempo	Modules\\Payroll\\Models\\PayrollTimeSheet	Talento Humano	hoja.tiempo.crear		2026-02-02 09:16:34	2026-02-02 09:16:34
 257	Modificar solicitudes de suspensión de vacaciones	payroll.suspension.vacation.requests.edit	Acceso para modificar registro las solicitudes de suspensión de vacaciones	Modules\\Payroll\\Models\\PayrollSuspensionVacationRequest	Talento Humano	solicitud.suspension.vacaciones.editar		2026-02-02 09:16:31	2026-02-02 09:16:31
 258	Eliminar solicitudes de suspensión de vacaciones	payroll.suspension.vacation.requests.delete	Acceso para eliminar solicitudes de suspensión de vacaciones	Modules\\Payroll\\Models\\PayrollSuspensionVacationRequest	Talento Humano	solicitud.suspension.vacaciones.eliminar		2026-02-02 09:16:31	2026-02-02 09:16:31
 259	Aprobar solicitud de suspensión de vacaciones	payroll.suspension.vacation.requests.approved	Acceso para aprobar solicitudes de suspensión de vacaciones	Modules\\Payroll\\Models\\PayrollSuspensionVacationRequest	Talento Humano	solicitud.suspension.vacaciones.aprobar		2026-02-02 09:16:31	2026-02-02 09:16:31
@@ -45203,7 +45263,6 @@ COPY public.permissions (id, name, slug, description, model, model_prefix, slug_
 345	Generar reporte presupuestario de nómina	payroll.budget.report.getbudgetaccountingreport	Acceso para generar reporte presupuestario de nómina	Modules\\Payroll\\Models\\PayrollTextFileController	Talento Humano	reporte.presupuestario.crear		2026-02-02 09:16:34	2026-02-02 09:16:34
 346	Solicitar disponibilidad presupuestaria (nómina)	payroll.availability.request	Acceso para solicitar disponibilidad presupuestaria (nómina)	Modules\\Payroll\\Models\\PayrollController	Talento Humano	disponiblidad.presupuestaria.solicitar		2026-02-02 09:16:34	2026-02-02 09:16:34
 347	Listar hoja de tiempo	payroll.timesheet.index	Acceso para listar hoja de tiempo	Modules\\Payroll\\Models\\PayrollTimeSheet	Talento Humano	hoja.tiempo.listar		2026-02-02 09:16:34	2026-02-02 09:16:34
-348	Crear hoja de tiempo	payroll.timesheet.create	Acceso para crear hoja de tiempo	Modules\\Payroll\\Models\\PayrollTimeSheet	Talento Humano	hoja.tiempo.crear		2026-02-02 09:16:34	2026-02-02 09:16:34
 349	Modificar hoja de tiempo	payroll.timesheet.edit	Acceso para modificar registro hoja de tiempo	Modules\\Payroll\\Models\\PayrollTimeSheet	Talento Humano	hoja.tiempo.editar		2026-02-02 09:16:34	2026-02-02 09:16:34
 350	Eliminar hoja de tiempo	payroll.timesheet.delete	Acceso para eliminar hoja de tiempo	Modules\\Payroll\\Models\\PayrollTimeSheet	Talento Humano	hoja.tiempo.eliminar		2026-02-02 09:16:34	2026-02-02 09:16:34
 351	Aprobar hoja de tiempo	payroll.timesheet.approve	Acceso para aprobar hoja de tiempo	Modules\\Payroll\\Models\\PayrollTimeSheet	Talento Humano	hoja.tiempo.aprobar		2026-02-02 09:16:34	2026-02-02 09:16:34
@@ -45430,6 +45489,7 @@ COPY public.permissions (id, name, slug, description, model, model_prefix, slug_
 572	Crear registro de cuenta patrimonial	accounting.account.create	Acceso para Crear registro cuenta patrimonial	Modules\\Accounting\\Models\\AccountingAccount	contabilidad	cuentas_patrimoniales.crear	agregar cuentas patrimoniales	2026-02-02 09:17:07	2026-02-02 09:17:07
 573	Modificar registro de cuenta patrimonial	accounting.account.edit	Acceso para Modificar registro cuenta patrimonial	Modules\\Accounting\\Models\\AccountingAccount	contabilidad	cuentas_patrimoniales.editar	editar cuentas patrimoniales	2026-02-02 09:17:07	2026-02-02 09:17:07
 574	Eliminar registro de cuenta patrimonial	accounting.account.delete	Acceso para eliminar cuenta patrimonial	Modules\\Accounting\\Models\\AccountingAccount	contabilidad	cuentas_patrimoniales.eliminar	eliminar cuentas patrimoniales	2026-02-02 09:17:07	2026-02-02 09:17:07
+664	Crear registro de  Ajustes de bienes	asset.adjustment.create	Acceso al registro de Ajustes de bienes		bienes	adjustment.crear	agregar Ajustes de bienes	2026-02-02 09:17:23	2026-02-02 09:17:23
 575	Visualizar registro convertidor de cuentas	accounting.converter.index	Acceso para Visualizar registro conversiones	Modules\\Accounting\\Models\\Accountable	contabilidad	conversion.ver	Visualizar registro conversion	2026-02-02 09:17:07	2026-02-02 09:17:07
 576	Crear registro nueva conversión	accounting.converter.create	Acceso para crear registro nuevas conversiones	Modules\\Accounting\\Models\\Accountable	contabilidad	conversion.crear	agregar conversion	2026-02-02 09:17:07	2026-02-02 09:17:07
 577	Modificar registro de conversiones	accounting.converter.edit	Acceso para editar registro conversiones	Modules\\Accounting\\Models\\Accountable	contabilidad	conversion.editar	editar conversion	2026-02-02 09:17:07	2026-02-02 09:17:07
@@ -45519,7 +45579,6 @@ COPY public.permissions (id, name, slug, description, model, model_prefix, slug_
 661	Modificar registro de  Método de Depreciación	asset.depreciation.method.edit	Acceso para editar  Método de Depreciación		bienes	depreciation.method.editar	editar  Método de Depreciación	2026-02-02 09:17:22	2026-02-02 09:17:22
 662	Eliminar registro de Método de Depreciación	asset.depreciation.method.delete	Acceso para eliminar  Método de Depreciación		bienes	depreciation.method.eliminar	eliminar  Método de Depreciación	2026-02-02 09:17:22	2026-02-02 09:17:22
 663	Configuración de Ajustes de bienes	asset.adjustment.index	Acceso a la configuración de Ajustes de bienes		bienes	configuracion.bienes.adjustment	configuración de Ajustes de bienes	2026-02-02 09:17:23	2026-02-02 09:17:23
-664	Crear registro de  Ajustes de bienes	asset.adjustment.create	Acceso al registro de Ajustes de bienes		bienes	adjustment.crear	agregar Ajustes de bienes	2026-02-02 09:17:23	2026-02-02 09:17:23
 665	Modificar registro de Ajustes de bienes	asset.adjustment.edit	Acceso para editar Ajustes de bienes		bienes	adjustment.editar	editar Ajustes de bienes	2026-02-02 09:17:23	2026-02-02 09:17:23
 666	Eliminar registro de Ajustes de bienes	asset.adjustment.delete	Acceso para eliminar Ajustes de bienes		bienes	adjustment.eliminar	eliminar Ajustes de bienes	2026-02-02 09:17:23	2026-02-02 09:17:23
 667	Crear registro de Tipos de Adquisición	asset.acquisition.type.create	Acceso al registro de  Tipos de Adquisición		bienes	acquisition.type.crear	agregar  Tipos de Adquisición	2026-02-02 09:17:23	2026-02-02 09:17:23
@@ -66070,6 +66129,7 @@ COPY public.sources (id, sourceable_type, sourceable_id, receiver_id, created_at
 --
 
 COPY public.tax_units (id, value, start_date, end_date, active, deleted_at, created_at, updated_at) FROM stdin;
+1	43	2025-06-02	\N	t	\N	2026-02-03 10:00:15	2026-02-03 10:00:15
 \.
 
 
@@ -66078,6 +66138,7 @@ COPY public.tax_units (id, value, start_date, end_date, active, deleted_at, crea
 --
 
 COPY public.taxes (id, name, description, affect_tax, active, created_at, updated_at, deleted_at) FROM stdin;
+1	Iva	IVA 16%	f	t	2026-02-03 09:58:21	2026-02-03 09:58:21	\N
 \.
 
 
@@ -66119,8 +66180,8 @@ COPY public.typeables (id, project_tracking_type_products_id, typeable_id, typea
 
 COPY public.users (id, name, email, username, password, level, last_login, lock_screen, time_lock, sign_public_key, active, email_verified_at, blocked_at, remember_token, created_at, updated_at, deleted_at) FROM stdin;
 2	Usuario de prueba	user@kavac-testing.com	user	$2y$10$GsNP69a37yjfa4sq9n.0au35zeZ8oNgrZku70fvarlBYWVai1S87O	2	\N	f	10	\N	t	2026-02-02 09:16:17	\N	\N	2026-02-02 09:16:17	2026-02-02 09:16:17	\N
-1	eduardo	edujosepeolms@gmail.com	eduardo	$2y$10$08TZMwhkK.edhvzw8x3.fOucvfN6sn34koJzPyvW1KQh711F.khFe	1	2026-02-02 09:22:58	f	10	\N	t	2026-02-02 09:16:15	\N	\N	2026-02-02 09:16:15	2026-02-02 10:36:42	\N
 3	Jose Luis	joseluisolmos59@gmail.com	joseluis	$2y$10$VJwyO6L/.9NYQtH1hQ0Ogevosi/GFVqKQl.VAql91RTTLzGIegMyG	0	2026-02-02 10:27:47	t	10	\N	t	2026-02-02 10:26:19	\N	\N	2026-02-02 10:19:03	2026-02-02 11:01:23	\N
+1	eduardo	edujosepeolms@gmail.com	eduardo	$2y$10$08TZMwhkK.edhvzw8x3.fOucvfN6sn34koJzPyvW1KQh711F.khFe	1	2026-02-03 09:53:28	f	10	\N	t	2026-02-02 09:16:15	\N	\N	2026-02-02 09:16:15	2026-02-03 09:53:28	\N
 \.
 
 
@@ -66621,7 +66682,7 @@ SELECT pg_catalog.setval('public.assets_id_seq', 1, false);
 -- Name: audits_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.audits_id_seq', 5564, true);
+SELECT pg_catalog.setval('public.audits_id_seq', 5588, true);
 
 
 --
@@ -66894,7 +66955,7 @@ SELECT pg_catalog.setval('public.citizen_service_transaction_types_id_seq', 1, f
 -- Name: code_settings_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.code_settings_id_seq', 1, false);
+SELECT pg_catalog.setval('public.code_settings_id_seq', 6, true);
 
 
 --
@@ -66929,7 +66990,7 @@ SELECT pg_catalog.setval('public.deductions_id_seq', 1, false);
 -- Name: departments_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.departments_id_seq', 1, false);
+SELECT pg_catalog.setval('public.departments_id_seq', 6, true);
 
 
 --
@@ -67111,7 +67172,7 @@ SELECT pg_catalog.setval('public.headquarters_id_seq', 1, false);
 -- Name: history_taxes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.history_taxes_id_seq', 1, false);
+SELECT pg_catalog.setval('public.history_taxes_id_seq', 2, true);
 
 
 --
@@ -67146,7 +67207,7 @@ SELECT pg_catalog.setval('public.institutions_id_seq', 1, true);
 -- Name: jobs_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.jobs_id_seq', 18, true);
+SELECT pg_catalog.setval('public.jobs_id_seq', 78, true);
 
 
 --
@@ -67538,7 +67599,7 @@ SELECT pg_catalog.setval('public.payroll_position_types_id_seq', 1, false);
 -- Name: payroll_positions_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.payroll_positions_id_seq', 1, false);
+SELECT pg_catalog.setval('public.payroll_positions_id_seq', 1, true);
 
 
 --
@@ -68336,14 +68397,14 @@ SELECT pg_catalog.setval('public.sources_id_seq', 1, false);
 -- Name: tax_units_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.tax_units_id_seq', 1, false);
+SELECT pg_catalog.setval('public.tax_units_id_seq', 1, true);
 
 
 --
 -- Name: taxes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.taxes_id_seq', 1, false);
+SELECT pg_catalog.setval('public.taxes_id_seq', 1, true);
 
 
 --
@@ -76849,5 +76910,5 @@ ALTER TABLE ONLY public.work_attendances
 -- PostgreSQL database dump complete
 --
 
-\unrestrict rmo21vfRSQL0fTMokpU4ZhMTnd2FCAQM3bqUbZe5fAndTEDLzPUwQ8Ct0QdGWhM
+\unrestrict kRzveGP5zj1gxaeBjLIyqDfdrLsZ3J7bB8a9fibVyIyk5jtefpjP3XbkOcO28Af
 
