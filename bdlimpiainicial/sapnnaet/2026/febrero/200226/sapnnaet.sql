@@ -2,10 +2,10 @@
 -- PostgreSQL database dump
 --
 
-\restrict GkOnqIK7DFeM5oIX3fQ7Gcgpe8KeGkadi7aHxtQukg3aBtagmbtgQepFi7eYIDU
+\restrict FyBoO2ED4AzpXdRFZIEceDuaY8wc8iVkdoL0zgOT33YOotMpFv9XTyoPxbuJMOI
 
--- Dumped from database version 15.15 (Debian 15.15-0+deb12u1)
--- Dumped by pg_dump version 15.15 (Debian 15.15-0+deb12u1)
+-- Dumped from database version 16.11 (Ubuntu 16.11-0ubuntu0.24.04.1)
+-- Dumped by pg_dump version 16.11 (Ubuntu 16.11-0ubuntu0.24.04.1)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -651,7 +651,7 @@ CREATE VIEW public.payroll_staff_filter_parameters_view AS
   GROUP BY employment.payroll_staff_id, workload.hours, employment.start_date, professional.payroll_instruction_degree_id, employment.payroll_position_type_id;
 
 
-ALTER TABLE public.payroll_staff_filter_parameters_view OWNER TO admin;
+ALTER VIEW public.payroll_staff_filter_parameters_view OWNER TO admin;
 
 --
 -- Name: compare_parameter_function(character varying, character varying, character varying, public.payroll_staff_filter_parameters_view, integer, integer); Type: FUNCTION; Schema: public; Owner: admin
@@ -2591,7 +2591,7 @@ CREATE SEQUENCE public.accountables_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.accountables_id_seq OWNER TO admin;
+ALTER SEQUENCE public.accountables_id_seq OWNER TO admin;
 
 --
 -- Name: accountables_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -2635,7 +2635,7 @@ CREATE SEQUENCE public.accounting_account_converters_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.accounting_account_converters_id_seq OWNER TO admin;
+ALTER SEQUENCE public.accounting_account_converters_id_seq OWNER TO admin;
 
 --
 -- Name: accounting_account_converters_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -2790,7 +2790,7 @@ CREATE SEQUENCE public.accounting_accounts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.accounting_accounts_id_seq OWNER TO admin;
+ALTER SEQUENCE public.accounting_accounts_id_seq OWNER TO admin;
 
 --
 -- Name: accounting_accounts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -2909,7 +2909,7 @@ CREATE SEQUENCE public.accounting_entries_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.accounting_entries_id_seq OWNER TO admin;
+ALTER SEQUENCE public.accounting_entries_id_seq OWNER TO admin;
 
 --
 -- Name: accounting_entries_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -2977,7 +2977,7 @@ CREATE SEQUENCE public.accounting_entry_accounts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.accounting_entry_accounts_id_seq OWNER TO admin;
+ALTER SEQUENCE public.accounting_entry_accounts_id_seq OWNER TO admin;
 
 --
 -- Name: accounting_entry_accounts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3036,7 +3036,7 @@ CREATE SEQUENCE public.accounting_entry_categories_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.accounting_entry_categories_id_seq OWNER TO admin;
+ALTER SEQUENCE public.accounting_entry_categories_id_seq OWNER TO admin;
 
 --
 -- Name: accounting_entry_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3081,7 +3081,7 @@ CREATE SEQUENCE public.accounting_entryables_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.accounting_entryables_id_seq OWNER TO admin;
+ALTER SEQUENCE public.accounting_entryables_id_seq OWNER TO admin;
 
 --
 -- Name: accounting_entryables_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3128,7 +3128,7 @@ CREATE SEQUENCE public.accounting_report_histories_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.accounting_report_histories_id_seq OWNER TO admin;
+ALTER SEQUENCE public.accounting_report_histories_id_seq OWNER TO admin;
 
 --
 -- Name: accounting_report_histories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3186,7 +3186,7 @@ CREATE SEQUENCE public.accounting_type_activities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.accounting_type_activities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.accounting_type_activities_id_seq OWNER TO admin;
 
 --
 -- Name: accounting_type_activities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3243,7 +3243,7 @@ CREATE SEQUENCE public.asset_acquisition_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_acquisition_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_acquisition_types_id_seq OWNER TO admin;
 
 --
 -- Name: asset_acquisition_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3326,7 +3326,7 @@ CREATE SEQUENCE public.asset_adjustment_assets_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_adjustment_assets_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_adjustment_assets_id_seq OWNER TO admin;
 
 --
 -- Name: asset_adjustment_assets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3377,7 +3377,7 @@ CREATE SEQUENCE public.asset_asignation_assets_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_asignation_assets_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_asignation_assets_id_seq OWNER TO admin;
 
 --
 -- Name: asset_asignation_assets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3454,7 +3454,7 @@ CREATE SEQUENCE public.asset_asignation_deliveries_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_asignation_deliveries_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_asignation_deliveries_id_seq OWNER TO admin;
 
 --
 -- Name: asset_asignation_deliveries_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3545,7 +3545,7 @@ CREATE SEQUENCE public.asset_asignations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_asignations_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_asignations_id_seq OWNER TO admin;
 
 --
 -- Name: asset_asignations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3603,7 +3603,7 @@ CREATE SEQUENCE public.asset_books_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_books_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_books_id_seq OWNER TO admin;
 
 --
 -- Name: asset_books_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3662,7 +3662,7 @@ CREATE SEQUENCE public.asset_buildings_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_buildings_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_buildings_id_seq OWNER TO admin;
 
 --
 -- Name: asset_buildings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3728,7 +3728,7 @@ CREATE SEQUENCE public.asset_categories_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_categories_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_categories_id_seq OWNER TO admin;
 
 --
 -- Name: asset_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3785,7 +3785,7 @@ CREATE SEQUENCE public.asset_conditions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_conditions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_conditions_id_seq OWNER TO admin;
 
 --
 -- Name: asset_conditions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3868,7 +3868,7 @@ CREATE SEQUENCE public.asset_depreciation_assets_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_depreciation_assets_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_depreciation_assets_id_seq OWNER TO admin;
 
 --
 -- Name: asset_depreciation_assets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -3942,7 +3942,7 @@ CREATE SEQUENCE public.asset_depreciation_methods_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_depreciation_methods_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_depreciation_methods_id_seq OWNER TO admin;
 
 --
 -- Name: asset_depreciation_methods_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4010,7 +4010,7 @@ CREATE SEQUENCE public.asset_depreciations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_depreciations_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_depreciations_id_seq OWNER TO admin;
 
 --
 -- Name: asset_depreciations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4061,7 +4061,7 @@ CREATE SEQUENCE public.asset_disincorporation_assets_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_disincorporation_assets_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_disincorporation_assets_id_seq OWNER TO admin;
 
 --
 -- Name: asset_disincorporation_assets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4118,7 +4118,7 @@ CREATE SEQUENCE public.asset_disincorporation_motives_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_disincorporation_motives_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_disincorporation_motives_id_seq OWNER TO admin;
 
 --
 -- Name: asset_disincorporation_motives_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4205,7 +4205,7 @@ CREATE SEQUENCE public.asset_disincorporations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_disincorporations_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_disincorporations_id_seq OWNER TO admin;
 
 --
 -- Name: asset_disincorporations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4264,7 +4264,7 @@ CREATE SEQUENCE public.asset_floors_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_floors_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_floors_id_seq OWNER TO admin;
 
 --
 -- Name: asset_floors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4331,7 +4331,7 @@ CREATE SEQUENCE public.asset_institution_storages_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_institution_storages_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_institution_storages_id_seq OWNER TO admin;
 
 --
 -- Name: asset_institution_storages_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4420,7 +4420,7 @@ CREATE SEQUENCE public.asset_inventories_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_inventories_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_inventories_id_seq OWNER TO admin;
 
 --
 -- Name: asset_inventories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4495,7 +4495,7 @@ CREATE SEQUENCE public.asset_inventory_assets_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_inventory_assets_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_inventory_assets_id_seq OWNER TO admin;
 
 --
 -- Name: asset_inventory_assets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4624,7 +4624,7 @@ CREATE SEQUENCE public.asset_reports_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_reports_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_reports_id_seq OWNER TO admin;
 
 --
 -- Name: asset_reports_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4675,7 +4675,7 @@ CREATE SEQUENCE public.asset_request_assets_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_request_assets_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_request_assets_id_seq OWNER TO admin;
 
 --
 -- Name: asset_request_assets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4742,7 +4742,7 @@ CREATE SEQUENCE public.asset_request_deliveries_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_request_deliveries_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_request_deliveries_id_seq OWNER TO admin;
 
 --
 -- Name: asset_request_deliveries_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4816,7 +4816,7 @@ CREATE SEQUENCE public.asset_request_events_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_request_events_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_request_events_id_seq OWNER TO admin;
 
 --
 -- Name: asset_request_events_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -4883,7 +4883,7 @@ CREATE SEQUENCE public.asset_request_extensions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_request_extensions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_request_extensions_id_seq OWNER TO admin;
 
 --
 -- Name: asset_request_extensions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5010,7 +5010,7 @@ CREATE SEQUENCE public.asset_requests_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_requests_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_requests_id_seq OWNER TO admin;
 
 --
 -- Name: asset_requests_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5077,7 +5077,7 @@ CREATE SEQUENCE public.asset_rules_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_rules_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_rules_id_seq OWNER TO admin;
 
 --
 -- Name: asset_rules_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5137,7 +5137,7 @@ CREATE SEQUENCE public.asset_sections_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_sections_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_sections_id_seq OWNER TO admin;
 
 --
 -- Name: asset_sections_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5203,7 +5203,7 @@ CREATE SEQUENCE public.asset_specific_categories_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_specific_categories_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_specific_categories_id_seq OWNER TO admin;
 
 --
 -- Name: asset_specific_categories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5260,7 +5260,7 @@ CREATE SEQUENCE public.asset_status_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_status_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_status_id_seq OWNER TO admin;
 
 --
 -- Name: asset_status_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5334,7 +5334,7 @@ CREATE SEQUENCE public.asset_storages_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_storages_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_storages_id_seq OWNER TO admin;
 
 --
 -- Name: asset_storages_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5402,7 +5402,7 @@ CREATE SEQUENCE public.asset_subcategories_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_subcategories_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_subcategories_id_seq OWNER TO admin;
 
 --
 -- Name: asset_subcategories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5459,7 +5459,7 @@ CREATE SEQUENCE public.asset_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_types_id_seq OWNER TO admin;
 
 --
 -- Name: asset_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5516,7 +5516,7 @@ CREATE SEQUENCE public.asset_use_functions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.asset_use_functions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.asset_use_functions_id_seq OWNER TO admin;
 
 --
 -- Name: asset_use_functions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5621,7 +5621,7 @@ CREATE SEQUENCE public.assets_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.assets_id_seq OWNER TO admin;
+ALTER SEQUENCE public.assets_id_seq OWNER TO admin;
 
 --
 -- Name: assets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5666,7 +5666,7 @@ CREATE SEQUENCE public.audits_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.audits_id_seq OWNER TO admin;
+ALTER SEQUENCE public.audits_id_seq OWNER TO admin;
 
 --
 -- Name: audits_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5838,7 +5838,7 @@ CREATE SEQUENCE public.budget_account_opens_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_account_opens_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_account_opens_id_seq OWNER TO admin;
 
 --
 -- Name: budget_account_opens_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -5992,7 +5992,7 @@ CREATE SEQUENCE public.budget_accounts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_accounts_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_accounts_id_seq OWNER TO admin;
 
 --
 -- Name: budget_accounts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -6059,7 +6059,7 @@ CREATE SEQUENCE public.budget_aditional_credit_accounts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_aditional_credit_accounts_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_aditional_credit_accounts_id_seq OWNER TO admin;
 
 --
 -- Name: budget_aditional_credit_accounts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -6134,7 +6134,7 @@ CREATE SEQUENCE public.budget_aditional_credits_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_aditional_credits_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_aditional_credits_id_seq OWNER TO admin;
 
 --
 -- Name: budget_aditional_credits_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -6249,7 +6249,7 @@ CREATE SEQUENCE public.budget_centralized_actions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_centralized_actions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_centralized_actions_id_seq OWNER TO admin;
 
 --
 -- Name: budget_centralized_actions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -6295,7 +6295,7 @@ CREATE SEQUENCE public.budget_component_manager_histories_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_component_manager_histories_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_component_manager_histories_id_seq OWNER TO admin;
 
 --
 -- Name: budget_component_manager_histories_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -6374,7 +6374,7 @@ CREATE SEQUENCE public.budget_compromise_details_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_compromise_details_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_compromise_details_id_seq OWNER TO admin;
 
 --
 -- Name: budget_compromise_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -6454,7 +6454,7 @@ CREATE SEQUENCE public.budget_compromises_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_compromises_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_compromises_id_seq OWNER TO admin;
 
 --
 -- Name: budget_compromises_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -6505,7 +6505,7 @@ CREATE SEQUENCE public.budget_financement_sources_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_financement_sources_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_financement_sources_id_seq OWNER TO admin;
 
 --
 -- Name: budget_financement_sources_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -6555,7 +6555,7 @@ CREATE SEQUENCE public.budget_financement_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_financement_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_financement_types_id_seq OWNER TO admin;
 
 --
 -- Name: budget_financement_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -6624,7 +6624,7 @@ CREATE SEQUENCE public.budget_modification_accounts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_modification_accounts_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_modification_accounts_id_seq OWNER TO admin;
 
 --
 -- Name: budget_modification_accounts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -6726,7 +6726,7 @@ CREATE SEQUENCE public.budget_modifications_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_modifications_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_modifications_id_seq OWNER TO admin;
 
 --
 -- Name: budget_modifications_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -6841,7 +6841,7 @@ CREATE SEQUENCE public.budget_projects_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_projects_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_projects_id_seq OWNER TO admin;
 
 --
 -- Name: budget_projects_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -6933,7 +6933,7 @@ CREATE SEQUENCE public.budget_specific_actions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_specific_actions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_specific_actions_id_seq OWNER TO admin;
 
 --
 -- Name: budget_specific_actions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7009,7 +7009,7 @@ CREATE SEQUENCE public.budget_stages_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_stages_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_stages_id_seq OWNER TO admin;
 
 --
 -- Name: budget_stages_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7120,7 +7120,7 @@ CREATE SEQUENCE public.budget_sub_specific_formulations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.budget_sub_specific_formulations_id_seq OWNER TO admin;
+ALTER SEQUENCE public.budget_sub_specific_formulations_id_seq OWNER TO admin;
 
 --
 -- Name: budget_sub_specific_formulations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7193,7 +7193,7 @@ CREATE SEQUENCE public.cities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.cities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.cities_id_seq OWNER TO admin;
 
 --
 -- Name: cities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7245,7 +7245,7 @@ CREATE SEQUENCE public.citizen_service_add_indicators_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_add_indicators_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_add_indicators_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_add_indicators_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7296,7 +7296,7 @@ CREATE SEQUENCE public.citizen_service_communal_councils_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_communal_councils_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_communal_councils_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_communal_councils_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7347,7 +7347,7 @@ CREATE SEQUENCE public.citizen_service_communes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_communes_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_communes_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_communes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7415,7 +7415,7 @@ CREATE SEQUENCE public.citizen_service_communities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_communities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_communities_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_communities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7476,7 +7476,7 @@ CREATE SEQUENCE public.citizen_service_community_institutions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_community_institutions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_community_institutions_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_community_institutions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7559,7 +7559,7 @@ CREATE SEQUENCE public.citizen_service_community_profilings_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_community_profilings_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_community_profilings_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_community_profilings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7642,7 +7642,7 @@ CREATE SEQUENCE public.citizen_service_contact_books_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_contact_books_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_contact_books_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_contact_books_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7702,7 +7702,7 @@ CREATE SEQUENCE public.citizen_service_departments_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_departments_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_departments_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_departments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7767,7 +7767,7 @@ CREATE SEQUENCE public.citizen_service_effect_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_effect_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_effect_types_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_effect_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7833,7 +7833,7 @@ CREATE SEQUENCE public.citizen_service_indicators_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_indicators_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_indicators_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_indicators_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7891,7 +7891,7 @@ CREATE SEQUENCE public.citizen_service_procedure_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_procedure_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_procedure_types_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_procedure_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -7950,7 +7950,7 @@ CREATE SEQUENCE public.citizen_service_procedures_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_procedures_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_procedures_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_procedures_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -8057,7 +8057,7 @@ CREATE SEQUENCE public.citizen_service_registers_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_registers_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_registers_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_registers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -8131,7 +8131,7 @@ CREATE SEQUENCE public.citizen_service_reports_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_reports_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_reports_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_reports_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -8191,7 +8191,7 @@ CREATE SEQUENCE public.citizen_service_request_teams_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_request_teams_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_request_teams_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_request_teams_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -8257,7 +8257,7 @@ CREATE SEQUENCE public.citizen_service_request_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_request_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_request_types_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_request_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -8687,7 +8687,7 @@ CREATE SEQUENCE public.citizen_service_requests_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_requests_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_requests_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_requests_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -8753,7 +8753,7 @@ CREATE SEQUENCE public.citizen_service_served_institutions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_served_institutions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_served_institutions_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_served_institutions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -8818,7 +8818,7 @@ CREATE SEQUENCE public.citizen_service_transaction_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.citizen_service_transaction_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.citizen_service_transaction_types_id_seq OWNER TO admin;
 
 --
 -- Name: citizen_service_transaction_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -8941,7 +8941,7 @@ CREATE SEQUENCE public.code_settings_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.code_settings_id_seq OWNER TO admin;
+ALTER SEQUENCE public.code_settings_id_seq OWNER TO admin;
 
 --
 -- Name: code_settings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -8987,7 +8987,7 @@ CREATE SEQUENCE public.contacts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.contacts_id_seq OWNER TO admin;
+ALTER SEQUENCE public.contacts_id_seq OWNER TO admin;
 
 --
 -- Name: contacts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9052,7 +9052,7 @@ CREATE SEQUENCE public.countries_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.countries_id_seq OWNER TO admin;
+ALTER SEQUENCE public.countries_id_seq OWNER TO admin;
 
 --
 -- Name: countries_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9135,7 +9135,7 @@ CREATE SEQUENCE public.currencies_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.currencies_id_seq OWNER TO admin;
+ALTER SEQUENCE public.currencies_id_seq OWNER TO admin;
 
 --
 -- Name: currencies_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9210,7 +9210,7 @@ CREATE SEQUENCE public.deductions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.deductions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.deductions_id_seq OWNER TO admin;
 
 --
 -- Name: deductions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9309,7 +9309,7 @@ CREATE SEQUENCE public.departments_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.departments_id_seq OWNER TO admin;
+ALTER SEQUENCE public.departments_id_seq OWNER TO admin;
 
 --
 -- Name: departments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9391,7 +9391,7 @@ CREATE SEQUENCE public.document_status_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.document_status_id_seq OWNER TO admin;
+ALTER SEQUENCE public.document_status_id_seq OWNER TO admin;
 
 --
 -- Name: document_status_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9508,7 +9508,7 @@ CREATE SEQUENCE public.documents_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.documents_id_seq OWNER TO admin;
+ALTER SEQUENCE public.documents_id_seq OWNER TO admin;
 
 --
 -- Name: documents_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9544,7 +9544,7 @@ CREATE SEQUENCE public.estate_region_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.estate_region_id_seq OWNER TO admin;
+ALTER SEQUENCE public.estate_region_id_seq OWNER TO admin;
 
 --
 -- Name: estate_region_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9610,7 +9610,7 @@ CREATE SEQUENCE public.estates_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.estates_id_seq OWNER TO admin;
+ALTER SEQUENCE public.estates_id_seq OWNER TO admin;
 
 --
 -- Name: estates_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9700,7 +9700,7 @@ CREATE SEQUENCE public.exchange_rates_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.exchange_rates_id_seq OWNER TO admin;
+ALTER SEQUENCE public.exchange_rates_id_seq OWNER TO admin;
 
 --
 -- Name: exchange_rates_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9738,7 +9738,7 @@ CREATE SEQUENCE public.failed_jobs_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.failed_jobs_id_seq OWNER TO admin;
+ALTER SEQUENCE public.failed_jobs_id_seq OWNER TO admin;
 
 --
 -- Name: failed_jobs_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9789,7 +9789,7 @@ CREATE SEQUENCE public.failed_login_attempts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.failed_login_attempts_id_seq OWNER TO admin;
+ALTER SEQUENCE public.failed_login_attempts_id_seq OWNER TO admin;
 
 --
 -- Name: failed_login_attempts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9847,7 +9847,7 @@ CREATE SEQUENCE public.finance_account_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_account_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_account_types_id_seq OWNER TO admin;
 
 --
 -- Name: finance_account_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -9924,7 +9924,7 @@ CREATE SEQUENCE public.finance_bank_accounts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_bank_accounts_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_bank_accounts_id_seq OWNER TO admin;
 
 --
 -- Name: finance_bank_accounts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -10008,7 +10008,7 @@ CREATE SEQUENCE public.finance_banking_agencies_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_banking_agencies_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_banking_agencies_id_seq OWNER TO admin;
 
 --
 -- Name: finance_banking_agencies_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -10109,7 +10109,7 @@ CREATE SEQUENCE public.finance_banking_movements_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_banking_movements_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_banking_movements_id_seq OWNER TO admin;
 
 --
 -- Name: finance_banking_movements_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -10191,7 +10191,7 @@ CREATE SEQUENCE public.finance_banks_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_banks_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_banks_id_seq OWNER TO admin;
 
 --
 -- Name: finance_banks_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -10266,7 +10266,7 @@ CREATE SEQUENCE public.finance_check_books_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_check_books_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_check_books_id_seq OWNER TO admin;
 
 --
 -- Name: finance_check_books_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -10342,7 +10342,7 @@ CREATE SEQUENCE public.finance_conciliation_bank_movements_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_conciliation_bank_movements_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_conciliation_bank_movements_id_seq OWNER TO admin;
 
 --
 -- Name: finance_conciliation_bank_movements_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -10449,7 +10449,7 @@ CREATE SEQUENCE public.finance_conciliations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_conciliations_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_conciliations_id_seq OWNER TO admin;
 
 --
 -- Name: finance_conciliations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -10507,7 +10507,7 @@ CREATE SEQUENCE public.finance_pay_order_finance_payment_execute_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_pay_order_finance_payment_execute_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_pay_order_finance_payment_execute_id_seq OWNER TO admin;
 
 --
 -- Name: finance_pay_order_finance_payment_execute_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -10692,7 +10692,7 @@ CREATE SEQUENCE public.finance_pay_orders_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_pay_orders_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_pay_orders_id_seq OWNER TO admin;
 
 --
 -- Name: finance_pay_orders_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -10792,7 +10792,7 @@ CREATE SEQUENCE public.finance_payment_deductions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_payment_deductions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_payment_deductions_id_seq OWNER TO admin;
 
 --
 -- Name: finance_payment_deductions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -10890,7 +10890,7 @@ CREATE SEQUENCE public.finance_payment_execute_ivas_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_payment_execute_ivas_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_payment_execute_ivas_id_seq OWNER TO admin;
 
 --
 -- Name: finance_payment_execute_ivas_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -11062,7 +11062,7 @@ CREATE SEQUENCE public.finance_payment_executes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_payment_executes_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_payment_executes_id_seq OWNER TO admin;
 
 --
 -- Name: finance_payment_executes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -11120,7 +11120,7 @@ CREATE SEQUENCE public.finance_payment_methods_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_payment_methods_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_payment_methods_id_seq OWNER TO admin;
 
 --
 -- Name: finance_payment_methods_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -11274,7 +11274,7 @@ CREATE SEQUENCE public.finance_setting_bank_reconciliation_files_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.finance_setting_bank_reconciliation_files_id_seq OWNER TO admin;
+ALTER SEQUENCE public.finance_setting_bank_reconciliation_files_id_seq OWNER TO admin;
 
 --
 -- Name: finance_setting_bank_reconciliation_files_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -11357,7 +11357,7 @@ CREATE SEQUENCE public.fiscal_years_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.fiscal_years_id_seq OWNER TO admin;
+ALTER SEQUENCE public.fiscal_years_id_seq OWNER TO admin;
 
 --
 -- Name: fiscal_years_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -11407,7 +11407,7 @@ CREATE SEQUENCE public.genders_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.genders_id_seq OWNER TO admin;
+ALTER SEQUENCE public.genders_id_seq OWNER TO admin;
 
 --
 -- Name: genders_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -11483,7 +11483,7 @@ CREATE SEQUENCE public.headquarters_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.headquarters_id_seq OWNER TO admin;
+ALTER SEQUENCE public.headquarters_id_seq OWNER TO admin;
 
 --
 -- Name: headquarters_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -11549,7 +11549,7 @@ CREATE SEQUENCE public.history_taxes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.history_taxes_id_seq OWNER TO admin;
+ALTER SEQUENCE public.history_taxes_id_seq OWNER TO admin;
 
 --
 -- Name: history_taxes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -11620,7 +11620,7 @@ CREATE SEQUENCE public.images_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.images_id_seq OWNER TO admin;
+ALTER SEQUENCE public.images_id_seq OWNER TO admin;
 
 --
 -- Name: images_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -11677,7 +11677,7 @@ CREATE SEQUENCE public.institution_sectors_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.institution_sectors_id_seq OWNER TO admin;
+ALTER SEQUENCE public.institution_sectors_id_seq OWNER TO admin;
 
 --
 -- Name: institution_sectors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -11742,7 +11742,7 @@ CREATE SEQUENCE public.institution_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.institution_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.institution_types_id_seq OWNER TO admin;
 
 --
 -- Name: institution_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -11963,7 +11963,7 @@ CREATE SEQUENCE public.institutions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.institutions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.institutions_id_seq OWNER TO admin;
 
 --
 -- Name: institutions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12001,7 +12001,7 @@ CREATE SEQUENCE public.jobs_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.jobs_id_seq OWNER TO admin;
+ALTER SEQUENCE public.jobs_id_seq OWNER TO admin;
 
 --
 -- Name: jobs_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12053,7 +12053,7 @@ CREATE SEQUENCE public.localities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.localities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.localities_id_seq OWNER TO admin;
 
 --
 -- Name: localities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12110,7 +12110,7 @@ CREATE SEQUENCE public.marital_status_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.marital_status_id_seq OWNER TO admin;
+ALTER SEQUENCE public.marital_status_id_seq OWNER TO admin;
 
 --
 -- Name: marital_status_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12176,7 +12176,7 @@ CREATE SEQUENCE public.measurement_units_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.measurement_units_id_seq OWNER TO admin;
+ALTER SEQUENCE public.measurement_units_id_seq OWNER TO admin;
 
 --
 -- Name: measurement_units_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12211,7 +12211,7 @@ CREATE SEQUENCE public.migrations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.migrations_id_seq OWNER TO admin;
+ALTER SEQUENCE public.migrations_id_seq OWNER TO admin;
 
 --
 -- Name: migrations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12277,7 +12277,7 @@ CREATE SEQUENCE public.municipalities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.municipalities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.municipalities_id_seq OWNER TO admin;
 
 --
 -- Name: municipalities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12322,7 +12322,7 @@ CREATE SEQUENCE public.notification_setting_user_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.notification_setting_user_id_seq OWNER TO admin;
+ALTER SEQUENCE public.notification_setting_user_id_seq OWNER TO admin;
 
 --
 -- Name: notification_setting_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12428,7 +12428,7 @@ CREATE SEQUENCE public.notification_settings_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.notification_settings_id_seq OWNER TO admin;
+ALTER SEQUENCE public.notification_settings_id_seq OWNER TO admin;
 
 --
 -- Name: notification_settings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12520,7 +12520,7 @@ CREATE SEQUENCE public.parameters_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.parameters_id_seq OWNER TO admin;
+ALTER SEQUENCE public.parameters_id_seq OWNER TO admin;
 
 --
 -- Name: parameters_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12586,7 +12586,7 @@ CREATE SEQUENCE public.parishes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.parishes_id_seq OWNER TO admin;
+ALTER SEQUENCE public.parishes_id_seq OWNER TO admin;
 
 --
 -- Name: parishes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12665,7 +12665,7 @@ CREATE SEQUENCE public.payroll_acknowledgment_files_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_acknowledgment_files_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_acknowledgment_files_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_acknowledgment_files_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12715,7 +12715,7 @@ CREATE SEQUENCE public.payroll_acknowledgments_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_acknowledgments_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_acknowledgments_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_acknowledgments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12797,7 +12797,7 @@ CREATE SEQUENCE public.payroll_age_groups_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_age_groups_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_age_groups_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_age_groups_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12842,7 +12842,7 @@ CREATE SEQUENCE public.payroll_arc_responsibles_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_arc_responsibles_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_arc_responsibles_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_arc_responsibles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -12909,7 +12909,7 @@ CREATE SEQUENCE public.payroll_ari_registers_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_ari_registers_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_ari_registers_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_ari_registers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -13079,7 +13079,7 @@ CREATE SEQUENCE public.payroll_benefits_policies_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_benefits_policies_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_benefits_policies_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_benefits_policies_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -13184,7 +13184,7 @@ CREATE SEQUENCE public.payroll_benefits_requests_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_benefits_requests_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_benefits_requests_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_benefits_requests_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -13234,7 +13234,7 @@ CREATE SEQUENCE public.payroll_blood_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_blood_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_blood_types_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_blood_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -13284,7 +13284,7 @@ CREATE SEQUENCE public.payroll_class_schedules_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_class_schedules_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_class_schedules_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_class_schedules_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -13350,7 +13350,7 @@ CREATE SEQUENCE public.payroll_classification_parameter_payroll_time_sheet_para_
     CACHE 1;
 
 
-ALTER TABLE public.payroll_classification_parameter_payroll_time_sheet_para_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_classification_parameter_payroll_time_sheet_para_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_classification_parameter_payroll_time_sheet_para_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -13402,7 +13402,7 @@ CREATE SEQUENCE public.payroll_classification_parameter_time_sheet_orders_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_classification_parameter_time_sheet_orders_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_classification_parameter_time_sheet_orders_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_classification_parameter_time_sheet_orders_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -13447,7 +13447,7 @@ CREATE SEQUENCE public.payroll_classification_parameters_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_classification_parameters_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_classification_parameters_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_classification_parameters_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -13516,7 +13516,7 @@ CREATE SEQUENCE public.payroll_concept_assign_options_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_concept_assign_options_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_concept_assign_options_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_concept_assign_options_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -13674,15 +13674,15 @@ COMMENT ON COLUMN public.payroll_concepts.formula_show_history IS 'Historial de 
 --
 
 CREATE VIEW public.payroll_global_parameters_view AS
- SELECT ((p.p_value)::jsonb ->> 'id'::text) AS id,
-    ((p.p_value)::jsonb ->> 'parameter_type'::text) AS type,
-    ((p.p_value)::jsonb ->> 'name'::text) AS name,
-    ((p.p_value)::jsonb ->> 'value'::text) AS value
+ SELECT ((p_value)::jsonb ->> 'id'::text) AS id,
+    ((p_value)::jsonb ->> 'parameter_type'::text) AS type,
+    ((p_value)::jsonb ->> 'name'::text) AS name,
+    ((p_value)::jsonb ->> 'value'::text) AS value
    FROM public.parameters p
-  WHERE (((p.required_by)::text = 'payroll'::text) AND (p.active = true) AND ((p.p_key)::text ~~ ('global_parameter_'::text || '%'::text)));
+  WHERE (((required_by)::text = 'payroll'::text) AND (active = true) AND ((p_key)::text ~~ ('global_parameter_'::text || '%'::text)));
 
 
-ALTER TABLE public.payroll_global_parameters_view OWNER TO admin;
+ALTER VIEW public.payroll_global_parameters_view OWNER TO admin;
 
 --
 -- Name: payroll_concept_parameters_view; Type: VIEW; Schema: public; Owner: admin
@@ -13699,7 +13699,7 @@ CREATE VIEW public.payroll_concept_parameters_view AS
      JOIN public.payroll_global_parameters_view parameters ON ((public.get_expanded_formula(concepts.formula) ~~ (('%parameter('::text || parameters.id) || ')%'::text))));
 
 
-ALTER TABLE public.payroll_concept_parameters_view OWNER TO admin;
+ALTER VIEW public.payroll_concept_parameters_view OWNER TO admin;
 
 --
 -- Name: payroll_concept_payment_type; Type: TABLE; Schema: public; Owner: admin
@@ -13749,7 +13749,7 @@ CREATE SEQUENCE public.payroll_concept_payment_type_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_concept_payment_type_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_concept_payment_type_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_concept_payment_type_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -13865,7 +13865,7 @@ CREATE VIEW public.payroll_concept_tabulators_view AS
      JOIN public.payroll_salary_tabulators tabulator ON ((public.get_expanded_formula(concepts.formula) ~~ (('%tabulator('::text || tabulator.id) || ')%'::text))));
 
 
-ALTER TABLE public.payroll_concept_tabulators_view OWNER TO admin;
+ALTER VIEW public.payroll_concept_tabulators_view OWNER TO admin;
 
 --
 -- Name: payroll_concept_types; Type: TABLE; Schema: public; Owner: admin
@@ -13924,7 +13924,7 @@ CREATE SEQUENCE public.payroll_concept_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_concept_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_concept_types_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_concept_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -13945,7 +13945,7 @@ CREATE SEQUENCE public.payroll_concepts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_concepts_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_concepts_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_concepts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -13995,7 +13995,7 @@ CREATE SEQUENCE public.payroll_contract_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_contract_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_contract_types_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_contract_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14054,7 +14054,7 @@ CREATE SEQUENCE public.payroll_coordinations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_coordinations_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_coordinations_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_coordinations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14120,7 +14120,7 @@ CREATE SEQUENCE public.payroll_course_files_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_course_files_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_course_files_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_course_files_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14170,7 +14170,7 @@ CREATE SEQUENCE public.payroll_courses_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_courses_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_courses_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_courses_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14228,7 +14228,7 @@ CREATE SEQUENCE public.payroll_disabilities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_disabilities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_disabilities_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_disabilities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14249,7 +14249,7 @@ CREATE SEQUENCE public.payroll_employment_payroll_position_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_employment_payroll_position_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_employment_payroll_position_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_employment_payroll_position_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14270,7 +14270,7 @@ CREATE SEQUENCE public.payroll_employments_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_employments_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_employments_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_employments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14314,7 +14314,7 @@ CREATE SEQUENCE public.payroll_exception_type_time_sheet_parameters_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_exception_type_time_sheet_parameters_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_exception_type_time_sheet_parameters_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_exception_type_time_sheet_parameters_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14382,7 +14382,7 @@ CREATE SEQUENCE public.payroll_exception_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_exception_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_exception_types_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_exception_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14403,7 +14403,7 @@ CREATE SEQUENCE public.payroll_family_burdens_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_family_burdens_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_family_burdens_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_family_burdens_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14456,7 +14456,7 @@ CREATE SEQUENCE public.payroll_financials_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_financials_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_financials_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_financials_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14503,7 +14503,7 @@ CREATE SEQUENCE public.payroll_guard_scheme_periods_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_guard_scheme_periods_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_guard_scheme_periods_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_guard_scheme_periods_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14557,7 +14557,7 @@ CREATE SEQUENCE public.payroll_guard_schemes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_guard_schemes_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_guard_schemes_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_guard_schemes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14623,7 +14623,7 @@ CREATE SEQUENCE public.payroll_holidays_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_holidays_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_holidays_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_holidays_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14673,7 +14673,7 @@ CREATE SEQUENCE public.payroll_inactivity_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_inactivity_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_inactivity_types_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_inactivity_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14731,7 +14731,7 @@ CREATE SEQUENCE public.payroll_instruction_degrees_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_instruction_degrees_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_instruction_degrees_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_instruction_degrees_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14752,7 +14752,7 @@ CREATE SEQUENCE public.payroll_lang_prof_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_lang_prof_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_lang_prof_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_lang_prof_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14802,7 +14802,7 @@ CREATE SEQUENCE public.payroll_language_levels_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_language_levels_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_language_levels_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_language_levels_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14860,7 +14860,7 @@ CREATE SEQUENCE public.payroll_languages_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_languages_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_languages_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_languages_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14918,7 +14918,7 @@ CREATE SEQUENCE public.payroll_license_degrees_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_license_degrees_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_license_degrees_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_license_degrees_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -14969,7 +14969,7 @@ CREATE SEQUENCE public.payroll_nationalities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_nationalities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_nationalities_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_nationalities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15036,7 +15036,7 @@ CREATE SEQUENCE public.payroll_organizations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_organizations_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_organizations_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_organizations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15080,7 +15080,7 @@ CREATE SEQUENCE public.payroll_parameter_time_sheet_parameters_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_parameter_time_sheet_parameters_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_parameter_time_sheet_parameters_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_parameter_time_sheet_parameters_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15194,7 +15194,7 @@ CREATE SEQUENCE public.payroll_payment_periods_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_payment_periods_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_payment_periods_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_payment_periods_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15238,7 +15238,7 @@ CREATE SEQUENCE public.payroll_payment_type_time_sheet_parameters_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_payment_type_time_sheet_parameters_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_payment_type_time_sheet_parameters_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_payment_type_time_sheet_parameters_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15405,7 +15405,7 @@ CREATE SEQUENCE public.payroll_payment_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_payment_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_payment_types_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_payment_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15511,7 +15511,7 @@ CREATE SEQUENCE public.payroll_permission_policies_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_permission_policies_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_permission_policies_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_permission_policies_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15605,7 +15605,7 @@ CREATE SEQUENCE public.payroll_permission_requests_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_permission_requests_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_permission_requests_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_permission_requests_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15663,7 +15663,7 @@ CREATE SEQUENCE public.payroll_position_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_position_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_position_types_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_position_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15745,7 +15745,7 @@ CREATE SEQUENCE public.payroll_positions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_positions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_positions_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_positions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15830,7 +15830,7 @@ CREATE SEQUENCE public.payroll_previous_jobs_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_previous_jobs_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_previous_jobs_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_previous_jobs_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15888,7 +15888,7 @@ CREATE SEQUENCE public.payroll_process_codes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_process_codes_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_process_codes_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_process_codes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15938,7 +15938,7 @@ CREATE SEQUENCE public.payroll_professional_profession_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_professional_profession_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_professional_profession_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_professional_profession_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15959,7 +15959,7 @@ CREATE SEQUENCE public.payroll_professionals_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_professionals_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_professionals_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_professionals_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -15980,7 +15980,7 @@ CREATE SEQUENCE public.payroll_relationships_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_relationships_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_relationships_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_relationships_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16041,7 +16041,7 @@ CREATE SEQUENCE public.payroll_reset_parameters_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_reset_parameters_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_reset_parameters_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_reset_parameters_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16095,7 +16095,7 @@ CREATE SEQUENCE public.payroll_responsibilities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_responsibilities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_responsibilities_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_responsibilities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16178,7 +16178,7 @@ CREATE SEQUENCE public.payroll_salary_adjustments_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_salary_adjustments_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_salary_adjustments_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_salary_adjustments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16276,7 +16276,7 @@ CREATE SEQUENCE public.payroll_salary_scales_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_salary_scales_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_salary_scales_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_salary_scales_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16333,7 +16333,7 @@ CREATE SEQUENCE public.payroll_salary_tabulator_payroll_staff_type_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_salary_tabulator_payroll_staff_type_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_salary_tabulator_payroll_staff_type_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_salary_tabulator_payroll_staff_type_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16414,7 +16414,7 @@ CREATE SEQUENCE public.payroll_salary_tabulator_scales_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_salary_tabulator_scales_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_salary_tabulator_scales_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_salary_tabulator_scales_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16435,7 +16435,7 @@ CREATE SEQUENCE public.payroll_salary_tabulators_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_salary_tabulators_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_salary_tabulators_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_salary_tabulators_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16502,7 +16502,7 @@ CREATE SEQUENCE public.payroll_savings_funds_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_savings_funds_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_savings_funds_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_savings_funds_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16578,7 +16578,7 @@ CREATE SEQUENCE public.payroll_scales_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_scales_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_scales_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_scales_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16636,7 +16636,7 @@ CREATE SEQUENCE public.payroll_scholarship_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_scholarship_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_scholarship_types_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_scholarship_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16694,7 +16694,7 @@ CREATE SEQUENCE public.payroll_schooling_levels_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_schooling_levels_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_schooling_levels_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_schooling_levels_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16744,7 +16744,7 @@ CREATE SEQUENCE public.payroll_sector_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_sector_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_sector_types_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_sector_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16826,7 +16826,7 @@ CREATE SEQUENCE public.payroll_seniorities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_seniorities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_seniorities_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_seniorities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16892,7 +16892,7 @@ CREATE SEQUENCE public.payroll_settlement_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_settlement_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_settlement_types_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_settlement_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16913,7 +16913,7 @@ CREATE SEQUENCE public.payroll_socioeconomics_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_socioeconomics_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_socioeconomics_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_socioeconomics_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -16957,7 +16957,7 @@ CREATE SEQUENCE public.payroll_staff_accounts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_staff_accounts_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_staff_accounts_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_staff_accounts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -17015,7 +17015,7 @@ CREATE SEQUENCE public.payroll_staff_classifications_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_staff_classifications_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_staff_classifications_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_staff_classifications_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -17096,7 +17096,7 @@ CREATE SEQUENCE public.payroll_staff_payrolls_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_staff_payrolls_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_staff_payrolls_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_staff_payrolls_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -17154,7 +17154,7 @@ CREATE SEQUENCE public.payroll_staff_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_staff_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_staff_types_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_staff_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -17213,7 +17213,7 @@ CREATE SEQUENCE public.payroll_staff_uniform_sizes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_staff_uniform_sizes_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_staff_uniform_sizes_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_staff_uniform_sizes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -17427,7 +17427,7 @@ CREATE SEQUENCE public.payroll_staffs_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_staffs_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_staffs_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_staffs_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -17502,7 +17502,7 @@ CREATE SEQUENCE public.payroll_studies_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_studies_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_studies_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_studies_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -17560,7 +17560,7 @@ CREATE SEQUENCE public.payroll_study_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_study_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_study_types_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_study_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -17618,7 +17618,7 @@ CREATE SEQUENCE public.payroll_supervised_group_staff_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_supervised_group_staff_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_supervised_group_staff_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_supervised_group_staff_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -17670,7 +17670,7 @@ CREATE SEQUENCE public.payroll_supervised_groups_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_supervised_groups_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_supervised_groups_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_supervised_groups_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -17747,7 +17747,7 @@ CREATE SEQUENCE public.payroll_survivors_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_survivors_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_survivors_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_survivors_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -17837,7 +17837,7 @@ CREATE SEQUENCE public.payroll_suspension_vacation_requests_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_suspension_vacation_requests_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_suspension_vacation_requests_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_suspension_vacation_requests_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -17887,7 +17887,7 @@ CREATE VIEW public.payroll_tabulators_view AS
   WHERE ((tabulators.deleted_at IS NULL) AND (tabulators.active = true));
 
 
-ALTER TABLE public.payroll_tabulators_view OWNER TO admin;
+ALTER VIEW public.payroll_tabulators_view OWNER TO admin;
 
 --
 -- Name: payroll_text_files; Type: TABLE; Schema: public; Owner: admin
@@ -17970,7 +17970,7 @@ CREATE SEQUENCE public.payroll_text_files_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_text_files_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_text_files_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_text_files_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -18052,7 +18052,7 @@ CREATE SEQUENCE public.payroll_time_sheet_parameters_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_time_sheet_parameters_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_time_sheet_parameters_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_time_sheet_parameters_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -18131,7 +18131,7 @@ CREATE SEQUENCE public.payroll_time_sheet_pendings_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_time_sheet_pendings_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_time_sheet_pendings_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_time_sheet_pendings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -18218,7 +18218,7 @@ CREATE SEQUENCE public.payroll_time_sheets_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_time_sheets_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_time_sheets_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_time_sheets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -18509,7 +18509,7 @@ CREATE SEQUENCE public.payroll_vacation_policies_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_vacation_policies_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_vacation_policies_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_vacation_policies_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -18553,7 +18553,7 @@ CREATE SEQUENCE public.payroll_vacation_policy_payment_concepts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_vacation_policy_payment_concepts_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_vacation_policy_payment_concepts_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_vacation_policy_payment_concepts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -18610,7 +18610,7 @@ CREATE SEQUENCE public.payroll_vacation_policy_payments_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_vacation_policy_payments_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_vacation_policy_payments_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_vacation_policy_payments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -18732,7 +18732,7 @@ CREATE SEQUENCE public.payroll_vacation_requests_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_vacation_requests_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_vacation_requests_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_vacation_requests_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -18799,7 +18799,7 @@ CREATE SEQUENCE public.payroll_wage_garnishments_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_wage_garnishments_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_wage_garnishments_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_wage_garnishments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -18820,7 +18820,7 @@ CREATE SEQUENCE public.payroll_workload_positions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_workload_positions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_workload_positions_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_workload_positions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -18841,7 +18841,7 @@ CREATE SEQUENCE public.payroll_workloads_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payroll_workloads_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payroll_workloads_id_seq OWNER TO admin;
 
 --
 -- Name: payroll_workloads_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -18954,7 +18954,7 @@ CREATE SEQUENCE public.payrolls_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.payrolls_id_seq OWNER TO admin;
+ALTER SEQUENCE public.payrolls_id_seq OWNER TO admin;
 
 --
 -- Name: payrolls_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -18990,7 +18990,7 @@ CREATE SEQUENCE public.permission_role_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.permission_role_id_seq OWNER TO admin;
+ALTER SEQUENCE public.permission_role_id_seq OWNER TO admin;
 
 --
 -- Name: permission_role_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19026,7 +19026,7 @@ CREATE SEQUENCE public.permission_user_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.permission_user_id_seq OWNER TO admin;
+ALTER SEQUENCE public.permission_user_id_seq OWNER TO admin;
 
 --
 -- Name: permission_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19088,7 +19088,7 @@ CREATE SEQUENCE public.permissions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.permissions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.permissions_id_seq OWNER TO admin;
 
 --
 -- Name: permissions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19165,7 +19165,7 @@ CREATE SEQUENCE public.phones_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.phones_id_seq OWNER TO admin;
+ALTER SEQUENCE public.phones_id_seq OWNER TO admin;
 
 --
 -- Name: phones_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19211,7 +19211,7 @@ CREATE SEQUENCE public.pivots_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.pivots_id_seq OWNER TO admin;
+ALTER SEQUENCE public.pivots_id_seq OWNER TO admin;
 
 --
 -- Name: pivots_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19276,7 +19276,7 @@ CREATE SEQUENCE public.professions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.professions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.professions_id_seq OWNER TO admin;
 
 --
 -- Name: professions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19345,7 +19345,7 @@ CREATE SEQUENCE public.profiles_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.profiles_id_seq OWNER TO admin;
+ALTER SEQUENCE public.profiles_id_seq OWNER TO admin;
 
 --
 -- Name: profiles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19435,7 +19435,7 @@ CREATE SEQUENCE public.project_tracking_activities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_activities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_activities_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_activities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19480,7 +19480,7 @@ CREATE SEQUENCE public.project_tracking_activity_plan_teams_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_activity_plan_teams_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_activity_plan_teams_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_activity_plan_teams_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19590,7 +19590,7 @@ CREATE SEQUENCE public.project_tracking_activity_plans_activity_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_activity_plans_activity_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_activity_plans_activity_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_activity_plans_activity_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19611,7 +19611,7 @@ CREATE SEQUENCE public.project_tracking_activity_plans_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_activity_plans_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_activity_plans_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_activity_plans_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19684,7 +19684,7 @@ CREATE SEQUENCE public.project_tracking_activity_statuses_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_activity_statuses_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_activity_statuses_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_activity_statuses_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19750,7 +19750,7 @@ CREATE SEQUENCE public.project_tracking_activity_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_activity_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_activity_types_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_activity_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19796,7 +19796,7 @@ CREATE SEQUENCE public.project_tracking_delivery_statuses_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_delivery_statuses_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_delivery_statuses_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_delivery_statuses_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19854,7 +19854,7 @@ CREATE SEQUENCE public.project_tracking_dependencies_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_dependencies_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_dependencies_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_dependencies_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19912,7 +19912,7 @@ CREATE SEQUENCE public.project_tracking_dependencies_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_dependencies_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_dependencies_types_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_dependencies_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -19979,7 +19979,7 @@ CREATE SEQUENCE public.project_tracking_personal_registers_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_personal_registers_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_personal_registers_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_personal_registers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20037,7 +20037,7 @@ CREATE SEQUENCE public.project_tracking_positions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_positions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_positions_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_positions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20103,7 +20103,7 @@ CREATE SEQUENCE public.project_tracking_priorities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_priorities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_priorities_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_priorities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20190,7 +20190,7 @@ CREATE SEQUENCE public.project_tracking_products_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_products_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_products_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_products_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20255,7 +20255,7 @@ CREATE SEQUENCE public.project_tracking_project_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_project_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_project_types_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_project_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20352,7 +20352,7 @@ CREATE SEQUENCE public.project_tracking_projects_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_projects_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_projects_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_projects_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20490,7 +20490,7 @@ CREATE SEQUENCE public.project_tracking_sub_projects_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_sub_projects_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_sub_projects_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_sub_projects_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20549,7 +20549,7 @@ CREATE SEQUENCE public.project_tracking_sub_tasks_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_sub_tasks_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_sub_tasks_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_sub_tasks_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20593,7 +20593,7 @@ CREATE SEQUENCE public.project_tracking_tag_task_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_tag_task_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_tag_task_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_tag_task_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20651,7 +20651,7 @@ CREATE SEQUENCE public.project_tracking_tags_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_tags_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_tags_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_tags_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20703,7 +20703,7 @@ CREATE SEQUENCE public.project_tracking_task_comments_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_task_comments_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_task_comments_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_task_comments_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20751,7 +20751,7 @@ CREATE SEQUENCE public.project_tracking_task_timers_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_task_timers_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_task_timers_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_task_timers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20886,7 +20886,7 @@ CREATE SEQUENCE public.project_tracking_tasks_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_tasks_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_tasks_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_tasks_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -20951,7 +20951,7 @@ CREATE SEQUENCE public.project_tracking_type_products_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_type_products_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_type_products_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_type_products_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21025,7 +21025,7 @@ CREATE SEQUENCE public.project_tracking_work_days_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.project_tracking_work_days_id_seq OWNER TO admin;
+ALTER SEQUENCE public.project_tracking_work_days_id_seq OWNER TO admin;
 
 --
 -- Name: project_tracking_work_days_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21046,7 +21046,7 @@ CREATE SEQUENCE public.projecttracking_staff_classifications_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.projecttracking_staff_classifications_id_seq OWNER TO admin;
+ALTER SEQUENCE public.projecttracking_staff_classifications_id_seq OWNER TO admin;
 
 --
 -- Name: projecttracking_staff_classifications_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21104,7 +21104,7 @@ CREATE SEQUENCE public.purchase_activity_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_activity_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_activity_types_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_activity_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21200,7 +21200,7 @@ CREATE SEQUENCE public.purchase_base_budgets_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_base_budgets_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_base_budgets_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_base_budgets_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21244,7 +21244,7 @@ CREATE SEQUENCE public.purchase_branch_supplier_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_branch_supplier_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_branch_supplier_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_branch_supplier_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21361,7 +21361,7 @@ CREATE SEQUENCE public.purchase_budgetary_availabilities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_budgetary_availabilities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_budgetary_availabilities_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_budgetary_availabilities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21406,7 +21406,7 @@ CREATE SEQUENCE public.purchase_common_budgetary_availabilities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_common_budgetary_availabilities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_common_budgetary_availabilities_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_common_budgetary_availabilities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21476,7 +21476,7 @@ CREATE SEQUENCE public.purchase_compromise_details_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_compromise_details_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_compromise_details_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_compromise_details_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21556,7 +21556,7 @@ CREATE SEQUENCE public.purchase_compromises_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_compromises_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_compromises_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_compromises_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21700,7 +21700,7 @@ CREATE SEQUENCE public.purchase_direct_hires_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_direct_hires_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_direct_hires_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_direct_hires_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21744,7 +21744,7 @@ CREATE SEQUENCE public.purchase_document_required_documents_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_document_required_documents_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_document_required_documents_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_document_required_documents_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21788,7 +21788,7 @@ CREATE SEQUENCE public.purchase_object_supplier_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_object_supplier_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_object_supplier_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_object_supplier_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21832,7 +21832,7 @@ CREATE SEQUENCE public.purchase_orders_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_orders_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_orders_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_orders_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21893,7 +21893,7 @@ CREATE SEQUENCE public.purchase_pivot_models_to_requirement_items_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_pivot_models_to_requirement_items_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_pivot_models_to_requirement_items_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_pivot_models_to_requirement_items_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -21961,7 +21961,7 @@ CREATE SEQUENCE public.purchase_plans_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_plans_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_plans_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_plans_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22027,7 +22027,7 @@ CREATE SEQUENCE public.purchase_priorities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_priorities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_priorities_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_priorities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22085,7 +22085,7 @@ CREATE SEQUENCE public.purchase_priority_orders_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_priority_orders_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_priority_orders_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_priority_orders_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22159,7 +22159,7 @@ CREATE SEQUENCE public.purchase_processes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_processes_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_processes_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_processes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22217,7 +22217,7 @@ CREATE SEQUENCE public.purchase_products_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_products_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_products_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_products_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22299,7 +22299,7 @@ CREATE SEQUENCE public.purchase_quotations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_quotations_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_quotations_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_quotations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22393,7 +22393,7 @@ CREATE SEQUENCE public.purchase_requirement_items_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_requirement_items_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_requirement_items_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_requirement_items_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22518,7 +22518,7 @@ CREATE SEQUENCE public.purchase_requirements_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_requirements_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_requirements_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_requirements_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22576,7 +22576,7 @@ CREATE SEQUENCE public.purchase_services_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_services_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_services_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_services_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22669,7 +22669,7 @@ CREATE SEQUENCE public.purchase_states_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_states_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_states_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_states_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22727,7 +22727,7 @@ CREATE SEQUENCE public.purchase_supplier_branches_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_supplier_branches_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_supplier_branches_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_supplier_branches_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22794,7 +22794,7 @@ CREATE SEQUENCE public.purchase_supplier_objects_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_supplier_objects_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_supplier_objects_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_supplier_objects_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22852,7 +22852,7 @@ CREATE SEQUENCE public.purchase_supplier_specialties_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_supplier_specialties_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_supplier_specialties_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_supplier_specialties_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -22902,7 +22902,7 @@ CREATE SEQUENCE public.purchase_supplier_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_supplier_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_supplier_types_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_supplier_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23057,7 +23057,7 @@ CREATE SEQUENCE public.purchase_suppliers_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_suppliers_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_suppliers_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_suppliers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23124,7 +23124,7 @@ CREATE SEQUENCE public.purchase_type_hirings_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_type_hirings_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_type_hirings_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_type_hirings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23182,7 +23182,7 @@ CREATE SEQUENCE public.purchase_type_operations_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_type_operations_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_type_operations_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_type_operations_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23256,7 +23256,7 @@ CREATE SEQUENCE public.purchase_types_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.purchase_types_id_seq OWNER TO admin;
+ALTER SEQUENCE public.purchase_types_id_seq OWNER TO admin;
 
 --
 -- Name: purchase_types_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23318,7 +23318,7 @@ CREATE SEQUENCE public.receivers_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.receivers_id_seq OWNER TO admin;
+ALTER SEQUENCE public.receivers_id_seq OWNER TO admin;
 
 --
 -- Name: receivers_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23370,7 +23370,7 @@ CREATE SEQUENCE public.regions_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.regions_id_seq OWNER TO admin;
+ALTER SEQUENCE public.regions_id_seq OWNER TO admin;
 
 --
 -- Name: regions_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23453,7 +23453,7 @@ CREATE SEQUENCE public.required_documents_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.required_documents_id_seq OWNER TO admin;
+ALTER SEQUENCE public.required_documents_id_seq OWNER TO admin;
 
 --
 -- Name: required_documents_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23489,7 +23489,7 @@ CREATE SEQUENCE public.role_user_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.role_user_id_seq OWNER TO admin;
+ALTER SEQUENCE public.role_user_id_seq OWNER TO admin;
 
 --
 -- Name: role_user_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23527,7 +23527,7 @@ CREATE SEQUENCE public.roles_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.roles_id_seq OWNER TO admin;
+ALTER SEQUENCE public.roles_id_seq OWNER TO admin;
 
 --
 -- Name: roles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23571,7 +23571,7 @@ CREATE SEQUENCE public.section_amounts_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.section_amounts_id_seq OWNER TO admin;
+ALTER SEQUENCE public.section_amounts_id_seq OWNER TO admin;
 
 --
 -- Name: section_amounts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23692,7 +23692,7 @@ CREATE SEQUENCE public.settings_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.settings_id_seq OWNER TO admin;
+ALTER SEQUENCE public.settings_id_seq OWNER TO admin;
 
 --
 -- Name: settings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23759,7 +23759,7 @@ CREATE SEQUENCE public.signprofiles_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.signprofiles_id_seq OWNER TO admin;
+ALTER SEQUENCE public.signprofiles_id_seq OWNER TO admin;
 
 --
 -- Name: signprofiles_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23803,7 +23803,7 @@ CREATE SEQUENCE public.sources_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.sources_id_seq OWNER TO admin;
+ALTER SEQUENCE public.sources_id_seq OWNER TO admin;
 
 --
 -- Name: sources_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23877,7 +23877,7 @@ CREATE SEQUENCE public.tax_units_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.tax_units_id_seq OWNER TO admin;
+ALTER SEQUENCE public.tax_units_id_seq OWNER TO admin;
 
 --
 -- Name: tax_units_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23958,7 +23958,7 @@ CREATE SEQUENCE public.taxes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.taxes_id_seq OWNER TO admin;
+ALTER SEQUENCE public.taxes_id_seq OWNER TO admin;
 
 --
 -- Name: taxes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -23997,7 +23997,7 @@ CREATE SEQUENCE public.telescope_entries_sequence_seq
     CACHE 1;
 
 
-ALTER TABLE public.telescope_entries_sequence_seq OWNER TO admin;
+ALTER SEQUENCE public.telescope_entries_sequence_seq OWNER TO admin;
 
 --
 -- Name: telescope_entries_sequence_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -24065,7 +24065,7 @@ CREATE SEQUENCE public.typeables_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.typeables_id_seq OWNER TO admin;
+ALTER SEQUENCE public.typeables_id_seq OWNER TO admin;
 
 --
 -- Name: typeables_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -24197,7 +24197,7 @@ CREATE SEQUENCE public.users_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.users_id_seq OWNER TO admin;
+ALTER SEQUENCE public.users_id_seq OWNER TO admin;
 
 --
 -- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -24287,7 +24287,7 @@ CREATE SEQUENCE public.warehouse_closes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouse_closes_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouse_closes_id_seq OWNER TO admin;
 
 --
 -- Name: warehouse_closes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -24354,7 +24354,7 @@ CREATE SEQUENCE public.warehouse_institution_warehouses_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouse_institution_warehouses_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouse_institution_warehouses_id_seq OWNER TO admin;
 
 --
 -- Name: warehouse_institution_warehouses_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -24451,7 +24451,7 @@ CREATE SEQUENCE public.warehouse_inventory_product_movements_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouse_inventory_product_movements_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouse_inventory_product_movements_id_seq OWNER TO admin;
 
 --
 -- Name: warehouse_inventory_product_movements_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -24524,7 +24524,7 @@ CREATE SEQUENCE public.warehouse_inventory_product_requests_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouse_inventory_product_requests_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouse_inventory_product_requests_id_seq OWNER TO admin;
 
 --
 -- Name: warehouse_inventory_product_requests_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -24631,7 +24631,7 @@ CREATE SEQUENCE public.warehouse_inventory_products_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouse_inventory_products_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouse_inventory_products_id_seq OWNER TO admin;
 
 --
 -- Name: warehouse_inventory_products_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -24698,7 +24698,7 @@ CREATE SEQUENCE public.warehouse_inventory_rules_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouse_inventory_rules_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouse_inventory_rules_id_seq OWNER TO admin;
 
 --
 -- Name: warehouse_inventory_rules_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -24853,7 +24853,7 @@ CREATE SEQUENCE public.warehouse_movements_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouse_movements_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouse_movements_id_seq OWNER TO admin;
 
 --
 -- Name: warehouse_movements_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -24903,7 +24903,7 @@ CREATE SEQUENCE public.warehouse_product_attributes_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouse_product_attributes_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouse_product_attributes_id_seq OWNER TO admin;
 
 --
 -- Name: warehouse_product_attributes_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -24954,7 +24954,7 @@ CREATE SEQUENCE public.warehouse_product_values_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouse_product_values_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouse_product_values_id_seq OWNER TO admin;
 
 --
 -- Name: warehouse_product_values_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -25052,7 +25052,7 @@ CREATE SEQUENCE public.warehouse_products_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouse_products_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouse_products_id_seq OWNER TO admin;
 
 --
 -- Name: warehouse_products_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -25126,7 +25126,7 @@ CREATE SEQUENCE public.warehouse_reports_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouse_reports_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouse_reports_id_seq OWNER TO admin;
 
 --
 -- Name: warehouse_reports_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -25235,7 +25235,7 @@ CREATE SEQUENCE public.warehouse_requests_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouse_requests_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouse_requests_id_seq OWNER TO admin;
 
 --
 -- Name: warehouse_requests_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -25309,7 +25309,7 @@ CREATE SEQUENCE public.warehouses_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.warehouses_id_seq OWNER TO admin;
+ALTER SEQUENCE public.warehouses_id_seq OWNER TO admin;
 
 --
 -- Name: warehouses_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -25347,7 +25347,7 @@ CREATE SEQUENCE public.websockets_statistics_entries_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.websockets_statistics_entries_id_seq OWNER TO admin;
+ALTER SEQUENCE public.websockets_statistics_entries_id_seq OWNER TO admin;
 
 --
 -- Name: websockets_statistics_entries_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -25463,7 +25463,7 @@ CREATE SEQUENCE public.work_attendance_custom_schedules_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.work_attendance_custom_schedules_id_seq OWNER TO admin;
+ALTER SEQUENCE public.work_attendance_custom_schedules_id_seq OWNER TO admin;
 
 --
 -- Name: work_attendance_custom_schedules_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -25529,7 +25529,7 @@ CREATE SEQUENCE public.work_attendance_external_activities_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.work_attendance_external_activities_id_seq OWNER TO admin;
+ALTER SEQUENCE public.work_attendance_external_activities_id_seq OWNER TO admin;
 
 --
 -- Name: work_attendance_external_activities_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -25574,7 +25574,7 @@ CREATE SEQUENCE public.work_attendance_external_activity_staffs_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.work_attendance_external_activity_staffs_id_seq OWNER TO admin;
+ALTER SEQUENCE public.work_attendance_external_activity_staffs_id_seq OWNER TO admin;
 
 --
 -- Name: work_attendance_external_activity_staffs_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -25696,7 +25696,7 @@ CREATE SEQUENCE public.work_attendance_schedules_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.work_attendance_schedules_id_seq OWNER TO admin;
+ALTER SEQUENCE public.work_attendance_schedules_id_seq OWNER TO admin;
 
 --
 -- Name: work_attendance_schedules_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -25756,7 +25756,7 @@ CREATE SEQUENCE public.work_attendance_setting_notifications_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.work_attendance_setting_notifications_id_seq OWNER TO admin;
+ALTER SEQUENCE public.work_attendance_setting_notifications_id_seq OWNER TO admin;
 
 --
 -- Name: work_attendance_setting_notifications_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -25823,7 +25823,7 @@ CREATE SEQUENCE public.work_attendances_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.work_attendances_id_seq OWNER TO admin;
+ALTER SEQUENCE public.work_attendances_id_seq OWNER TO admin;
 
 --
 -- Name: work_attendances_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: admin
@@ -41588,6 +41588,7 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 10814	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	60	[]	{"name":"A\\u00d1OS","value":"\\"12\\"","payroll_salary_scale_id":3,"updated_at":"2025-12-22 10:15:02","created_at":"2025-12-22 10:15:02","id":60}	https://192.168.10.221/payroll/salary-scales	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-22 10:15:02	2025-12-22 10:15:02
 10815	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	61	[]	{"name":"A\\u00d1OS","value":"\\"13\\"","payroll_salary_scale_id":3,"updated_at":"2025-12-22 10:15:02","created_at":"2025-12-22 10:15:02","id":61}	https://192.168.10.221/payroll/salary-scales	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-22 10:15:02	2025-12-22 10:15:02
 10958	App\\Models\\User	1	updated	Modules\\Accounting\\Models\\AccountingAccount	754	{"subgroup":"7","updated_at":"2025-12-21 04:19:34"}	{"subgroup":"1","updated_at":"2026-01-06 09:54:36"}	https://192.168.10.221/accounting/accounts/754	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-01-06 09:54:36	2026-01-06 09:54:36
+11167	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2026-02-20 14:17:03","updated_at":"2026-02-20 14:17:03"}	{"last_login":"2026-02-21 10:51:26","updated_at":"2026-02-21 10:51:26"}	https://ing-sistemas.ddns.net/login	186.94.96.62	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-21 10:51:26	2026-02-21 10:51:26
 10817	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	63	[]	{"name":"A\\u00d1OS","value":"\\"15\\"","payroll_salary_scale_id":3,"updated_at":"2025-12-22 10:15:02","created_at":"2025-12-22 10:15:02","id":63}	https://192.168.10.221/payroll/salary-scales	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-22 10:15:02	2025-12-22 10:15:02
 10818	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	64	[]	{"name":"A\\u00d1OS","value":"\\"16\\"","payroll_salary_scale_id":3,"updated_at":"2025-12-22 10:15:02","created_at":"2025-12-22 10:15:02","id":64}	https://192.168.10.221/payroll/salary-scales	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-22 10:15:02	2025-12-22 10:15:02
 10819	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollScale	65	[]	{"name":"A\\u00d1OS","value":"\\"17\\"","payroll_salary_scale_id":3,"updated_at":"2025-12-22 10:15:02","created_at":"2025-12-22 10:15:02","id":65}	https://192.168.10.221/payroll/salary-scales	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-22 10:15:02	2025-12-22 10:15:02
@@ -41642,6 +41643,7 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 10868	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	58	[]	{"value":"11","payroll_vertical_scale_id":58,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":3,"updated_at":"2025-12-22 10:26:20","created_at":"2025-12-22 10:26:20","id":58}	https://192.168.10.221/payroll/salary-tabulators	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-22 10:26:20	2025-12-22 10:26:20
 10869	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	59	[]	{"value":"12.4","payroll_vertical_scale_id":59,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":3,"updated_at":"2025-12-22 10:26:20","created_at":"2025-12-22 10:26:20","id":59}	https://192.168.10.221/payroll/salary-tabulators	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-22 10:26:20	2025-12-22 10:26:20
 10870	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	60	[]	{"value":"13.8","payroll_vertical_scale_id":60,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":3,"updated_at":"2025-12-22 10:26:20","created_at":"2025-12-22 10:26:20","id":60}	https://192.168.10.221/payroll/salary-tabulators	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-22 10:26:20	2025-12-22 10:26:20
+11168	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccount	812	{"denomination":"Primas","active":true,"original":true}	{"denomination":"Primas a empleados y obreros","active":"1","original":"1"}	https://ing-sistemas.ddns.net/budget/accounts/812	186.94.96.62	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-21 10:55:59	2026-02-21 10:55:59
 10871	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	61	[]	{"value":"15.2","payroll_vertical_scale_id":61,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":3,"updated_at":"2025-12-22 10:26:20","created_at":"2025-12-22 10:26:20","id":61}	https://192.168.10.221/payroll/salary-tabulators	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-22 10:26:20	2025-12-22 10:26:20
 10872	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	62	[]	{"value":"16.6","payroll_vertical_scale_id":62,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":3,"updated_at":"2025-12-22 10:26:20","created_at":"2025-12-22 10:26:20","id":62}	https://192.168.10.221/payroll/salary-tabulators	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-22 10:26:20	2025-12-22 10:26:20
 10873	App\\Models\\User	1	created	Modules\\Payroll\\Models\\PayrollSalaryTabulatorScale	63	[]	{"value":"18","payroll_vertical_scale_id":63,"payroll_horizontal_scale_id":null,"payroll_salary_tabulator_id":3,"updated_at":"2025-12-22 10:26:20","created_at":"2025-12-22 10:26:20","id":63}	https://192.168.10.221/payroll/salary-tabulators	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2025-12-22 10:26:20	2025-12-22 10:26:20
@@ -41738,9 +41740,6 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 10969	App\\Models\\User	1	updated	Modules\\Purchase\\Models\\PurchaseProduct	19762	{"name":"pa\\u00f1ales desechables talla g","updated_at":"2025-12-18 13:54:36"}	{"name":"pa\\u00f1ales desechables talla g (g)","updated_at":"2026-01-16 11:29:59"}	https://192.168.10.221/purchase/products/import	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-01-16 11:29:59	2026-01-16 11:29:59
 10970	App\\Models\\User	1	updated	Modules\\Purchase\\Models\\PurchaseProduct	19832	{"name":"refresco de 1 litro (g9","updated_at":"2025-12-18 13:54:36"}	{"name":"refresco de 1 litro (g)","updated_at":"2026-01-16 11:29:59"}	https://192.168.10.221/purchase/products/import	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-01-16 11:29:59	2026-01-16 11:29:59
 10971	App\\Models\\User	1	updated	Modules\\Purchase\\Models\\PurchaseProduct	19683	{"name":"crema dental","updated_at":"2025-12-18 13:54:36"}	{"name":"pezcado","updated_at":"2026-01-16 11:29:59"}	https://192.168.10.221/purchase/products/import	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-01-16 11:29:59	2026-01-16 11:29:59
-10980	App\\Models\\User	1	updated	App\\Models\\User	1	{"lock_screen":true,"updated_at":"2026-01-16 11:58:36"}	{"lock_screen":false,"updated_at":"2026-01-16 11:58:55"}	https://192.168.10.221/unlockscreen	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-01-16 11:58:55	2026-01-16 11:58:55
-10981	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2026-01-16 11:20:03","updated_at":"2026-01-16 11:58:55"}	{"last_login":"2026-01-26 08:40:15","updated_at":"2026-01-26 08:40:15"}	https://192.168.10.221/login	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-01-26 08:40:15	2026-01-26 08:40:15
-10982	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2026-01-26 08:40:15","updated_at":"2026-01-26 08:40:15"}	{"last_login":"2026-01-26 08:52:20","updated_at":"2026-01-26 08:52:20"}	https://192.168.10.221/login	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-01-26 08:52:20	2026-01-26 08:52:20
 10983	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2026-01-26 08:52:20","updated_at":"2026-01-26 08:52:20"}	{"last_login":"2026-01-26 09:09:27","updated_at":"2026-01-26 09:09:27"}	https://192.168.10.221/login	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-01-26 09:09:27	2026-01-26 09:09:27
 10984	App\\Models\\User	1	updated	App\\Models\\User	1	{"last_login":"2026-01-26 09:09:27","updated_at":"2026-01-26 09:09:27"}	{"last_login":"2026-01-26 10:55:49","updated_at":"2026-01-26 10:55:49"}	https://192.168.10.221/login	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-01-26 10:55:49	2026-01-26 10:55:49
 10985	App\\Models\\User	1	created	App\\Models\\User	3	[]	{"name":"Milagros del Valle Segovia Rondon","email":"milasegov3011@gmail.com","username":"mila","updated_at":"2026-01-26 10:57:38","created_at":"2026-01-26 10:57:38","id":3}	https://192.168.10.221/users	192.168.10.221	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-01-26 10:57:38	2026-01-26 10:57:38
@@ -41763,6 +41762,7 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 11002	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	3	[]	{"jan_amount":96582,"feb_amount":96582,"mar_amount":96582,"apr_amount":96582,"may_amount":96582,"jun_amount":96582,"jul_amount":96582,"aug_amount":96582,"sep_amount":96582,"oct_amount":96582,"nov_amount":96582,"dec_amount":96582,"total_year_amount":1158984,"total_year_amount_m":1158984,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":780,"budget_sub_specific_formulation_id":1,"id":3}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
 11003	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	4	[]	{"jan_amount":69184,"feb_amount":69184,"mar_amount":69184,"apr_amount":69184,"may_amount":69184,"jun_amount":69184,"jul_amount":69184,"aug_amount":69184,"sep_amount":69184,"oct_amount":69184,"nov_amount":69184,"dec_amount":69184,"total_year_amount":830208,"total_year_amount_m":830208,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":781,"budget_sub_specific_formulation_id":1,"id":4}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
 11004	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	5	[]	{"jan_amount":16118,"feb_amount":16118,"mar_amount":16118,"apr_amount":16118,"may_amount":16118,"jun_amount":16118,"jul_amount":16118,"aug_amount":16118,"sep_amount":16118,"oct_amount":16118,"nov_amount":16118,"dec_amount":16118,"total_year_amount":193416,"total_year_amount_m":193416,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":790,"budget_sub_specific_formulation_id":1,"id":5}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
+11169	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccount	919	{"denomination":"Aportes patronales","active":true,"original":true}	{"denomination":"Aportes patronales por empleados y obreros","active":"1","original":"1"}	https://ing-sistemas.ddns.net/budget/accounts/919	186.94.96.62	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-21 10:59:43	2026-02-21 10:59:43
 11005	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	6	[]	{"jan_amount":11280,"feb_amount":11280,"mar_amount":11280,"apr_amount":11280,"may_amount":11280,"jun_amount":11280,"jul_amount":11280,"aug_amount":11280,"sep_amount":11280,"oct_amount":11280,"nov_amount":11280,"dec_amount":11280,"total_year_amount":135360,"total_year_amount_m":135360,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":800,"budget_sub_specific_formulation_id":1,"id":6}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
 11006	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	7	[]	{"jan_amount":96368,"feb_amount":96368,"mar_amount":96368,"apr_amount":96368,"may_amount":96368,"jun_amount":96368,"jul_amount":96368,"aug_amount":96368,"sep_amount":96368,"oct_amount":96368,"nov_amount":96368,"dec_amount":96368,"total_year_amount":1156416,"total_year_amount_m":1156416,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":812,"budget_sub_specific_formulation_id":1,"id":7}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
 11007	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	8	[]	{"jan_amount":41860,"feb_amount":41860,"mar_amount":41860,"apr_amount":41860,"may_amount":41860,"jun_amount":41860,"jul_amount":41860,"aug_amount":41860,"sep_amount":41860,"oct_amount":41860,"nov_amount":41860,"dec_amount":41860,"total_year_amount":502320,"total_year_amount_m":502320,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":814,"budget_sub_specific_formulation_id":1,"id":8}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
@@ -41784,6 +41784,7 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 11023	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	24	[]	{"jan_amount":2080000,"feb_amount":2080000,"mar_amount":2080000,"apr_amount":2080000,"may_amount":2080000,"jun_amount":2080000,"jul_amount":2080000,"aug_amount":2080000,"sep_amount":2080000,"oct_amount":2080000,"nov_amount":2080000,"dec_amount":2080000,"total_year_amount":24960000,"total_year_amount_m":24960000,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":869,"budget_sub_specific_formulation_id":1,"id":24}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
 11024	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	25	[]	{"jan_amount":1125.58,"feb_amount":1125.58,"mar_amount":1125.58,"apr_amount":1125.58,"may_amount":1125.58,"jun_amount":1125.58,"jul_amount":1125.58,"aug_amount":1125.58,"sep_amount":1125.58,"oct_amount":1125.58,"nov_amount":1125.58,"dec_amount":1125.58,"total_year_amount":13507,"total_year_amount_m":13507,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":873,"budget_sub_specific_formulation_id":1,"id":25}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
 11025	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	26	[]	{"jan_amount":133.33,"feb_amount":133.33,"mar_amount":133.33,"apr_amount":133.33,"may_amount":133.33,"jun_amount":133.33,"jul_amount":133.33,"aug_amount":133.33,"sep_amount":133.33,"oct_amount":133.33,"nov_amount":133.33,"dec_amount":133.33,"total_year_amount":1600,"total_year_amount_m":1600,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":897,"budget_sub_specific_formulation_id":1,"id":26}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
+11170	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccount	955	{"denomination":"Asistencia socio-econ\\u00f3mica","active":true,"original":true}	{"denomination":"Asistencia socio-econ\\u00f3mica a empleados y obreros","active":"1","original":"1"}	https://ing-sistemas.ddns.net/budget/accounts/955	186.94.96.62	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-21 11:01:22	2026-02-21 11:01:22
 11026	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	27	[]	{"jan_amount":1341.67,"feb_amount":1341.67,"mar_amount":1341.67,"apr_amount":1341.67,"may_amount":1341.67,"jun_amount":1341.67,"jul_amount":1341.67,"aug_amount":1341.67,"sep_amount":1341.67,"oct_amount":1341.67,"nov_amount":1341.67,"dec_amount":1341.67,"total_year_amount":16100,"total_year_amount_m":16100,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":898,"budget_sub_specific_formulation_id":1,"id":27}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
 11027	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	28	[]	{"jan_amount":433.33,"feb_amount":433.33,"mar_amount":433.33,"apr_amount":433.33,"may_amount":433.33,"jun_amount":433.33,"jul_amount":433.33,"aug_amount":433.33,"sep_amount":433.33,"oct_amount":433.33,"nov_amount":433.33,"dec_amount":433.33,"total_year_amount":5200,"total_year_amount_m":5200,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":899,"budget_sub_specific_formulation_id":1,"id":28}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
 11028	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	29	[]	{"jan_amount":139810.42,"feb_amount":139810.42,"mar_amount":139810.42,"apr_amount":139810.42,"may_amount":139810.42,"jun_amount":139810.42,"jul_amount":139810.42,"aug_amount":139810.42,"sep_amount":139810.42,"oct_amount":139810.42,"nov_amount":139810.42,"dec_amount":139810.42,"total_year_amount":1677725,"total_year_amount_m":1677725,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":902,"budget_sub_specific_formulation_id":1,"id":29}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
@@ -41794,6 +41795,7 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 11033	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	34	[]	{"jan_amount":13820.25,"feb_amount":13820.25,"mar_amount":13820.25,"apr_amount":13820.25,"may_amount":13820.25,"jun_amount":13820.25,"jul_amount":13820.25,"aug_amount":13820.25,"sep_amount":13820.25,"oct_amount":13820.25,"nov_amount":13820.25,"dec_amount":13820.25,"total_year_amount":165843,"total_year_amount_m":165843,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":920,"budget_sub_specific_formulation_id":1,"id":34}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
 11034	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	35	[]	{"jan_amount":17423.5,"feb_amount":17423.5,"mar_amount":17423.5,"apr_amount":17423.5,"may_amount":17423.5,"jun_amount":17423.5,"jul_amount":17423.5,"aug_amount":17423.5,"sep_amount":17423.5,"oct_amount":17423.5,"nov_amount":17423.5,"dec_amount":17423.5,"total_year_amount":209082,"total_year_amount_m":209082,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":922,"budget_sub_specific_formulation_id":1,"id":35}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
 11035	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	36	[]	{"jan_amount":3071.17,"feb_amount":3071.17,"mar_amount":3071.17,"apr_amount":3071.17,"may_amount":3071.17,"jun_amount":3071.17,"jul_amount":3071.17,"aug_amount":3071.17,"sep_amount":3071.17,"oct_amount":3071.17,"nov_amount":3071.17,"dec_amount":3071.17,"total_year_amount":36854,"total_year_amount_m":36854,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":923,"budget_sub_specific_formulation_id":1,"id":36}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
+11171	App\\Models\\User	1	updated	Modules\\Budget\\Models\\BudgetAccount	1071	{"denomination":"Productos de minas, canteras y yacimientos","active":true,"original":true}	{"denomination":"Productos de minas y canteras","active":"1","original":"1"}	https://ing-sistemas.ddns.net/budget/accounts/1071	186.94.96.62	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-21 11:09:55	2026-02-21 11:09:55
 11036	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	37	[]	{"jan_amount":3071.17,"feb_amount":3071.17,"mar_amount":3071.17,"apr_amount":3071.17,"may_amount":3071.17,"jun_amount":3071.17,"jul_amount":3071.17,"aug_amount":3071.17,"sep_amount":3071.17,"oct_amount":3071.17,"nov_amount":3071.17,"dec_amount":3071.17,"total_year_amount":36854,"total_year_amount_m":36854,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":924,"budget_sub_specific_formulation_id":1,"id":37}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
 11037	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	38	[]	{"jan_amount":3005.42,"feb_amount":3005.42,"mar_amount":3005.42,"apr_amount":3005.42,"may_amount":3005.42,"jun_amount":3005.42,"jul_amount":3005.42,"aug_amount":3005.42,"sep_amount":3005.42,"oct_amount":3005.42,"nov_amount":3005.42,"dec_amount":3005.42,"total_year_amount":36065,"total_year_amount_m":36065,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":926,"budget_sub_specific_formulation_id":1,"id":38}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
 11038	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	39	[]	{"jan_amount":3339.42,"feb_amount":3339.42,"mar_amount":3339.42,"apr_amount":3339.42,"may_amount":3339.42,"jun_amount":3339.42,"jul_amount":3339.42,"aug_amount":3339.42,"sep_amount":3339.42,"oct_amount":3339.42,"nov_amount":3339.42,"dec_amount":3339.42,"total_year_amount":40073,"total_year_amount_m":40073,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":927,"budget_sub_specific_formulation_id":1,"id":39}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:27	2026-02-20 13:47:27
@@ -41804,6 +41806,7 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 11043	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	44	[]	{"jan_amount":413.5,"feb_amount":413.5,"mar_amount":413.5,"apr_amount":413.5,"may_amount":413.5,"jun_amount":413.5,"jul_amount":413.5,"aug_amount":413.5,"sep_amount":413.5,"oct_amount":413.5,"nov_amount":413.5,"dec_amount":413.5,"total_year_amount":4962,"total_year_amount_m":4962,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":947,"budget_sub_specific_formulation_id":1,"id":44}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:28	2026-02-20 13:47:28
 11044	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	45	[]	{"jan_amount":8469.75,"feb_amount":8469.75,"mar_amount":8469.75,"apr_amount":8469.75,"may_amount":8469.75,"jun_amount":8469.75,"jul_amount":8469.75,"aug_amount":8469.75,"sep_amount":8469.75,"oct_amount":8469.75,"nov_amount":8469.75,"dec_amount":8469.75,"total_year_amount":101637,"total_year_amount_m":101637,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":955,"budget_sub_specific_formulation_id":1,"id":45}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:28	2026-02-20 13:47:28
 11045	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	46	[]	{"jan_amount":4837.5,"feb_amount":4837.5,"mar_amount":4837.5,"apr_amount":4837.5,"may_amount":4837.5,"jun_amount":4837.5,"jul_amount":4837.5,"aug_amount":4837.5,"sep_amount":4837.5,"oct_amount":4837.5,"nov_amount":4837.5,"dec_amount":4837.5,"total_year_amount":58050,"total_year_amount_m":58050,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":957,"budget_sub_specific_formulation_id":1,"id":46}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:28	2026-02-20 13:47:28
+11172	App\\Models\\User	1	updated	App\\Models\\User	1	{"lock_screen":false,"updated_at":"2026-02-21 10:51:26"}	{"lock_screen":true,"updated_at":"2026-02-21 11:23:29"}	https://ing-sistemas.ddns.net/set-lockscreen-data	186.94.96.62	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-21 11:23:29	2026-02-21 11:23:29
 11046	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	47	[]	{"jan_amount":2067.67,"feb_amount":2067.67,"mar_amount":2067.67,"apr_amount":2067.67,"may_amount":2067.67,"jun_amount":2067.67,"jul_amount":2067.67,"aug_amount":2067.67,"sep_amount":2067.67,"oct_amount":2067.67,"nov_amount":2067.67,"dec_amount":2067.67,"total_year_amount":24812,"total_year_amount_m":24812,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":962,"budget_sub_specific_formulation_id":1,"id":47}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:28	2026-02-20 13:47:28
 11047	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	48	[]	{"jan_amount":368.75,"feb_amount":368.75,"mar_amount":368.75,"apr_amount":368.75,"may_amount":368.75,"jun_amount":368.75,"jul_amount":368.75,"aug_amount":368.75,"sep_amount":368.75,"oct_amount":368.75,"nov_amount":368.75,"dec_amount":368.75,"total_year_amount":4425,"total_year_amount_m":4425,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":967,"budget_sub_specific_formulation_id":1,"id":48}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:28	2026-02-20 13:47:28
 11048	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	49	[]	{"jan_amount":1087.5,"feb_amount":1087.5,"mar_amount":1087.5,"apr_amount":1087.5,"may_amount":1087.5,"jun_amount":1087.5,"jul_amount":1087.5,"aug_amount":1087.5,"sep_amount":1087.5,"oct_amount":1087.5,"nov_amount":1087.5,"dec_amount":1087.5,"total_year_amount":13050,"total_year_amount_m":13050,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":969,"budget_sub_specific_formulation_id":1,"id":49}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:28	2026-02-20 13:47:28
@@ -41814,6 +41817,7 @@ COPY public.audits (id, user_type, user_id, event, auditable_type, auditable_id,
 11053	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	54	[]	{"jan_amount":46666.67,"feb_amount":46666.67,"mar_amount":46666.67,"apr_amount":46666.67,"may_amount":46666.67,"jun_amount":46666.67,"jul_amount":46666.67,"aug_amount":46666.67,"sep_amount":46666.67,"oct_amount":46666.67,"nov_amount":46666.67,"dec_amount":46666.67,"total_year_amount":560000,"total_year_amount_m":560000,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":1067,"budget_sub_specific_formulation_id":1,"id":54}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:28	2026-02-20 13:47:28
 11054	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	55	[]	{"jan_amount":19304.17,"feb_amount":19304.17,"mar_amount":19304.17,"apr_amount":19304.17,"may_amount":19304.17,"jun_amount":19304.17,"jul_amount":19304.17,"aug_amount":19304.17,"sep_amount":19304.17,"oct_amount":19304.17,"nov_amount":19304.17,"dec_amount":19304.17,"total_year_amount":231650,"total_year_amount_m":231650,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":1068,"budget_sub_specific_formulation_id":1,"id":55}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:28	2026-02-20 13:47:28
 11055	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	56	[]	{"jan_amount":30000,"feb_amount":30000,"mar_amount":30000,"apr_amount":30000,"may_amount":30000,"jun_amount":30000,"jul_amount":30000,"aug_amount":30000,"sep_amount":30000,"oct_amount":30000,"nov_amount":30000,"dec_amount":30000,"total_year_amount":360000,"total_year_amount_m":360000,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":1071,"budget_sub_specific_formulation_id":1,"id":56}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:28	2026-02-20 13:47:28
+11173	App\\Models\\User	1	updated	App\\Models\\User	1	{"lock_screen":true,"updated_at":"2026-02-21 11:23:29"}	{"lock_screen":false,"updated_at":"2026-02-21 11:26:42"}	https://ing-sistemas.ddns.net/unlockscreen	186.94.96.62	Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0	\N	2026-02-21 11:26:42	2026-02-21 11:26:42
 11056	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	57	[]	{"jan_amount":30000,"feb_amount":30000,"mar_amount":30000,"apr_amount":30000,"may_amount":30000,"jun_amount":30000,"jul_amount":30000,"aug_amount":30000,"sep_amount":30000,"oct_amount":30000,"nov_amount":30000,"dec_amount":30000,"total_year_amount":360000,"total_year_amount_m":360000,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":1076,"budget_sub_specific_formulation_id":1,"id":57}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:28	2026-02-20 13:47:28
 11057	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	58	[]	{"jan_amount":549529.01,"feb_amount":549529.01,"mar_amount":549529.01,"apr_amount":549529.01,"may_amount":549529.01,"jun_amount":549529.01,"jul_amount":549529.01,"aug_amount":549529.01,"sep_amount":549529.01,"oct_amount":549529.01,"nov_amount":549529.01,"dec_amount":549529.01,"total_year_amount":6594348.13,"total_year_amount_m":6594348.13,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":1080,"budget_sub_specific_formulation_id":1,"id":58}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:28	2026-02-20 13:47:28
 11058	App\\Models\\User	1	created	Modules\\Budget\\Models\\BudgetAccountOpen	59	[]	{"jan_amount":80512.76,"feb_amount":80512.76,"mar_amount":80512.76,"apr_amount":80512.76,"may_amount":80512.76,"jun_amount":80512.76,"jul_amount":80512.76,"aug_amount":80512.76,"sep_amount":80512.76,"oct_amount":80512.76,"nov_amount":80512.76,"dec_amount":80512.76,"total_year_amount":966153.13,"total_year_amount_m":966153.13,"total_real_amount":0,"total_estimated_amount":0,"budget_account_id":1081,"budget_sub_specific_formulation_id":1,"id":59}	https://192.168.10.221/budget/subspecific-formulations	192.168.10.167	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36	\N	2026-02-20 13:47:28	2026-02-20 13:47:28
@@ -42919,7 +42923,6 @@ COPY public.budget_accounts (id, "group", item, generic, specific, subspecific, 
 809	4	01	02	05	00	Compensaciones previstas en las escalas de sueldos al personal militar	t	\N	f	t	t	804	\N	2025-12-16 08:44:33	2025-12-16 08:44:33	\N	f
 810	4	01	02	06	00	Compensaciones previstas en las escalas de sueldos de los altos funcionarios y altas funcionarias del poder público y de elección popular	t	\N	f	t	t	804	\N	2025-12-16 08:44:33	2025-12-16 08:44:33	\N	f
 811	4	01	02	07	00	Compensaciones previstas en las escalas de sueldos del personal de alto nivel y de dirección	t	\N	f	t	t	804	\N	2025-12-16 08:44:33	2025-12-16 08:44:33	\N	f
-812	4	01	03	00	00	Primas	t	\N	f	t	t	779	\N	2025-12-16 08:44:33	2025-12-16 08:44:33	\N	f
 813	4	01	03	01	00	Primas por mérito al personal empleado	t	\N	f	t	t	812	\N	2025-12-16 08:44:33	2025-12-16 08:44:33	\N	f
 814	4	01	03	02	00	Primas de transporte al personal empleado	t	\N	f	t	t	812	\N	2025-12-16 08:44:33	2025-12-16 08:44:33	\N	f
 815	4	01	03	03	00	Primas por hogar para la protección y estabilidad familiar del personal empleado.	t	\N	f	t	t	812	\N	2025-12-16 08:44:33	2025-12-16 08:44:33	\N	f
@@ -42952,6 +42955,7 @@ COPY public.budget_accounts (id, "group", item, generic, specific, subspecific, 
 842	4	01	03	42	00	Primas por hijos e hijas de los altos funcionarios y altas funcionarias del poder público y de elección popular	t	\N	f	t	t	812	\N	2025-12-16 08:44:34	2025-12-16 08:44:34	\N	f
 843	4	01	03	43	00	Primas de profesionalización\tde los altos funcionarios y altas funcionarias del poder público y de elección popular	t	\N	f	t	t	812	\N	2025-12-16 08:44:34	2025-12-16 08:44:34	\N	f
 844	4	01	03	44	00	Primas por antigüedad de los altos funcionarios y altas funcionarias del poder público y de elección popular	t	\N	f	t	t	812	\N	2025-12-16 08:44:34	2025-12-16 08:44:34	\N	f
+812	4	01	03	00	00	Primas a empleados y obreros	t	\N	f	t	t	779	\N	2025-12-16 08:44:33	2026-02-21 10:55:58	\N	f
 845	4	01	03	45	00	Primas por hijos e hijas al personal de alto nivel y de dirección	t	\N	f	t	t	812	\N	2025-12-16 08:44:34	2025-12-16 08:44:34	\N	f
 846	4	01	03	48	00	Primas de profesionalización al personal de alto nivel y de dirección	t	\N	f	t	t	812	\N	2025-12-16 08:44:34	2025-12-16 08:44:34	\N	f
 847	4	01	03	49	00	Primas de antigüedad al personal de alto nivel y de dirección	t	\N	f	t	t	812	\N	2025-12-16 08:44:34	2025-12-16 08:44:34	\N	f
@@ -43026,7 +43030,6 @@ COPY public.budget_accounts (id, "group", item, generic, specific, subspecific, 
 916	4	01	05	16	00	Aguinaldos al personal de alto nivel y de dirección	t	\N	f	t	t	902	\N	2025-12-16 08:44:35	2025-12-16 08:44:35	\N	f
 917	4	01	05	17	00	Utilidades al personal de alto nivel y de dirección	t	\N	f	t	t	902	\N	2025-12-16 08:44:35	2025-12-16 08:44:35	\N	f
 918	4	01	05	18	00	Bono vacacional al personal de alto nivel y de dirección	t	\N	f	t	t	902	\N	2025-12-16 08:44:35	2025-12-16 08:44:35	\N	f
-919	4	01	06	00	00	Aportes patronales	t	\N	f	t	t	779	\N	2025-12-16 08:44:35	2025-12-16 08:44:35	\N	f
 920	4	01	06	01	00	Aporte patronal al Instituto Venezolano de los Seguros Sociales (I.V.S.S.) al personal empleado	t	\N	f	t	t	919	\N	2025-12-16 08:44:35	2025-12-16 08:44:35	\N	f
 921	4	01	06	02	00	Aporte patronal al Instituto de Previsión y Asistencia Social para el personal del Ministerio de Educación (IPASME) al personal empleado	t	\N	f	t	t	919	\N	2025-12-16 08:44:35	2025-12-16 08:44:35	\N	f
 922	4	01	06	03	00	Aporte patronal al Fondo de Jubilaciones al personal empleado	t	\N	f	t	t	919	\N	2025-12-16 08:44:35	2025-12-16 08:44:35	\N	f
@@ -43062,7 +43065,6 @@ COPY public.budget_accounts (id, "group", item, generic, specific, subspecific, 
 952	4	01	06	96	00	Otros aportes patronales al personal empleado	t	\N	f	t	t	919	\N	2025-12-16 08:44:36	2025-12-16 08:44:36	\N	f
 953	4	01	06	97	00	Otros aportes patronales al personal obrero	t	\N	f	t	t	919	\N	2025-12-16 08:44:36	2025-12-16 08:44:36	\N	f
 954	4	01	06	98	00	Otros aportes patronales por personal militar	t	\N	f	t	t	919	\N	2025-12-16 08:44:36	2025-12-16 08:44:36	\N	f
-955	4	01	07	00	00	Asistencia socio-económica	t	\N	f	t	t	779	\N	2025-12-16 08:44:36	2025-12-16 08:44:36	\N	f
 956	4	01	07	01	00	Capacitación y adiestramiento al personal empleado	t	\N	f	t	t	955	\N	2025-12-16 08:44:36	2025-12-16 08:44:36	\N	f
 957	4	01	07	02	00	Becas al personal empleado	t	\N	f	t	t	955	\N	2025-12-16 08:44:36	2025-12-16 08:44:36	\N	f
 958	4	01	07	03	00	Ayudas por matrimonio al personal empleado	t	\N	f	t	t	955	\N	2025-12-16 08:44:36	2025-12-16 08:44:36	\N	f
@@ -43178,7 +43180,6 @@ COPY public.budget_accounts (id, "group", item, generic, specific, subspecific, 
 1068	4	02	01	03	00	Productos agrícolas y pecuarios	t	\N	f	t	t	1065	\N	2025-12-16 08:44:38	2025-12-16 08:44:38	\N	f
 1069	4	02	01	04	00	Productos de la caza y pesca	t	\N	f	t	t	1065	\N	2025-12-16 08:44:38	2025-12-16 08:44:38	\N	f
 1070	4	02	01	99	00	Otros productos alimenticios y agropecuarios	t	\N	f	t	t	1065	\N	2025-12-16 08:44:38	2025-12-16 08:44:38	\N	f
-1071	4	02	02	00	00	Productos de minas, canteras y yacimientos	t	\N	f	t	t	1064	\N	2025-12-16 08:44:38	2025-12-16 08:44:38	\N	f
 1072	4	02	02	01	00	Carbón mineral	t	\N	f	t	t	1071	\N	2025-12-16 08:44:38	2025-12-16 08:44:38	\N	f
 1073	4	02	02	02	00	Petróleo crudo y gas natural	t	\N	f	t	t	1071	\N	2025-12-16 08:44:38	2025-12-16 08:44:38	\N	f
 1074	4	02	02	03	00	Mineral de hierro	t	\N	f	t	t	1071	\N	2025-12-16 08:44:38	2025-12-16 08:44:38	\N	f
@@ -44052,6 +44053,7 @@ COPY public.budget_accounts (id, "group", item, generic, specific, subspecific, 
 1939	4	10	03	02	05	Intereses de la deuda pública externa por préstamos recibidos de gobiernos extranjeros a corto plazo	t	\N	f	t	t	1934	\N	2025-12-16 08:44:54	2025-12-16 08:44:54	\N	f
 1940	4	10	03	02	06	Intereses de la deuda pública externa por préstamos recibidos de organismos internacionales a corto plazo	t	\N	f	t	t	1934	\N	2025-12-16 08:44:54	2025-12-16 08:44:54	\N	f
 1941	4	10	03	02	07	Intereses de la deuda pública externa por préstamos recibidos de instituciones financieras externas a corto plazo	t	\N	f	t	t	1934	\N	2025-12-16 08:44:54	2025-12-16 08:44:54	\N	f
+1071	4	02	02	00	00	Productos de minas y canteras	t	\N	f	t	t	1064	\N	2025-12-16 08:44:38	2026-02-21 11:09:55	\N	f
 1942	4	10	03	02	08	Intereses de la deuda pública externa por préstamos recibidos de proveedores de bienes y servicios externos a corto plazo	t	\N	f	t	t	1934	\N	2025-12-16 08:44:54	2025-12-16 08:44:54	\N	f
 1943	4	10	03	02	09	Intereses por mora y multas de la deuda pública externa por préstamos recibidos de gobiernos extranjeros a corto plazo	t	\N	f	t	t	1934	\N	2025-12-16 08:44:54	2025-12-16 08:44:54	\N	f
 1944	4	10	03	02	10	Intereses por mora y multas de la deuda pública externa por préstamos recibidos  de organismos internacionales a corto plazo	t	\N	f	t	t	1934	\N	2025-12-16 08:44:54	2025-12-16 08:44:54	\N	f
@@ -44235,6 +44237,8 @@ COPY public.budget_accounts (id, "group", item, generic, specific, subspecific, 
 2126	4	02	99	01	15	Otros materiales y suministros (Fondos Propios)	t	\N	f	t	f	1153	\N	2025-12-19 10:11:06	2025-12-19 10:11:06	\N	f
 2127	4	03	08	02	16	Comisiones y gastos bancarios (Fondos Propios)	t	\N	f	t	f	1202	\N	2025-12-19 10:12:10	2025-12-19 10:12:10	\N	f
 2128	4	03	18	01	17	Impuesto al valor agregado (Fondos Propios)	t	\N	f	t	f	1247	\N	2025-12-19 10:13:11	2025-12-19 10:13:11	\N	f
+919	4	01	06	00	00	Aportes patronales por empleados y obreros	t	\N	f	t	t	779	\N	2025-12-16 08:44:35	2026-02-21 10:59:43	\N	f
+955	4	01	07	00	00	Asistencia socio-económica a empleados y obreros	t	\N	f	t	t	779	\N	2025-12-16 08:44:36	2026-02-21 11:01:22	\N	f
 \.
 
 
@@ -56654,7 +56658,7 @@ COPY public.users (id, name, email, username, password, level, last_login, lock_
 2	Usuario de prueba	user@kavac-testing.com	user	$2y$10$Zf/Ydtvuj3cL.YVXJuBKaump1CWXiicXkW8vQboeB2/RjCLHY5BfW	2	\N	f	10	\N	t	2026-02-18 09:09:42	\N	\N	2025-12-16 08:43:25	2026-02-18 09:09:42	\N
 3	Milagros del Valle Segovia Rondon	milasegov3011@gmail.com	mila	$2y$10$12ZAxgLhaQijKAZUBMQ68.okF5qgSYtk6Pez6TIxFR636b1v01SYu	0	2026-02-18 09:26:48	f	10	\N	t	2026-02-18 09:09:53	\N	\N	2026-01-26 10:57:38	2026-02-18 09:26:48	\N
 4	Alba Araujo	albaaraujo781@gmail.com	alba	$2y$10$vfedpcn46P4KRsAe.laqFep4/uFm/KPF0VPX7LfPfwvPzclmVPUiW	0	2026-02-18 13:19:35	f	10	\N	t	2026-02-18 13:20:30	\N	\N	2026-02-18 09:18:06	2026-02-18 13:20:30	\N
-1	Eduardo Jose Peñaloza Olmos	edujosepeolms@gmail.com	eduardo	$2y$10$8qIFG6WyuCGMG0e3VevAG.NLQkFd6VfjRxOm3ZEoqKgxct9ZLuDSu	1	2026-02-20 14:17:03	f	10	\N	t	2025-12-16 08:43:23	\N	\N	2025-12-16 08:43:23	2026-02-20 14:17:03	\N
+1	Eduardo Jose Peñaloza Olmos	edujosepeolms@gmail.com	eduardo	$2y$10$8qIFG6WyuCGMG0e3VevAG.NLQkFd6VfjRxOm3ZEoqKgxct9ZLuDSu	1	2026-02-21 10:51:26	f	10	\N	t	2025-12-16 08:43:23	\N	\N	2025-12-16 08:43:23	2026-02-21 11:26:42	\N
 \.
 
 
@@ -57123,7 +57127,7 @@ SELECT pg_catalog.setval('public.assets_id_seq', 1, false);
 -- Name: audits_id_seq; Type: SEQUENCE SET; Schema: public; Owner: admin
 --
 
-SELECT pg_catalog.setval('public.audits_id_seq', 11166, true);
+SELECT pg_catalog.setval('public.audits_id_seq', 11173, true);
 
 
 --
@@ -67157,5 +67161,5 @@ ALTER TABLE ONLY public.work_attendances
 -- PostgreSQL database dump complete
 --
 
-\unrestrict GkOnqIK7DFeM5oIX3fQ7Gcgpe8KeGkadi7aHxtQukg3aBtagmbtgQepFi7eYIDU
+\unrestrict FyBoO2ED4AzpXdRFZIEceDuaY8wc8iVkdoL0zgOT33YOotMpFv9XTyoPxbuJMOI
 
